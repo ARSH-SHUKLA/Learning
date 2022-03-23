@@ -1,0 +1,430 @@
+﻿// Created by Microsoft (R) C/C++ Compiler Version 14.00.24215.1 (fb436646).
+//
+// p:\ml-native\orders\orders_frontend\code\pvorderschedulemanager\src\main\cpp\testrelease\cpsdatacommon.tlh
+//
+// C++ source equivalent of type library CPSDataCommon.dll
+// compiler-generated file created 03/21/22 at 07:41:01 - DO NOT EDIT!
+
+#pragma once
+#pragma pack(push, 8)
+
+#include <comdef.h>
+
+//
+// Forward references and typedefs
+//
+
+struct __declspec(uuid("0f8930b6-eac4-11d3-9dd4-00105ae68592"))
+/* LIBID */ __CPSDATACOMMONLib;
+struct __declspec(uuid("d303bdc0-671a-11d4-9e11-00105ae68592"))
+/* dispinterface */ IProVideObjectCollectionEventDI;
+struct __declspec(uuid("7ac7b221-ead8-11d3-9dd4-00105ae68592"))
+/* dual interface */ IProVideObjectCollectionEvent;
+struct __declspec(uuid("c5a00c50-67b2-11d4-9e12-00105ae68592"))
+/* dispinterface */ IProVideCollectionEventDI;
+struct __declspec(uuid("4ad84e83-cc06-11d2-9685-00c0e310724c"))
+/* interface */ IProVideCollectionEvent;
+struct /* coclass */ ProVideObjectCollection;
+struct __declspec(uuid("7defb4d4-c4f0-11d2-9683-00c0e310724c"))
+/* interface */ IProVideCollection;
+struct __declspec(uuid("dde192e1-e9fe-11d3-9dd3-00105ae68592"))
+/* dual interface */ IProVideObjectCollection;
+struct /* coclass */ Comment;
+struct __declspec(uuid("dde192e4-e9fe-11d3-9dd3-00105ae68592"))
+/* dual interface */ IComment;
+
+//
+// Smart pointer typedef declarations
+//
+
+_COM_SMARTPTR_TYPEDEF(IProVideObjectCollectionEventDI, __uuidof(IProVideObjectCollectionEventDI));
+_COM_SMARTPTR_TYPEDEF(IProVideObjectCollectionEvent, __uuidof(IProVideObjectCollectionEvent));
+_COM_SMARTPTR_TYPEDEF(IProVideCollectionEventDI, __uuidof(IProVideCollectionEventDI));
+_COM_SMARTPTR_TYPEDEF(IProVideCollectionEvent, __uuidof(IProVideCollectionEvent));
+_COM_SMARTPTR_TYPEDEF(IProVideCollection, __uuidof(IProVideCollection));
+_COM_SMARTPTR_TYPEDEF(IProVideObjectCollection, __uuidof(IProVideObjectCollection));
+_COM_SMARTPTR_TYPEDEF(IComment, __uuidof(IComment));
+
+//
+// Type library items
+//
+
+struct __declspec(uuid("d303bdc0-671a-11d4-9e11-00105ae68592"))
+IProVideObjectCollectionEventDI : IDispatch
+{
+    //
+    // Wrapper methods for error-handling
+    //
+
+    // Methods:
+    HRESULT ObjectChanged (
+        IDispatch * pIObject );
+};
+
+struct __declspec(uuid("7ac7b221-ead8-11d3-9dd4-00105ae68592"))
+IProVideObjectCollectionEvent : IDispatch
+{
+    //
+    // Wrapper methods for error-handling
+    //
+
+    HRESULT ObjectChanged (
+        IDispatch * pIObject );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall raw_ObjectChanged (
+        IDispatch * pIObject ) = 0;
+};
+
+struct __declspec(uuid("c5a00c50-67b2-11d4-9e12-00105ae68592"))
+IProVideCollectionEventDI : IDispatch
+{
+    //
+    // Wrapper methods for error-handling
+    //
+
+    // Methods:
+    HRESULT Added (
+        IDispatch * pObject );
+    HRESULT Removed (
+        IDispatch * pObject );
+    HRESULT Reloaded ( );
+    HRESULT Emptied ( );
+};
+
+struct __declspec(uuid("4ad84e83-cc06-11d2-9685-00c0e310724c"))
+IProVideCollectionEvent : IDispatch
+{
+    //
+    // Wrapper methods for error-handling
+    //
+
+    HRESULT Added (
+        IDispatch * pObject );
+    HRESULT Removed (
+        IDispatch * pObject );
+    HRESULT Reloaded ( );
+    HRESULT Emptied ( );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall raw_Added (
+        /*[in]*/ IDispatch * pObject ) = 0;
+      virtual HRESULT __stdcall raw_Removed (
+        /*[in]*/ IDispatch * pObject ) = 0;
+      virtual HRESULT __stdcall raw_Reloaded ( ) = 0;
+      virtual HRESULT __stdcall raw_Emptied ( ) = 0;
+};
+
+struct __declspec(uuid("0f8930c4-eac4-11d3-9dd4-00105ae68592"))
+ProVideObjectCollection;
+    // interface IProVideCollection
+    // [ default ] interface IProVideObjectCollection
+    // [ default, source ] dispinterface IProVideCollectionEventDI
+    // [ source ] interface IProVideCollectionEvent
+    // [ source ] interface IProVideObjectCollectionEvent
+    // [ source ] dispinterface IProVideObjectCollectionEventDI
+
+struct __declspec(uuid("7defb4d4-c4f0-11d2-9683-00c0e310724c"))
+IProVideCollection : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetCount))
+    long Count;
+    __declspec(property(get=GetAutoSort,put=PutAutoSort))
+    VARIANT_BOOL AutoSort;
+    __declspec(property(get=Get_NewEnum))
+    IUnknownPtr _NewEnum;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    long GetCount ( );
+    VARIANT_BOOL GetAutoSort ( );
+    void PutAutoSort (
+        VARIANT_BOOL pVal );
+    HRESULT Add (
+        IDispatch * pObject );
+    HRESULT Remove (
+        const _variant_t & Index );
+    HRESULT RemoveAll ( );
+    HRESULT DisableEvents (
+        VARIANT_BOOL bDisable );
+    HRESULT FireReloadedEvent ( );
+    HRESULT Sort ( );
+    _variant_t Value (
+        const _variant_t & Index );
+    IUnknownPtr Get_NewEnum ( );
+    HRESULT ConnectTo (
+        IUnknown * pUnk,
+        _GUID * iid,
+        unsigned long * pdw );
+    HRESULT DisconnectFrom (
+        _GUID * iid,
+        unsigned long dwVal );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Count (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall get_AutoSort (
+        /*[out,retval]*/ VARIANT_BOOL * pVal ) = 0;
+      virtual HRESULT __stdcall put_AutoSort (
+        /*[in]*/ VARIANT_BOOL pVal ) = 0;
+      virtual HRESULT __stdcall raw_Add (
+        /*[in]*/ IDispatch * pObject ) = 0;
+      virtual HRESULT __stdcall raw_Remove (
+        /*[in]*/ VARIANT Index ) = 0;
+      virtual HRESULT __stdcall raw_RemoveAll ( ) = 0;
+      virtual HRESULT __stdcall raw_DisableEvents (
+        /*[in]*/ VARIANT_BOOL bDisable ) = 0;
+      virtual HRESULT __stdcall raw_FireReloadedEvent ( ) = 0;
+      virtual HRESULT __stdcall raw_Sort ( ) = 0;
+      virtual HRESULT __stdcall raw_Value (
+        /*[in]*/ VARIANT Index,
+        /*[out,retval]*/ VARIANT * pItem ) = 0;
+      virtual HRESULT __stdcall get__NewEnum (
+        /*[out,retval]*/ IUnknown * * pVal ) = 0;
+      virtual HRESULT __stdcall raw_ConnectTo (
+        /*[in]*/ IUnknown * pUnk,
+        /*[in]*/ _GUID * iid,
+        /*[in,out]*/ unsigned long * pdw ) = 0;
+      virtual HRESULT __stdcall raw_DisconnectFrom (
+        /*[in]*/ _GUID * iid,
+        /*[in]*/ unsigned long dwVal ) = 0;
+};
+
+struct __declspec(uuid("dde192e1-e9fe-11d3-9dd3-00105ae68592"))
+IProVideObjectCollection : IProVideCollection
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetID,put=PutID))
+    double ID;
+    __declspec(property(get=GetMaster,put=PutMaster))
+    _variant_t Master;
+    __declspec(property(get=GetLoaded,put=PutLoaded))
+    _variant_t Loaded;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    double GetID ( );
+    void PutID (
+        double pVal );
+    HRESULT NotifyObjectChanged (
+        IDispatch * pIObject );
+    _variant_t GetMaster ( );
+    void PutMaster (
+        const _variant_t & pVal );
+    HRESULT InsertAt (
+        IDispatch * pIDispatch,
+        long lIndex );
+    _variant_t GetLoaded ( );
+    void PutLoaded (
+        const _variant_t & pVal );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_ID (
+        /*[out,retval]*/ double * pVal ) = 0;
+      virtual HRESULT __stdcall put_ID (
+        /*[in]*/ double pVal ) = 0;
+      virtual HRESULT __stdcall raw_NotifyObjectChanged (
+        IDispatch * pIObject ) = 0;
+      virtual HRESULT __stdcall get_Master (
+        /*[out,retval]*/ VARIANT * pVal ) = 0;
+      virtual HRESULT __stdcall put_Master (
+        /*[in]*/ VARIANT pVal ) = 0;
+      virtual HRESULT __stdcall raw_InsertAt (
+        /*[in]*/ IDispatch * pIDispatch,
+        /*[in]*/ long lIndex ) = 0;
+      virtual HRESULT __stdcall get_Loaded (
+        /*[out,retval]*/ VARIANT * pVal ) = 0;
+      virtual HRESULT __stdcall put_Loaded (
+        /*[in]*/ VARIANT pVal ) = 0;
+};
+
+struct __declspec(uuid("0f8930c7-eac4-11d3-9dd4-00105ae68592"))
+Comment;
+    // interface IProVideObject
+    // [ default ] interface IComment
+
+struct __declspec(uuid("dde192e4-e9fe-11d3-9dd3-00105ae68592"))
+IComment : IProVideObject
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetCommentID,put=PutCommentID))
+    double CommentID;
+    __declspec(property(get=GetCommentDisp,put=PutCommentDisp))
+    _bstr_t CommentDisp;
+    __declspec(property(get=GetCommentOwnerObjectInstanceID,put=PutCommentOwnerObjectInstanceID))
+    double CommentOwnerObjectInstanceID;
+    __declspec(property(get=GetCommentOwnerObjectID,put=PutCommentOwnerObjectID))
+    double CommentOwnerObjectID;
+    __declspec(property(get=GetCommentCreatedPrsnlName,put=PutCommentCreatedPrsnlName))
+    _bstr_t CommentCreatedPrsnlName;
+    __declspec(property(get=GetCommentActiveInd,put=PutCommentActiveInd))
+    _variant_t CommentActiveInd;
+    __declspec(property(get=GetCommentCreateDtTm,put=PutCommentCreateDtTm))
+    DATE CommentCreateDtTm;
+    __declspec(property(get=GetCommentCreatedPrsnlID,put=PutCommentCreatedPrsnlID))
+    double CommentCreatedPrsnlID;
+    __declspec(property(get=GetCommentCreateCalendar,put=PutCommentCreateCalendar))
+    IDispatchPtr CommentCreateCalendar;
+    __declspec(property(get=GetInputType,put=PutInputType))
+    double InputType;
+    __declspec(property(get=GetSequence,put=PutSequence))
+    long Sequence;
+    __declspec(property(get=GetOrganizationID,put=PutOrganizationID))
+    double OrganizationID;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    double GetCommentID ( );
+    void PutCommentID (
+        double pVal );
+    _bstr_t GetCommentDisp ( );
+    void PutCommentDisp (
+        _bstr_t pVal );
+    double GetCommentOwnerObjectInstanceID ( );
+    void PutCommentOwnerObjectInstanceID (
+        double pVal );
+    double GetCommentOwnerObjectID ( );
+    void PutCommentOwnerObjectID (
+        double pVal );
+    _bstr_t GetCommentCreatedPrsnlName ( );
+    void PutCommentCreatedPrsnlName (
+        _bstr_t pVal );
+    _variant_t GetCommentActiveInd ( );
+    void PutCommentActiveInd (
+        const _variant_t & pVal );
+    DATE GetCommentCreateDtTm ( );
+    void PutCommentCreateDtTm (
+        DATE pVal );
+    double GetCommentCreatedPrsnlID ( );
+    void PutCommentCreatedPrsnlID (
+        double pVal );
+    IDispatchPtr MakeCopy ( );
+    IDispatchPtr GetCommentCreateCalendar ( );
+    void PutCommentCreateCalendar (
+        IDispatch * pVal );
+    double GetInputType ( );
+    void PutInputType (
+        double pVal );
+    long GetSequence ( );
+    void PutSequence (
+        long pVal );
+    double GetOrganizationID ( );
+    void PutOrganizationID (
+        double pVal );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_CommentID (
+        /*[out,retval]*/ double * pVal ) = 0;
+      virtual HRESULT __stdcall put_CommentID (
+        /*[in]*/ double pVal ) = 0;
+      virtual HRESULT __stdcall get_CommentDisp (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_CommentDisp (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_CommentOwnerObjectInstanceID (
+        /*[out,retval]*/ double * pVal ) = 0;
+      virtual HRESULT __stdcall put_CommentOwnerObjectInstanceID (
+        /*[in]*/ double pVal ) = 0;
+      virtual HRESULT __stdcall get_CommentOwnerObjectID (
+        /*[out,retval]*/ double * pVal ) = 0;
+      virtual HRESULT __stdcall put_CommentOwnerObjectID (
+        /*[in]*/ double pVal ) = 0;
+      virtual HRESULT __stdcall get_CommentCreatedPrsnlName (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_CommentCreatedPrsnlName (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_CommentActiveInd (
+        /*[out,retval]*/ VARIANT * pVal ) = 0;
+      virtual HRESULT __stdcall put_CommentActiveInd (
+        /*[in]*/ VARIANT pVal ) = 0;
+      virtual HRESULT __stdcall get_CommentCreateDtTm (
+        /*[out,retval]*/ DATE * pVal ) = 0;
+      virtual HRESULT __stdcall put_CommentCreateDtTm (
+        /*[in]*/ DATE pVal ) = 0;
+      virtual HRESULT __stdcall get_CommentCreatedPrsnlID (
+        /*[out,retval]*/ double * pVal ) = 0;
+      virtual HRESULT __stdcall put_CommentCreatedPrsnlID (
+        /*[in]*/ double pVal ) = 0;
+      virtual HRESULT __stdcall raw_MakeCopy (
+        /*[out,retval]*/ IDispatch * * ppIComment ) = 0;
+      virtual HRESULT __stdcall get_CommentCreateCalendar (
+        /*[out,retval]*/ IDispatch * * pVal ) = 0;
+      virtual HRESULT __stdcall put_CommentCreateCalendar (
+        /*[in]*/ IDispatch * pVal ) = 0;
+      virtual HRESULT __stdcall get_InputType (
+        /*[out,retval]*/ double * pVal ) = 0;
+      virtual HRESULT __stdcall put_InputType (
+        /*[in]*/ double pVal ) = 0;
+      virtual HRESULT __stdcall get_Sequence (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall put_Sequence (
+        /*[in]*/ long pVal ) = 0;
+      virtual HRESULT __stdcall get_OrganizationID (
+        /*[out,retval]*/ double * pVal ) = 0;
+      virtual HRESULT __stdcall put_OrganizationID (
+        /*[in]*/ double pVal ) = 0;
+};
+
+//
+// Named GUID constants initializations
+//
+
+extern "C" const GUID __declspec(selectany) LIBID_CPSDATACOMMONLib =
+    {0x0f8930b6,0xeac4,0x11d3,{0x9d,0xd4,0x00,0x10,0x5a,0xe6,0x85,0x92}};
+extern "C" const GUID __declspec(selectany) DIID_IProVideObjectCollectionEventDI =
+    {0xd303bdc0,0x671a,0x11d4,{0x9e,0x11,0x00,0x10,0x5a,0xe6,0x85,0x92}};
+extern "C" const GUID __declspec(selectany) IID_IProVideObjectCollectionEvent =
+    {0x7ac7b221,0xead8,0x11d3,{0x9d,0xd4,0x00,0x10,0x5a,0xe6,0x85,0x92}};
+extern "C" const GUID __declspec(selectany) DIID_IProVideCollectionEventDI =
+    {0xc5a00c50,0x67b2,0x11d4,{0x9e,0x12,0x00,0x10,0x5a,0xe6,0x85,0x92}};
+extern "C" const GUID __declspec(selectany) IID_IProVideCollectionEvent =
+    {0x4ad84e83,0xcc06,0x11d2,{0x96,0x85,0x00,0xc0,0xe3,0x10,0x72,0x4c}};
+extern "C" const GUID __declspec(selectany) CLSID_ProVideObjectCollection =
+    {0x0f8930c4,0xeac4,0x11d3,{0x9d,0xd4,0x00,0x10,0x5a,0xe6,0x85,0x92}};
+extern "C" const GUID __declspec(selectany) IID_IProVideCollection =
+    {0x7defb4d4,0xc4f0,0x11d2,{0x96,0x83,0x00,0xc0,0xe3,0x10,0x72,0x4c}};
+extern "C" const GUID __declspec(selectany) IID_IProVideObjectCollection =
+    {0xdde192e1,0xe9fe,0x11d3,{0x9d,0xd3,0x00,0x10,0x5a,0xe6,0x85,0x92}};
+extern "C" const GUID __declspec(selectany) CLSID_Comment =
+    {0x0f8930c7,0xeac4,0x11d3,{0x9d,0xd4,0x00,0x10,0x5a,0xe6,0x85,0x92}};
+extern "C" const GUID __declspec(selectany) IID_IComment =
+    {0xdde192e4,0xe9fe,0x11d3,{0x9d,0xd3,0x00,0x10,0x5a,0xe6,0x85,0x92}};
+
+//
+// Wrapper method implementations
+//
+
+#include "p:\ml-native\orders\orders_frontend\code\pvorderschedulemanager\src\main\cpp\testrelease\cpsdatacommon.tli"
+
+#pragma pack(pop)

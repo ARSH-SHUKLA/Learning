@@ -1,0 +1,373 @@
+﻿// Created by Microsoft (R) C/C++ Compiler Version 14.00.24215.1 (fb436646).
+//
+// p:\ml-native\orders\orders_frontend\code\pvorderschedulemanager\src\main\cpp\testrelease\cpsdatacommon.tli
+//
+// Wrapper implementations for type library CPSDataCommon.dll
+// compiler-generated file created 03/21/22 at 07:41:01 - DO NOT EDIT!
+
+#pragma once
+
+//
+// dispinterface IProVideObjectCollectionEventDI wrapper method implementations
+//
+
+inline HRESULT IProVideObjectCollectionEventDI::ObjectChanged ( IDispatch * pIObject ) {
+    return _com_dispatch_method(this, 0x1, DISPATCH_METHOD, VT_EMPTY, NULL, 
+        L"\x0009", pIObject);
+}
+
+//
+// interface IProVideObjectCollectionEvent wrapper method implementations
+//
+
+inline HRESULT IProVideObjectCollectionEvent::ObjectChanged ( IDispatch * pIObject ) {
+    HRESULT _hr = raw_ObjectChanged(pIObject);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// dispinterface IProVideCollectionEventDI wrapper method implementations
+//
+
+inline HRESULT IProVideCollectionEventDI::Added ( IDispatch * pObject ) {
+    return _com_dispatch_method(this, 0x1, DISPATCH_METHOD, VT_EMPTY, NULL, 
+        L"\x0009", pObject);
+}
+
+inline HRESULT IProVideCollectionEventDI::Removed ( IDispatch * pObject ) {
+    return _com_dispatch_method(this, 0x2, DISPATCH_METHOD, VT_EMPTY, NULL, 
+        L"\x0009", pObject);
+}
+
+inline HRESULT IProVideCollectionEventDI::Reloaded ( ) {
+    return _com_dispatch_method(this, 0x3, DISPATCH_METHOD, VT_EMPTY, NULL, NULL);
+}
+
+inline HRESULT IProVideCollectionEventDI::Emptied ( ) {
+    return _com_dispatch_method(this, 0x4, DISPATCH_METHOD, VT_EMPTY, NULL, NULL);
+}
+
+//
+// interface IProVideCollectionEvent wrapper method implementations
+//
+
+inline HRESULT IProVideCollectionEvent::Added ( IDispatch * pObject ) {
+    HRESULT _hr = raw_Added(pObject);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IProVideCollectionEvent::Removed ( IDispatch * pObject ) {
+    HRESULT _hr = raw_Removed(pObject);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IProVideCollectionEvent::Reloaded ( ) {
+    HRESULT _hr = raw_Reloaded();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IProVideCollectionEvent::Emptied ( ) {
+    HRESULT _hr = raw_Emptied();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface IProVideCollection wrapper method implementations
+//
+
+inline long IProVideCollection::GetCount ( ) {
+    long _result = 0;
+    HRESULT _hr = get_Count(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline VARIANT_BOOL IProVideCollection::GetAutoSort ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_AutoSort(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IProVideCollection::PutAutoSort ( VARIANT_BOOL pVal ) {
+    HRESULT _hr = put_AutoSort(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline HRESULT IProVideCollection::Add ( IDispatch * pObject ) {
+    HRESULT _hr = raw_Add(pObject);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IProVideCollection::Remove ( const _variant_t & Index ) {
+    HRESULT _hr = raw_Remove(Index);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IProVideCollection::RemoveAll ( ) {
+    HRESULT _hr = raw_RemoveAll();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IProVideCollection::DisableEvents ( VARIANT_BOOL bDisable ) {
+    HRESULT _hr = raw_DisableEvents(bDisable);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IProVideCollection::FireReloadedEvent ( ) {
+    HRESULT _hr = raw_FireReloadedEvent();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IProVideCollection::Sort ( ) {
+    HRESULT _hr = raw_Sort();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline _variant_t IProVideCollection::Value ( const _variant_t & Index ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = raw_Value(Index, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline IUnknownPtr IProVideCollection::Get_NewEnum ( ) {
+    IUnknown * _result = 0;
+    HRESULT _hr = get__NewEnum(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IUnknownPtr(_result, false);
+}
+
+inline HRESULT IProVideCollection::ConnectTo ( IUnknown * pUnk, _GUID * iid, unsigned long * pdw ) {
+    HRESULT _hr = raw_ConnectTo(pUnk, iid, pdw);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IProVideCollection::DisconnectFrom ( _GUID * iid, unsigned long dwVal ) {
+    HRESULT _hr = raw_DisconnectFrom(iid, dwVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface IProVideObjectCollection wrapper method implementations
+//
+
+inline double IProVideObjectCollection::GetID ( ) {
+    double _result = 0;
+    HRESULT _hr = get_ID(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IProVideObjectCollection::PutID ( double pVal ) {
+    HRESULT _hr = put_ID(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline HRESULT IProVideObjectCollection::NotifyObjectChanged ( IDispatch * pIObject ) {
+    HRESULT _hr = raw_NotifyObjectChanged(pIObject);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline _variant_t IProVideObjectCollection::GetMaster ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_Master(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline void IProVideObjectCollection::PutMaster ( const _variant_t & pVal ) {
+    HRESULT _hr = put_Master(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline HRESULT IProVideObjectCollection::InsertAt ( IDispatch * pIDispatch, long lIndex ) {
+    HRESULT _hr = raw_InsertAt(pIDispatch, lIndex);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline _variant_t IProVideObjectCollection::GetLoaded ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_Loaded(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline void IProVideObjectCollection::PutLoaded ( const _variant_t & pVal ) {
+    HRESULT _hr = put_Loaded(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+//
+// interface IComment wrapper method implementations
+//
+
+inline double IComment::GetCommentID ( ) {
+    double _result = 0;
+    HRESULT _hr = get_CommentID(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IComment::PutCommentID ( double pVal ) {
+    HRESULT _hr = put_CommentID(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t IComment::GetCommentDisp ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_CommentDisp(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void IComment::PutCommentDisp ( _bstr_t pVal ) {
+    HRESULT _hr = put_CommentDisp(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline double IComment::GetCommentOwnerObjectInstanceID ( ) {
+    double _result = 0;
+    HRESULT _hr = get_CommentOwnerObjectInstanceID(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IComment::PutCommentOwnerObjectInstanceID ( double pVal ) {
+    HRESULT _hr = put_CommentOwnerObjectInstanceID(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline double IComment::GetCommentOwnerObjectID ( ) {
+    double _result = 0;
+    HRESULT _hr = get_CommentOwnerObjectID(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IComment::PutCommentOwnerObjectID ( double pVal ) {
+    HRESULT _hr = put_CommentOwnerObjectID(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t IComment::GetCommentCreatedPrsnlName ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_CommentCreatedPrsnlName(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void IComment::PutCommentCreatedPrsnlName ( _bstr_t pVal ) {
+    HRESULT _hr = put_CommentCreatedPrsnlName(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _variant_t IComment::GetCommentActiveInd ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_CommentActiveInd(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline void IComment::PutCommentActiveInd ( const _variant_t & pVal ) {
+    HRESULT _hr = put_CommentActiveInd(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline DATE IComment::GetCommentCreateDtTm ( ) {
+    DATE _result = 0;
+    HRESULT _hr = get_CommentCreateDtTm(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IComment::PutCommentCreateDtTm ( DATE pVal ) {
+    HRESULT _hr = put_CommentCreateDtTm(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline double IComment::GetCommentCreatedPrsnlID ( ) {
+    double _result = 0;
+    HRESULT _hr = get_CommentCreatedPrsnlID(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IComment::PutCommentCreatedPrsnlID ( double pVal ) {
+    HRESULT _hr = put_CommentCreatedPrsnlID(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline IDispatchPtr IComment::MakeCopy ( ) {
+    IDispatch * _result = 0;
+    HRESULT _hr = raw_MakeCopy(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IDispatchPtr(_result, false);
+}
+
+inline IDispatchPtr IComment::GetCommentCreateCalendar ( ) {
+    IDispatch * _result = 0;
+    HRESULT _hr = get_CommentCreateCalendar(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IDispatchPtr(_result, false);
+}
+
+inline void IComment::PutCommentCreateCalendar ( IDispatch * pVal ) {
+    HRESULT _hr = put_CommentCreateCalendar(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline double IComment::GetInputType ( ) {
+    double _result = 0;
+    HRESULT _hr = get_InputType(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IComment::PutInputType ( double pVal ) {
+    HRESULT _hr = put_InputType(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long IComment::GetSequence ( ) {
+    long _result = 0;
+    HRESULT _hr = get_Sequence(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IComment::PutSequence ( long pVal ) {
+    HRESULT _hr = put_Sequence(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline double IComment::GetOrganizationID ( ) {
+    double _result = 0;
+    HRESULT _hr = get_OrganizationID(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IComment::PutOrganizationID ( double pVal ) {
+    HRESULT _hr = put_OrganizationID(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
