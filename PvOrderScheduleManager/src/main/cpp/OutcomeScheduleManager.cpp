@@ -59,6 +59,7 @@ void COutcomeScheduleManager::UpdateOutcomeSchedule(IPhase& phase, IComponent& c
 		outcome.PutUTCStartDtTm(pIStartDateTime);
 	}
 
+
 	CPvGenericLoaderExtended(m_hPatCon).PrepareOutcomeForUpdate(&outcome);
 
 	// Outcomes dirty flag need to be set here since we are updating outcome schedule.
