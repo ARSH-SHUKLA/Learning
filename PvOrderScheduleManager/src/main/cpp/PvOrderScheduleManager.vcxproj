@@ -1,0 +1,343 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Test Release|x64">
+      <Configuration>Test Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{83bd853a-8464-45dd-a3ae-9331073fda90}</ProjectGuid>
+    <RootNamespace>PvOrderScheduleManager</RootNamespace>
+    <Keyword>MFCDLLProj</Keyword>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Test Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Test Release|x64'" Label="PropertySheets">
+    <Import Project="..\..\..\..\prop_files\common.props" Condition="exists('..\..\..\..\prop_files\common.props')" />
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>.\Debug\</OutDir>
+    <IntDir>.\Debug\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>.\Release\</OutDir>
+    <IntDir>.\Release\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Test Release|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IntDir>.\TestRelease\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Test Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>_PVORDERSCHEDULEMANAGER_DLLAPI_;_WINDOWS;NDEBUG;_USRDLL;NO_WARN_MBCS_MFC_DEPRECATION;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <StringPooling>true</StringPooling>
+      <DisableSpecificWarnings>4100;4190;4290;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <Optimization>Disabled</Optimization>
+      <AdditionalOptions>/w14311 /w14312 /w14296 /w14995 /w14996 %(AdditionalOptions)</AdditionalOptions>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <AdditionalDependencies>pvclass.lib;stringlib.lib;i18n_common.lib;I18n_Mfclib.lib;mftmisclib.lib;msgrtl.lib;pthread.lib;pvcodevalue.lib;pvcontxt.lib;srvcore.lib;srvcorelib.lib;pvorderoblib.lib;srvcalendars.lib;srvcalendarlib.lib;pvorderutility.lib;pvordclass.lib;pvcarecoordcom.lib;srvrtl.lib;pvorderdata.lib;pvresumeschedulemanager.lib;pvscheduletransactionassistant.lib;PvOrderPreferenceManager.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalOptions>/VERBOSE:UNUSEDLIBS %(AdditionalOptions)</AdditionalOptions>
+      <TreatLinkerWarningAsErrors>true</TreatLinkerWarningAsErrors>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <PreprocessorDefinitions>_PVORDERSCHEDULEMANAGER_DLLAPI_;_WINDOWS;_DEBUG;_USRDLL;NO_WARN_MBCS_MFC_DEPRECATION;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>$(IntDir)$(TargetName).pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)</ProgramDataBaseFileName>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DisableSpecificWarnings>4100;4190;4290;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <AdditionalOptions>/w14311 /w14312 /w14296 /w14995 /w14996 %(AdditionalOptions)</AdditionalOptions>
+      <TreatWarningAsError>false</TreatWarningAsError>
+    </ClCompile>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <LinkDLL>true</LinkDLL>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <ImportLibrary>$(OutDir)$(TargetName).lib</ImportLibrary>
+      <AdditionalDependencies>pvclass.lib;stringlib.lib;i18n_common.lib;I18n_Mfclib.lib;mftmisclib.lib;msgrtl.lib;pthread.lib;pvcodevalue.lib;pvcontxt.lib;srvcore.lib;srvcorelib.lib;pvorderoblib.lib;srvcalendars.lib;srvcalendarlib.lib;pvorderutility.lib;pvordclass.lib;pvcarecoordcom.lib;srvrtl.lib;pvorderdata.lib;pvresumeschedulemanager.lib;pvscheduletransactionassistant.lib;PvOrderPreferenceManager.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+      <TreatLinkerWarningAsErrors>false</TreatLinkerWarningAsErrors>
+    </Link>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>MaxSpeed</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>_PVORDERSCHEDULEMANAGER_DLLAPI_;_WINDOWS;NDEBUG;_USRDLL;NO_WARN_MBCS_MFC_DEPRECATION;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Release\</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>$(IntDir)$(TargetName).pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>.\Release\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Release\</ProgramDataBaseFileName>
+      <DisableSpecificWarnings>4100;4190;4290;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <AdditionalOptions>/w14311 /w14312 /w14296 /w14995 /w14996 %(AdditionalOptions)</AdditionalOptions>
+      <TreatWarningAsError>true</TreatWarningAsError>
+    </ClCompile>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <LinkDLL>true</LinkDLL>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <ImportLibrary>$(OutDir)$(TargetName).lib</ImportLibrary>
+      <AdditionalDependencies>pvclass.lib;stringlib.lib;i18n_common.lib;I18n_Mfclib.lib;mftmisclib.lib;msgrtl.lib;pthread.lib;pvcodevalue.lib;pvcontxt.lib;srvcore.lib;srvcorelib.lib;pvorderoblib.lib;srvcalendars.lib;srvcalendarlib.lib;pvorderutility.lib;pvordclass.lib;pvcarecoordcom.lib;srvrtl.lib;pvorderdata.lib;pvresumeschedulemanager.lib;pvscheduletransactionassistant.lib;PvOrderPreferenceManager.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OptimizeReferences>true</OptimizeReferences>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+      <TreatLinkerWarningAsErrors>true</TreatLinkerWarningAsErrors>
+    </Link>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="ActivateOrderScheduleManager.cpp" />
+    <ClCompile Include="ActivatePhaseScheduleManager.cpp" />
+    <ClCompile Include="AdhocFrequencyDeterminer.cpp" />
+    <ClCompile Include="ChangePhaseStartDateTimeManager.cpp" />
+    <ClCompile Include="ChangePhaseStartOrderScheduleManager.cpp" />
+    <ClCompile Include="ChangePhaseStopDateTimeManager.cpp" />
+    <ClCompile Include="ChangePhaseStopOrderScheduleManager.cpp" />
+    <ClCompile Include="ChangePhaseTimeZeroDateTimeManager.cpp" />
+    <ClCompile Include="CollectionPriorityChangePlanOrderScheduleUpdater.cpp" />
+    <ClCompile Include="CollectionPriorityOffsetDeterminer.cpp" />
+    <ClCompile Include="ComponentOffsetAndPriorityCombiner.cpp" />
+    <ClCompile Include="ComponentOffsetChangeHandler.cpp" />
+    <ClCompile Include="ComponentOffsetChangePlanOrderScheduleUpdater.cpp" />
+    <ClCompile Include="ComponentOffsetHelper.cpp" />
+    <ClCompile Include="ConstantIndicatorChangePlanOrderScheduleUpdater.cpp" />
+    <ClCompile Include="ConstantIndicatorHelper.cpp" />
+    <ClCompile Include="DoTComponentRetriever.cpp" />
+    <ClCompile Include="DoTOrderDateTimeUpdater.cpp" />
+    <ClCompile Include="DurationChangePlanOrderScheduleUpdater.cpp" />
+    <ClCompile Include="DurationDisplayHelper.cpp" />
+    <ClCompile Include="ExcludeComponentScheduleManager.cpp" />
+    <ClCompile Include="FrequencyChangePlanOrderScheduleUpdater.cpp" />
+    <ClCompile Include="FutureChangePlanOrderScheduleUpdater.cpp" />
+    <ClCompile Include="GenericPriorityChangePlanOrderScheduleUpdater.cpp" />
+    <ClCompile Include="GenericPriorityOffsetDeterminer.cpp" />
+    <ClCompile Include="IncludeComponentScheduleManager.cpp" />
+    <ClCompile Include="IncludedComponentRetriever.cpp" />
+    <ClCompile Include="IncludeOrderScheduleManager.cpp" />
+    <ClCompile Include="InfuseOverChangePlanOrderScheduleUpdater.cpp" />
+    <ClCompile Include="InitiateOrderScheduleManager.cpp" />
+    <ClCompile Include="InitiatePhaseScheduleManager.cpp" />
+    <ClCompile Include="InpatientOrderScheduleServiceCaller.cpp" />
+    <ClCompile Include="InpatientOrderScheduleUpdater.cpp" />
+    <ClCompile Include="IntervalChildrenScheduleHelper.cpp" />
+    <ClCompile Include="LinkedPhaseStartDtTmHelper.cpp" />
+    <ClCompile Include="LinkedToPhaseDurationUpdater.cpp" />
+    <ClCompile Include="ModifiableOrderRetriever.cpp" />
+    <ClCompile Include="ModifyPlanOrderScheduleManager.cpp" />
+    <ClCompile Include="MostNegativeTimeZeroOffsetDeterminer.cpp" />
+    <ClCompile Include="OrderComponentRetriever.cpp" />
+    <ClCompile Include="OrderDurationHelper.cpp" />
+    <ClCompile Include="OrderStartDateTimeUpdater.cpp" />
+    <ClCompile Include="OutcomeComponentRetriever.cpp" />
+    <ClCompile Include="OutcomeScheduleManager.cpp" />
+    <ClCompile Include="PharmacyPriorityChangePlanOrderScheduleUpdater.cpp" />
+    <ClCompile Include="PharmacyPriorityHelper.cpp" />
+    <ClCompile Include="PhaseTimeZeroDateTimeDeterminer.cpp" />
+    <ClCompile Include="PlannedComponentDeterminer.cpp" />
+    <ClCompile Include="PlanOrderDateTimesModifiableDeterminer.cpp" />
+    <ClCompile Include="PlanPhaseDateTimesModifiableDeterminer.cpp" />
+    <ClCompile Include="PlanScheduleManager.cpp" />
+    <ClCompile Include="PrescriptionComponentRetriever.cpp" />
+    <ClCompile Include="PrescriptionScheduleManager.cpp" />
+    <ClCompile Include="PriorityFieldHelper.cpp" />
+    <ClCompile Include="PRNChangePlanOrderScheduleUpdater.cpp" />
+    <ClCompile Include="PRNFlagUpdater.cpp" />
+    <ClCompile Include="PrnIndicatorDeterminer.cpp" />
+    <ClCompile Include="ProtocolOrderScheduleManager.cpp" />
+    <ClCompile Include="PvFrequencyScheduleManager.cpp" />
+    <ClCompile Include="PvOrderScheduleManager.cpp" />
+    <ClCompile Include="PvOrderScheduleManagerExp.cpp" />
+    <ClCompile Include="ReferenceStartDateTimeChangePlanOrderScheduleUpdater.cpp" />
+    <ClCompile Include="RequestedStartDateTimeChangePlanOrderScheduleUpdater.cpp" />
+    <ClCompile Include="SchedulingInstructionsChangePlanOrderScheduleUpdater.cpp" />
+    <ClCompile Include="SchedulingInstructionsHelper.cpp" />
+    <ClCompile Include="UpdateStopTypeFieldHelper.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Test Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="StopDateTimeChangePlanOrderScheduleUpdater.cpp" />
+    <ClCompile Include="SubPhaseRetriever.cpp" />
+    <ClCompile Include="SubPhaseScheduleManager.cpp" />
+    <ClCompile Include="TimeZeroHelper.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ActivateOrderScheduleManager.h" />
+    <ClInclude Include="ActivatePhaseScheduleManager.h" />
+    <ClInclude Include="AdhocFrequencyDeterminer.h" />
+    <ClInclude Include="ChangePhaseStartDateTimeManager.h" />
+    <ClInclude Include="ChangePhaseStartOrderScheduleManager.h" />
+    <ClInclude Include="ChangePhaseStopDateTimeManager.h" />
+    <ClInclude Include="ChangePhaseStopOrderScheduleManager.h" />
+    <ClInclude Include="ChangePhaseTimeZeroDateTimeManager.h" />
+    <ClInclude Include="CollectionPriorityChangePlanOrderScheduleUpdater.h" />
+    <ClInclude Include="CollectionPriorityOffsetDeterminer.h" />
+    <ClInclude Include="ComponentOffsetAndPriorityCombiner.h" />
+    <ClInclude Include="ComponentOffsetChangeHandler.h" />
+    <ClInclude Include="ComponentOffsetChangePlanOrderScheduleUpdater.h" />
+    <ClInclude Include="ComponentOffsetHelper.h" />
+    <ClInclude Include="ConstantIndicatorChangePlanOrderScheduleUpdater.h" />
+    <ClInclude Include="ConstantIndicatorHelper.h" />
+    <ClInclude Include="DoTComponentRetriever.h" />
+    <ClInclude Include="DoTOrderDateTimeUpdater.h" />
+    <ClInclude Include="DurationChangePlanOrderScheduleUpdater.h" />
+    <ClInclude Include="DurationDisplayHelper.h" />
+    <ClInclude Include="ExcludeComponentScheduleManager.h" />
+    <ClInclude Include="FrequencyChangePlanOrderScheduleUpdater.h" />
+    <ClInclude Include="FutureChangePlanOrderScheduleUpdater.h" />
+    <ClInclude Include="GenericPriorityChangePlanOrderScheduleUpdater.h" />
+    <ClInclude Include="GenericPriorityOffsetDeterminer.h" />
+    <ClInclude Include="IncludeComponentScheduleManager.h" />
+    <ClInclude Include="IncludedComponentRetriever.h" />
+    <ClInclude Include="IncludeOrderScheduleManager.h" />
+    <ClInclude Include="InfuseOverChangePlanOrderScheduleUpdater.h" />
+    <ClInclude Include="InitiateOrderScheduleManager.h" />
+    <ClInclude Include="InitiatePhaseScheduleManager.h" />
+    <ClInclude Include="InpatientOrderScheduleServiceCaller.h" />
+    <ClInclude Include="InpatientOrderScheduleUpdater.h" />
+    <ClInclude Include="IntervalChildrenScheduleHelper.h" />
+    <ClInclude Include="LinkedPhaseStartDtTmHelper.h" />
+    <ClInclude Include="LinkedToPhaseDurationUpdater.h" />
+    <ClInclude Include="ModifiableOrderRetriever.h" />
+    <ClInclude Include="ModifyPlanOrderScheduleManager.h" />
+    <ClInclude Include="MostNegativeTimeZeroOffsetDeterminer.h" />
+    <ClInclude Include="OrderComponentRetriever.h" />
+    <ClInclude Include="OrderDurationHelper.h" />
+    <ClInclude Include="OrderStartDateTimeUpdater.h" />
+    <ClInclude Include="OutcomeComponentRetriever.h" />
+    <ClInclude Include="OutcomeScheduleManager.h" />
+    <ClInclude Include="PharmacyPriorityChangePlanOrderScheduleUpdater.h" />
+    <ClInclude Include="PharmacyPriorityHelper.h" />
+    <ClInclude Include="PhaseTimeZeroDateTimeDeterminer.h" />
+    <ClInclude Include="PlannedComponentDeterminer.h" />
+    <ClInclude Include="PlanOrderDateTimesModifiableDeterminer.h" />
+    <ClInclude Include="PlanPhaseDateTimesModifiableDeterminer.h" />
+    <ClInclude Include="PlanScheduleManager.h" />
+    <ClInclude Include="PrescriptionComponentRetriever.h" />
+    <ClInclude Include="PrescriptionScheduleManager.h" />
+    <ClInclude Include="PriorityFieldHelper.h" />
+    <ClInclude Include="PRNChangePlanOrderScheduleUpdater.h" />
+    <ClInclude Include="PRNFlagUpdater.h" />
+    <ClInclude Include="PrnIndicatorDeterminer.h" />
+    <ClInclude Include="ProtocolOrderScheduleManager.h" />
+    <ClInclude Include="PvFrequencyScheduleManager.h" />
+    <ClInclude Include="PvOrderScheduleManager.h" />
+    <ClInclude Include="ReferenceStartDateTimeChangePlanOrderScheduleUpdater.h" />
+    <ClInclude Include="RequestedStartDateTimeChangePlanOrderScheduleUpdater.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="SchedulingInstructionsChangePlanOrderScheduleUpdater.h" />
+    <ClInclude Include="SchedulingInstructionsHelper.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="StopDateTimeChangePlanOrderScheduleUpdater.h" />
+    <ClInclude Include="SubPhaseRetriever.h" />
+    <ClInclude Include="SubPhaseScheduleManager.h" />
+    <ClInclude Include="TimeZeroHelper.h" />
+    <ClInclude Include="UpdateStopTypeFieldHelper.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="PvOrderScheduleManager.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

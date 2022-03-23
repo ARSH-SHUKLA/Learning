@@ -1,0 +1,1124 @@
+﻿// Created by Microsoft (R) C/C++ Compiler Version 14.00.24215.1 (f42771dd).
+//
+// p:\ml-native\orders\orders_frontend\code\pvorderschedulemanager\src\main\cpp\testrelease\srvcalendar32.tli
+//
+// Wrapper implementations for type library srvcalendar32.dll
+// compiler-generated file created 03/15/22 at 16:43:58 - DO NOT EDIT!
+
+#pragma once
+
+//
+// interface IDateTime wrapper method implementations
+//
+
+inline HRESULT IDateTime::Init ( ) {
+    HRESULT _hr = raw_Init();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IDateTime::InitFromMilliseconds ( unsigned __int64 milliseconds ) {
+    HRESULT _hr = raw_InitFromMilliseconds(milliseconds);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline unsigned __int64 IDateTime::GetMilliseconds ( ) {
+    unsigned __int64 _result = 0;
+    HRESULT _hr = raw_GetMilliseconds(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline long IDateTime::Compare ( struct IDateTime * DateTime ) {
+    long _result = 0;
+    HRESULT _hr = raw_Compare(DateTime, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+//
+// interface ITimeSpan wrapper method implementations
+//
+
+inline HRESULT ITimeSpan::InitFromMilliseconds ( __int64 milliseconds ) {
+    HRESULT _hr = raw_InitFromMilliseconds(milliseconds);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT ITimeSpan::InitFromHMS ( int hours, int minutes, int seconds ) {
+    HRESULT _hr = raw_InitFromHMS(hours, minutes, seconds);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT ITimeSpan::InitFromDHMSM ( int days, int hours, int minutes, int seconds, int milliseconds ) {
+    HRESULT _hr = raw_InitFromDHMSM(days, hours, minutes, seconds, milliseconds);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT ITimeSpan::InitFromDays ( double days ) {
+    HRESULT _hr = raw_InitFromDays(days);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT ITimeSpan::InitFromHours ( double hours ) {
+    HRESULT _hr = raw_InitFromHours(hours);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT ITimeSpan::InitFromMinutes ( double minutes ) {
+    HRESULT _hr = raw_InitFromMinutes(minutes);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT ITimeSpan::InitFromSeconds ( double seconds ) {
+    HRESULT _hr = raw_InitFromSeconds(seconds);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline int ITimeSpan::GetDays ( ) {
+    int _result = 0;
+    HRESULT _hr = raw_GetDays(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline int ITimeSpan::GetHours ( ) {
+    int _result = 0;
+    HRESULT _hr = raw_GetHours(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline int ITimeSpan::GetMinutes ( ) {
+    int _result = 0;
+    HRESULT _hr = raw_GetMinutes(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline int ITimeSpan::GetSeconds ( ) {
+    int _result = 0;
+    HRESULT _hr = raw_GetSeconds(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline __int64 ITimeSpan::GetMilliseconds ( ) {
+    __int64 _result = 0;
+    HRESULT _hr = raw_GetMilliseconds(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline double ITimeSpan::GetTotalDays ( ) {
+    double _result = 0;
+    HRESULT _hr = raw_GetTotalDays(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline double ITimeSpan::GetTotalHours ( ) {
+    double _result = 0;
+    HRESULT _hr = raw_GetTotalHours(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline double ITimeSpan::GetTotalMinutes ( ) {
+    double _result = 0;
+    HRESULT _hr = raw_GetTotalMinutes(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline double ITimeSpan::GetTotalSeconds ( ) {
+    double _result = 0;
+    HRESULT _hr = raw_GetTotalSeconds(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline long ITimeSpan::Compare ( struct ITimeSpan * TimeSpan ) {
+    long _result = 0;
+    HRESULT _hr = raw_Compare(TimeSpan, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline ITimeSpanPtr ITimeSpan::Duration ( ) {
+    struct ITimeSpan * _result = 0;
+    HRESULT _hr = raw_Duration(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ITimeSpanPtr(_result, false);
+}
+
+inline ITimeSpanPtr ITimeSpan::Negate ( ) {
+    struct ITimeSpan * _result = 0;
+    HRESULT _hr = raw_Negate(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ITimeSpanPtr(_result, false);
+}
+
+inline ITimeSpanPtr ITimeSpan::Add ( struct ITimeSpan * TimeSpan ) {
+    struct ITimeSpan * _result = 0;
+    HRESULT _hr = raw_Add(TimeSpan, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ITimeSpanPtr(_result, false);
+}
+
+inline ITimeSpanPtr ITimeSpan::Subtract ( struct ITimeSpan * TimeSpan ) {
+    struct ITimeSpan * _result = 0;
+    HRESULT _hr = raw_Subtract(TimeSpan, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ITimeSpanPtr(_result, false);
+}
+
+//
+// interface IDaylightTime wrapper method implementations
+//
+
+inline HRESULT IDaylightTime::Init ( struct IDateTime * start, struct IDateTime * end ) {
+    HRESULT _hr = raw_Init(start, end);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline IDateTimePtr IDaylightTime::GetStart ( ) {
+    struct IDateTime * _result = 0;
+    HRESULT _hr = raw_GetStart(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IDateTimePtr(_result, false);
+}
+
+inline IDateTimePtr IDaylightTime::GetEnd ( ) {
+    struct IDateTime * _result = 0;
+    HRESULT _hr = raw_GetEnd(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IDateTimePtr(_result, false);
+}
+
+inline ITimeSpanPtr IDaylightTime::GetDelta ( ) {
+    struct ITimeSpan * _result = 0;
+    HRESULT _hr = raw_GetDelta(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ITimeSpanPtr(_result, false);
+}
+
+//
+// interface ITimeZone wrapper method implementations
+//
+
+inline HRESULT ITimeZone::Init ( ) {
+    HRESULT _hr = raw_Init();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT ITimeZone::InitFromUTC ( ) {
+    HRESULT _hr = raw_InitFromUTC();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT ITimeZone::InitFromName ( _bstr_t name ) {
+    HRESULT _hr = raw_InitFromName(name);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT ITimeZone::InitFromIndex ( unsigned __int64 index ) {
+    HRESULT _hr = raw_InitFromIndex(index);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline IDaylightTimePtr ITimeZone::GetDaylightChanges ( unsigned int year ) {
+    struct IDaylightTime * _result = 0;
+    HRESULT _hr = raw_GetDaylightChanges(year, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IDaylightTimePtr(_result, false);
+}
+
+inline _bstr_t ITimeZone::GetName ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = raw_GetName(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline unsigned __int64 ITimeZone::GetIndex ( ) {
+    unsigned __int64 _result = 0;
+    HRESULT _hr = raw_GetIndex(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline ITimeZonePtr ITimeZone::GetDefault ( ) {
+    struct ITimeZone * _result = 0;
+    HRESULT _hr = raw_GetDefault(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ITimeZonePtr(_result, false);
+}
+
+inline HRESULT ITimeZone::SetDefault ( struct ITimeZone * TimeZone ) {
+    HRESULT _hr = raw_SetDefault(TimeZone);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT ITimeZone::GetTimeZones ( SAFEARRAY * * timeZones ) {
+    HRESULT _hr = raw_GetTimeZones(timeZones);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT ITimeZone::GetTimeZonesOffset ( SAFEARRAY * * timeZones, int offset ) {
+    HRESULT _hr = raw_GetTimeZonesOffset(timeZones, offset);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT ITimeZone::InitFromDomain ( ) {
+    HRESULT _hr = raw_InitFromDomain();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT ITimeZone::GetSystemTimeZones ( SAFEARRAY * * timeZones ) {
+    HRESULT _hr = raw_GetSystemTimeZones(timeZones);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT ITimeZone::InitFromIndexWithDefault ( unsigned __int64 index, VARIANT_BOOL withDefault ) {
+    HRESULT _hr = raw_InitFromIndexWithDefault(index, withDefault);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline ITimeSpanPtr ITimeZone::GetDaylightOffset ( ) {
+    struct ITimeSpan * _result = 0;
+    HRESULT _hr = raw_GetDaylightOffset(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ITimeSpanPtr(_result, false);
+}
+
+inline ITimeZonePtr ITimeZone::GetThreadDefault ( ) {
+    struct ITimeZone * _result = 0;
+    HRESULT _hr = raw_GetThreadDefault(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ITimeZonePtr(_result, false);
+}
+
+inline HRESULT ITimeZone::SetThreadDefault ( struct ITimeZone * TimeZone ) {
+    HRESULT _hr = raw_SetThreadDefault(TimeZone);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline ITimeSpanPtr ITimeZone::GetUTCOffset ( ) {
+    struct ITimeSpan * _result = 0;
+    HRESULT _hr = raw_GetUTCOffset(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ITimeSpanPtr(_result, false);
+}
+
+//
+// interface ICalendar wrapper method implementations
+//
+
+inline HRESULT ICalendar::Init ( unsigned int calendarType ) {
+    HRESULT _hr = raw_Init(calendarType);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT ICalendar::InitFromZone ( struct ITimeZone * TimeZone, unsigned int calendarType ) {
+    HRESULT _hr = raw_InitFromZone(TimeZone, calendarType);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT ICalendar::InitFromDateTime ( struct IDateTime * DateTime, unsigned int calendarType ) {
+    HRESULT _hr = raw_InitFromDateTime(DateTime, calendarType);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT ICalendar::InitFromDateTimeZone ( struct IDateTime * DateTime, struct ITimeZone * TimeZone, unsigned int calendarType ) {
+    HRESULT _hr = raw_InitFromDateTimeZone(DateTime, TimeZone, calendarType);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT ICalendar::InitFromDateEx ( unsigned int year, unsigned int month, unsigned int day, unsigned int calendarType ) {
+    HRESULT _hr = raw_InitFromDateEx(year, month, day, calendarType);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT ICalendar::InitFromDateZoneEx ( unsigned int year, unsigned int month, unsigned int day, struct ITimeZone * TimeZone, unsigned int calendarType ) {
+    HRESULT _hr = raw_InitFromDateZoneEx(year, month, day, TimeZone, calendarType);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT ICalendar::InitFromDateTimeEx ( unsigned int year, unsigned int month, unsigned int day, unsigned int hour, unsigned int minute, unsigned int second, unsigned int millisecond, unsigned int calendarType ) {
+    HRESULT _hr = raw_InitFromDateTimeEx(year, month, day, hour, minute, second, millisecond, calendarType);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT ICalendar::InitFromDateTimeZoneEx ( unsigned int year, unsigned int month, unsigned int day, unsigned int hour, unsigned int minute, unsigned int second, unsigned int millisecond, struct ITimeZone * TimeZone, unsigned int calendarType ) {
+    HRESULT _hr = raw_InitFromDateTimeZoneEx(year, month, day, hour, minute, second, millisecond, TimeZone, calendarType);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline IDateTimePtr ICalendar::GetDateTime ( ) {
+    struct IDateTime * _result = 0;
+    HRESULT _hr = raw_GetDateTime(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IDateTimePtr(_result, false);
+}
+
+inline unsigned int ICalendar::GetYear ( ) {
+    unsigned int _result = 0;
+    HRESULT _hr = raw_GetYear(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline unsigned int ICalendar::GetMonth ( ) {
+    unsigned int _result = 0;
+    HRESULT _hr = raw_GetMonth(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline unsigned int ICalendar::GetHour ( ) {
+    unsigned int _result = 0;
+    HRESULT _hr = raw_GetHour(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline unsigned int ICalendar::GetMinute ( ) {
+    unsigned int _result = 0;
+    HRESULT _hr = raw_GetMinute(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline unsigned int ICalendar::GetSecond ( ) {
+    unsigned int _result = 0;
+    HRESULT _hr = raw_GetSecond(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline unsigned int ICalendar::GetMillisecond ( ) {
+    unsigned int _result = 0;
+    HRESULT _hr = raw_GetMillisecond(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline unsigned int ICalendar::GetDayOfWeek ( ) {
+    unsigned int _result = 0;
+    HRESULT _hr = raw_GetDayOfWeek(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline unsigned int ICalendar::GetDayOfMonth ( ) {
+    unsigned int _result = 0;
+    HRESULT _hr = raw_GetDayOfMonth(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline unsigned int ICalendar::GetDayOfYear ( ) {
+    unsigned int _result = 0;
+    HRESULT _hr = raw_GetDayOfYear(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline unsigned int ICalendar::GetDaysInMonth ( unsigned int year, unsigned int month ) {
+    unsigned int _result = 0;
+    HRESULT _hr = raw_GetDaysInMonth(year, month, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline unsigned int ICalendar::GetDaysInYear ( unsigned int year ) {
+    unsigned int _result = 0;
+    HRESULT _hr = raw_GetDaysInYear(year, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline unsigned int ICalendar::GetMonthsInYear ( unsigned int year ) {
+    unsigned int _result = 0;
+    HRESULT _hr = raw_GetMonthsInYear(year, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline unsigned int ICalendar::GetWeekOfYear ( unsigned int rule, unsigned int dayOfWeek ) {
+    unsigned int _result = 0;
+    HRESULT _hr = raw_GetWeekOfYear(rule, dayOfWeek, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline unsigned int ICalendar::GetWeekOfMonth ( unsigned int rule, unsigned int dayOfWeek ) {
+    unsigned int _result = 0;
+    HRESULT _hr = raw_GetWeekOfMonth(rule, dayOfWeek, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline ITimeZonePtr ICalendar::GetTimeZone ( ) {
+    struct ITimeZone * _result = 0;
+    HRESULT _hr = raw_GetTimeZone(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ITimeZonePtr(_result, false);
+}
+
+inline ITimeSpanPtr ICalendar::GetUTCOffset ( ) {
+    struct ITimeSpan * _result = 0;
+    HRESULT _hr = raw_GetUTCOffset(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ITimeSpanPtr(_result, false);
+}
+
+inline VARIANT_BOOL ICalendar::IsLeapDay ( unsigned int year, unsigned int month, unsigned int day ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = raw_IsLeapDay(year, month, day, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline VARIANT_BOOL ICalendar::IsLeapMonth ( unsigned int year, unsigned int month ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = raw_IsLeapMonth(year, month, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline VARIANT_BOOL ICalendar::IsLeapYear ( unsigned int year ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = raw_IsLeapYear(year, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline VARIANT_BOOL ICalendar::IsDaylight ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = raw_IsDaylight(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline unsigned int ICalendar::GetType ( ) {
+    unsigned int _result = 0;
+    HRESULT _hr = raw_GetType(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline long ICalendar::Compare ( struct ICalendar * Calendar ) {
+    long _result = 0;
+    HRESULT _hr = raw_Compare(Calendar, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline ICalendarPtr ICalendar::ToTimeZone ( struct ITimeZone * TimeZone ) {
+    struct ICalendar * _result = 0;
+    HRESULT _hr = raw_ToTimeZone(TimeZone, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ICalendarPtr(_result, false);
+}
+
+inline ICalendarPtr ICalendar::ToUTC ( ) {
+    struct ICalendar * _result = 0;
+    HRESULT _hr = raw_ToUTC(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ICalendarPtr(_result, false);
+}
+
+inline ICalendarPtr ICalendar::Add ( struct ITimeSpan * TimeSpan ) {
+    struct ICalendar * _result = 0;
+    HRESULT _hr = raw_Add(TimeSpan, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ICalendarPtr(_result, false);
+}
+
+inline ICalendarPtr ICalendar::AddYears ( int amount ) {
+    struct ICalendar * _result = 0;
+    HRESULT _hr = raw_AddYears(amount, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ICalendarPtr(_result, false);
+}
+
+inline ICalendarPtr ICalendar::AddMonths ( int amount ) {
+    struct ICalendar * _result = 0;
+    HRESULT _hr = raw_AddMonths(amount, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ICalendarPtr(_result, false);
+}
+
+inline ICalendarPtr ICalendar::AddWeeks ( int amount ) {
+    struct ICalendar * _result = 0;
+    HRESULT _hr = raw_AddWeeks(amount, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ICalendarPtr(_result, false);
+}
+
+inline ICalendarPtr ICalendar::AddDays ( int amount ) {
+    struct ICalendar * _result = 0;
+    HRESULT _hr = raw_AddDays(amount, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ICalendarPtr(_result, false);
+}
+
+inline ICalendarPtr ICalendar::AddHours ( int amount ) {
+    struct ICalendar * _result = 0;
+    HRESULT _hr = raw_AddHours(amount, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ICalendarPtr(_result, false);
+}
+
+inline ICalendarPtr ICalendar::AddMinutes ( int amount ) {
+    struct ICalendar * _result = 0;
+    HRESULT _hr = raw_AddMinutes(amount, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ICalendarPtr(_result, false);
+}
+
+inline ICalendarPtr ICalendar::AddSeconds ( int amount ) {
+    struct ICalendar * _result = 0;
+    HRESULT _hr = raw_AddSeconds(amount, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ICalendarPtr(_result, false);
+}
+
+inline ICalendarPtr ICalendar::AddMilliseconds ( int amount ) {
+    struct ICalendar * _result = 0;
+    HRESULT _hr = raw_AddMilliseconds(amount, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ICalendarPtr(_result, false);
+}
+
+inline ICalendarPtr ICalendar::RollYears ( int amount ) {
+    struct ICalendar * _result = 0;
+    HRESULT _hr = raw_RollYears(amount, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ICalendarPtr(_result, false);
+}
+
+inline ICalendarPtr ICalendar::RollMonths ( int amount ) {
+    struct ICalendar * _result = 0;
+    HRESULT _hr = raw_RollMonths(amount, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ICalendarPtr(_result, false);
+}
+
+inline ICalendarPtr ICalendar::RollDays ( int amount ) {
+    struct ICalendar * _result = 0;
+    HRESULT _hr = raw_RollDays(amount, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ICalendarPtr(_result, false);
+}
+
+inline ICalendarPtr ICalendar::RollHours ( int amount ) {
+    struct ICalendar * _result = 0;
+    HRESULT _hr = raw_RollHours(amount, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ICalendarPtr(_result, false);
+}
+
+inline ICalendarPtr ICalendar::RollMinutes ( int amount ) {
+    struct ICalendar * _result = 0;
+    HRESULT _hr = raw_RollMinutes(amount, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ICalendarPtr(_result, false);
+}
+
+inline ICalendarPtr ICalendar::RollSeconds ( int amount ) {
+    struct ICalendar * _result = 0;
+    HRESULT _hr = raw_RollSeconds(amount, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ICalendarPtr(_result, false);
+}
+
+inline ICalendarPtr ICalendar::RollMilliseconds ( int amount ) {
+    struct ICalendar * _result = 0;
+    HRESULT _hr = raw_RollMilliseconds(amount, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ICalendarPtr(_result, false);
+}
+
+inline ICalendarPtr ICalendar::Subtract ( struct ITimeSpan * TimeSpan ) {
+    struct ICalendar * _result = 0;
+    HRESULT _hr = raw_Subtract(TimeSpan, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ICalendarPtr(_result, false);
+}
+
+inline ITimeSpanPtr ICalendar::SubtractCalendar ( struct ICalendar * Calendar ) {
+    struct ITimeSpan * _result = 0;
+    HRESULT _hr = raw_SubtractCalendar(Calendar, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ITimeSpanPtr(_result, false);
+}
+
+inline HRESULT ICalendar::InitFromDateStruct ( struct DateStruct * date, VARIANT_BOOL domainDate, unsigned int calendarType ) {
+    HRESULT _hr = raw_InitFromDateStruct(date, domainDate, calendarType);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT ICalendar::InitFromDateStructZone ( struct DateStruct * date, struct ITimeZone * TimeZone, VARIANT_BOOL domainDate, unsigned int calendarType ) {
+    HRESULT _hr = raw_InitFromDateStructZone(date, TimeZone, domainDate, calendarType);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline struct DateStruct ICalendar::GetDate ( ) {
+    struct DateStruct _result;
+    HRESULT _hr = raw_GetDate(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline unsigned int ICalendar::GetDefaultType ( ) {
+    unsigned int _result = 0;
+    HRESULT _hr = raw_GetDefaultType(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline HRESULT ICalendar::SetDefaultType ( unsigned int calendarType ) {
+    HRESULT _hr = raw_SetDefaultType(calendarType);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline ICalendarPtr ICalendar::AddWallHours ( int amount ) {
+    struct ICalendar * _result = 0;
+    HRESULT _hr = raw_AddWallHours(amount, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ICalendarPtr(_result, false);
+}
+
+inline ICalendarPtr ICalendar::AddWallMinutes ( int amount ) {
+    struct ICalendar * _result = 0;
+    HRESULT _hr = raw_AddWallMinutes(amount, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ICalendarPtr(_result, false);
+}
+
+inline ICalendarPtr ICalendar::AddWallSeconds ( int amount ) {
+    struct ICalendar * _result = 0;
+    HRESULT _hr = raw_AddWallSeconds(amount, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ICalendarPtr(_result, false);
+}
+
+inline ICalendarPtr ICalendar::AddWallMilliseconds ( int amount ) {
+    struct ICalendar * _result = 0;
+    HRESULT _hr = raw_AddWallMilliseconds(amount, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ICalendarPtr(_result, false);
+}
+
+inline struct DateStruct ICalendar::GetDomainDate ( ) {
+    struct DateStruct _result;
+    HRESULT _hr = raw_GetDomainDate(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline HRESULT ICalendar::InitFromCalendar ( struct ICalendar * Calendar ) {
+    HRESULT _hr = raw_InitFromCalendar(Calendar);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline VARIANT_BOOL ICalendar::IsMinimum ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = raw_IsMinimum(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline VARIANT_BOOL ICalendar::IsMaximum ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = raw_IsMaximum(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline VARIANT_BOOL ICalendar::IsCalLeapDay ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = raw_IsCalLeapDay(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline VARIANT_BOOL ICalendar::IsCalLeapMonth ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = raw_IsCalLeapMonth(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline VARIANT_BOOL ICalendar::IsCalLeapYear ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = raw_IsCalLeapYear(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline unsigned int ICalendar::GetDaysInMonthForCal ( ) {
+    unsigned int _result = 0;
+    HRESULT _hr = raw_GetDaysInMonthForCal(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline unsigned int ICalendar::GetDaysInYearForCal ( ) {
+    unsigned int _result = 0;
+    HRESULT _hr = raw_GetDaysInYearForCal(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline unsigned int ICalendar::GetMonthsInYearForCal ( ) {
+    unsigned int _result = 0;
+    HRESULT _hr = raw_GetMonthsInYearForCal(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline HRESULT ICalendar::InitFromDateString ( _bstr_t date, VARIANT_BOOL domainDate, unsigned int calendarType ) {
+    HRESULT _hr = raw_InitFromDateString(date, domainDate, calendarType);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT ICalendar::InitFromDateStringZone ( _bstr_t date, struct ITimeZone * TimeZone, VARIANT_BOOL domainDate, unsigned int calendarType ) {
+    HRESULT _hr = raw_InitFromDateStringZone(date, TimeZone, domainDate, calendarType);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline _bstr_t ICalendar::GetDateString ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = raw_GetDateString(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline _bstr_t ICalendar::GetDomainDateString ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = raw_GetDomainDateString(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline HRESULT ICalendar::InitToMinimum ( ) {
+    HRESULT _hr = raw_InitToMinimum();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT ICalendar::InitToMaximum ( ) {
+    HRESULT _hr = raw_InitToMaximum();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT ICalendar::InitToNull ( ) {
+    HRESULT _hr = raw_InitToNull();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline VARIANT_BOOL ICalendar::IsNull ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = raw_IsNull(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline HRESULT ICalendar::InitFromHandle ( unsigned int handle ) {
+    HRESULT _hr = raw_InitFromHandle(handle);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline unsigned int ICalendar::GetHandle ( ) {
+    unsigned int _result = 0;
+    HRESULT _hr = raw_GetHandle(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline VARIANT_BOOL ICalendar::IsWallClockTimeRepeated ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = raw_IsWallClockTimeRepeated(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline ITimeSpanPtr ICalendar::SubtractWallCalendar ( struct ICalendar * Calendar ) {
+    struct ITimeSpan * _result = 0;
+    HRESULT _hr = raw_SubtractWallCalendar(Calendar, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ITimeSpanPtr(_result, false);
+}
+
+//
+// interface IBasicDateTimeFormatter wrapper method implementations
+//
+
+inline HRESULT IBasicDateTimeFormatter::Init ( _bstr_t defaultPattern ) {
+    HRESULT _hr = raw_Init(defaultPattern);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline _bstr_t IBasicDateTimeFormatter::Format ( struct ICalendar * Calendar ) {
+    BSTR _result = 0;
+    HRESULT _hr = raw_Format(Calendar, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline _bstr_t IBasicDateTimeFormatter::FormatByPatternType ( struct ICalendar * Calendar, _bstr_t patternType ) {
+    BSTR _result = 0;
+    HRESULT _hr = raw_FormatByPatternType(Calendar, patternType, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline _bstr_t IBasicDateTimeFormatter::FormatByPattern ( struct ICalendar * Calendar, _bstr_t pattern ) {
+    BSTR _result = 0;
+    HRESULT _hr = raw_FormatByPattern(Calendar, pattern, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline _bstr_t IBasicDateTimeFormatter::GetMonthName ( unsigned int month, unsigned int calendarType ) {
+    BSTR _result = 0;
+    HRESULT _hr = raw_GetMonthName(month, calendarType, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline _bstr_t IBasicDateTimeFormatter::GetDayOfWeekName ( unsigned int dayOfWeek, unsigned int calendarType ) {
+    BSTR _result = 0;
+    HRESULT _hr = raw_GetDayOfWeekName(dayOfWeek, calendarType, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline unsigned int IBasicDateTimeFormatter::GetFirstDayOfWeek ( ) {
+    unsigned int _result = 0;
+    HRESULT _hr = raw_GetFirstDayOfWeek(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline _bstr_t IBasicDateTimeFormatter::GetTimeZoneAlias ( struct ITimeZone * TimeZone, unsigned int aliasType ) {
+    BSTR _result = 0;
+    HRESULT _hr = raw_GetTimeZoneAlias(TimeZone, aliasType, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline ICalendarPtr IBasicDateTimeFormatter::ParseByPattern ( _bstr_t DateTime, _bstr_t pattern, unsigned int calendarType ) {
+    struct ICalendar * _result = 0;
+    HRESULT _hr = raw_ParseByPattern(DateTime, pattern, calendarType, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ICalendarPtr(_result, false);
+}
+
+inline ICalendarPtr IBasicDateTimeFormatter::ParseByPatternType ( _bstr_t DateTime, _bstr_t patternType, unsigned int calendarType ) {
+    struct ICalendar * _result = 0;
+    HRESULT _hr = raw_ParseByPatternType(DateTime, patternType, calendarType, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ICalendarPtr(_result, false);
+}
+
+inline ICalendarPtr IBasicDateTimeFormatter::Parse ( _bstr_t DateTime, unsigned int calendarType ) {
+    struct ICalendar * _result = 0;
+    HRESULT _hr = raw_Parse(DateTime, calendarType, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ICalendarPtr(_result, false);
+}
+
+inline _bstr_t IBasicDateTimeFormatter::GetShortMonthName ( unsigned int month, unsigned int calendarType ) {
+    BSTR _result = 0;
+    HRESULT _hr = raw_GetShortMonthName(month, calendarType, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline _bstr_t IBasicDateTimeFormatter::GetShortDayOfWeekName ( unsigned int dayOfWeek, unsigned int calendarType ) {
+    BSTR _result = 0;
+    HRESULT _hr = raw_GetShortDayOfWeekName(dayOfWeek, calendarType, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline ICalendarPtr IBasicDateTimeFormatter::ParseWithZone ( _bstr_t DateTime, struct ITimeZone * TimeZone, unsigned int calendarType ) {
+    struct ICalendar * _result = 0;
+    HRESULT _hr = raw_ParseWithZone(DateTime, TimeZone, calendarType, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ICalendarPtr(_result, false);
+}
+
+inline ICalendarPtr IBasicDateTimeFormatter::ParseByPatternWithZone ( _bstr_t DateTime, _bstr_t pattern, struct ITimeZone * TimeZone, unsigned int calendarType ) {
+    struct ICalendar * _result = 0;
+    HRESULT _hr = raw_ParseByPatternWithZone(DateTime, pattern, TimeZone, calendarType, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ICalendarPtr(_result, false);
+}
+
+inline ICalendarPtr IBasicDateTimeFormatter::ParseByPatternTypeWithZone ( _bstr_t DateTime, _bstr_t patternType, struct ITimeZone * TimeZone, unsigned int calendarType ) {
+    struct ICalendar * _result = 0;
+    HRESULT _hr = raw_ParseByPatternTypeWithZone(DateTime, patternType, TimeZone, calendarType, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ICalendarPtr(_result, false);
+}
+
+//
+// interface IAgeFormatPolicy wrapper method implementations
+//
+
+inline HRESULT IAgeFormatPolicy::Init ( ) {
+    HRESULT _hr = raw_Init();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline SAFEARRAY * IAgeFormatPolicy::GetFormatRules ( ) {
+    SAFEARRAY * _result = 0;
+    HRESULT _hr = raw_GetFormatRules(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline HRESULT IAgeFormatPolicy::InitFromRules ( SAFEARRAY * * formatRules ) {
+    HRESULT _hr = raw_InitFromRules(formatRules);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IAgeFormatPolicy::SetDefaultPolicy ( struct IAgeFormatPolicy * policy ) {
+    HRESULT _hr = raw_SetDefaultPolicy(policy);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline IAgeFormatPolicyPtr IAgeFormatPolicy::GetDefaultPolicy ( ) {
+    struct IAgeFormatPolicy * _result = 0;
+    HRESULT _hr = raw_GetDefaultPolicy(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IAgeFormatPolicyPtr(_result, false);
+}
+
+inline HRESULT IAgeFormatPolicy::ResetDefaultPolicy ( ) {
+    HRESULT _hr = raw_ResetDefaultPolicy();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface IAgeFormatter wrapper method implementations
+//
+
+inline HRESULT IAgeFormatter::Init ( ) {
+    HRESULT _hr = raw_Init();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline _bstr_t IAgeFormatter::Format ( struct ICalendar * Calendar ) {
+    BSTR _result = 0;
+    HRESULT _hr = raw_Format(Calendar, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline _bstr_t IAgeFormatter::FormatAt ( struct ICalendar * birthDate, struct ICalendar * endDate ) {
+    BSTR _result = 0;
+    HRESULT _hr = raw_FormatAt(birthDate, endDate, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline IAgeFormatPolicyPtr IAgeFormatter::GetFormatPolicy ( ) {
+    struct IAgeFormatPolicy * _result = 0;
+    HRESULT _hr = raw_GetFormatPolicy(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IAgeFormatPolicyPtr(_result, false);
+}
+
+inline HRESULT IAgeFormatter::SetFormatPolicy ( struct IAgeFormatPolicy * policy ) {
+    HRESULT _hr = raw_SetFormatPolicy(policy);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface IAgeFormatRule wrapper method implementations
+//
+
+inline VARIANT_BOOL IAgeFormatRule::UseFractionalUnits ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = raw_UseFractionalUnits(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline _bstr_t IAgeFormatRule::GetMinorUnit ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = raw_GetMinorUnit(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline _bstr_t IAgeFormatRule::GetMajorUnit ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = raw_GetMajorUnit(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline _bstr_t IAgeFormatRule::GetEndPoint ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = raw_GetEndPoint(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline HRESULT IAgeFormatRule::Init ( _bstr_t endPoint, _bstr_t majorUnit, _bstr_t minorUnit, VARIANT_BOOL fractionalUnits ) {
+    HRESULT _hr = raw_Init(endPoint, majorUnit, minorUnit, fractionalUnits);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}

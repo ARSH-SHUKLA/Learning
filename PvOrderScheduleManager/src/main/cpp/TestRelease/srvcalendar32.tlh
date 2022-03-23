@@ -1,0 +1,1121 @@
+﻿// Created by Microsoft (R) C/C++ Compiler Version 14.00.24215.1 (f42771dd).
+//
+// p:\ml-native\orders\orders_frontend\code\pvorderschedulemanager\src\main\cpp\testrelease\srvcalendar32.tlh
+//
+// C++ source equivalent of type library srvcalendar32.dll
+// compiler-generated file created 03/15/22 at 16:43:58 - DO NOT EDIT!
+
+#pragma once
+#pragma pack(push, 8)
+
+#include <comdef.h>
+
+//
+// Forward references and typedefs
+//
+
+struct __declspec(uuid("3714881e-a1c9-4efc-b262-3690e50e8b81"))
+/* LIBID */ __SRVCALENDAR32Lib;
+struct /* coclass */ DateTime;
+struct __declspec(uuid("aafcddce-017e-4f1f-a39b-91c534258952"))
+/* dual interface */ IDateTime;
+struct /* coclass */ TimeSpan;
+struct __declspec(uuid("47e60fc3-bbe8-4071-bd57-b10fb3209ee7"))
+/* dual interface */ ITimeSpan;
+struct /* coclass */ DaylightTime;
+struct __declspec(uuid("a718a03e-c013-42d6-8aa0-29b8928b98c9"))
+/* dual interface */ IDaylightTime;
+struct /* coclass */ TimeZone;
+struct __declspec(uuid("f01d989e-dd09-4e21-a55b-1eac6e29c15e"))
+/* dual interface */ ITimeZone;
+struct /* coclass */ Calendar;
+struct __declspec(uuid("1240fa04-e6be-48e3-bc89-ebf3a593a873"))
+/* dual interface */ ICalendar;
+struct DateStruct;
+struct /* coclass */ BasicDateTimeFormatter;
+struct __declspec(uuid("9a42985b-1ac1-4790-a72a-f0d21073c602"))
+/* dual interface */ IBasicDateTimeFormatter;
+struct /* coclass */ AgeFormatter;
+struct __declspec(uuid("292caa6c-a8ab-44a2-acd6-789dfe2bd334"))
+/* dual interface */ IAgeFormatter;
+struct __declspec(uuid("550d6e57-9bb1-4b6f-86c0-2819b1f26f7b"))
+/* dual interface */ IAgeFormatPolicy;
+struct __declspec(uuid("398fe54f-9d99-441d-a9f1-3999c6182ccc"))
+/* dual interface */ IAgeFormatRule;
+struct /* coclass */ AgeFormatRule;
+struct /* coclass */ AgeFormatPolicy;
+
+//
+// Smart pointer typedef declarations
+//
+
+_COM_SMARTPTR_TYPEDEF(IDateTime, __uuidof(IDateTime));
+_COM_SMARTPTR_TYPEDEF(ITimeSpan, __uuidof(ITimeSpan));
+_COM_SMARTPTR_TYPEDEF(IDaylightTime, __uuidof(IDaylightTime));
+_COM_SMARTPTR_TYPEDEF(ITimeZone, __uuidof(ITimeZone));
+_COM_SMARTPTR_TYPEDEF(ICalendar, __uuidof(ICalendar));
+_COM_SMARTPTR_TYPEDEF(IBasicDateTimeFormatter, __uuidof(IBasicDateTimeFormatter));
+_COM_SMARTPTR_TYPEDEF(IAgeFormatPolicy, __uuidof(IAgeFormatPolicy));
+_COM_SMARTPTR_TYPEDEF(IAgeFormatter, __uuidof(IAgeFormatter));
+_COM_SMARTPTR_TYPEDEF(IAgeFormatRule, __uuidof(IAgeFormatRule));
+
+//
+// Type library items
+//
+    const int SRV_CALENDAR_TYPE_DEFAULT = 0;
+    const int SRV_CALENDAR_TYPE_GREGORIAN = 1;
+    const int SRV_CALENDAR_TYPE_HIJRI = 2;
+    const int SRV_CALENDAR_FIELD_CURRENT = -1;
+    const int SRV_CALENDAR_WEEKRULE_FIRSTDAY = 0;
+    const int SRV_CALENDAR_WEEKRULE_FIRSTFOURDAYWEEK = 1;
+    const int SRV_CALENDAR_WEEKRULE_FIRSTFULLWEEK = 2;
+    const int SRV_CALENDAR_DOW_SUNDAY = 0;
+    const int SRV_CALENDAR_DOW_MONDAY = 1;
+    const int SRV_CALENDAR_DOW_TUESDAY = 2;
+    const int SRV_CALENDAR_DOW_WEDNESDAY = 3;
+    const int SRV_CALENDAR_DOW_THURSDAY = 4;
+    const int SRV_CALENDAR_DOW_FRIDAY = 5;
+    const int SRV_CALENDAR_DOW_SATURDAY = 6;
+    const int SRV_CALENDAR_MONTH_JANUARY = 0;
+    const int SRV_CALENDAR_MONTH_FEBRUARY = 1;
+    const int SRV_CALENDAR_MONTH_MARCH = 2;
+    const int SRV_CALENDAR_MONTH_APRIL = 3;
+    const int SRV_CALENDAR_MONTH_MAY = 4;
+    const int SRV_CALENDAR_MONTH_JUNE = 5;
+    const int SRV_CALENDAR_MONTH_JULY = 6;
+    const int SRV_CALENDAR_MONTH_AUGUST = 7;
+    const int SRV_CALENDAR_MONTH_SEPTEMBER = 8;
+    const int SRV_CALENDAR_MONTH_OCTOBER = 9;
+    const int SRV_CALENDAR_MONTH_NOVEMBER = 10;
+    const int SRV_CALENDAR_MONTH_DECEMBER = 11;
+    const int SRV_CALENDAR_MONTH_13 = 12;
+    const BSTR SRV_DATETIME_FORMAT_PATTERN_DEFAULT = (wchar_t*) L"Default";
+    const BSTR SRV_DATETIME_FORMAT_PATTERN_SHORTDATE = (wchar_t*) L"ShortDate";
+    const BSTR SRV_DATETIME_FORMAT_PATTERN_SHORTDATE_DOW = (wchar_t*) L"ShortDateDOW";
+    const BSTR SRV_DATETIME_FORMAT_PATTERN_MEDIUMDATE = (wchar_t*) L"MediumDate";
+    const BSTR SRV_DATETIME_FORMAT_PATTERN_MEDIUMDATE_DOW = (wchar_t*) L"MediumDateDOW";
+    const BSTR SRV_DATETIME_FORMAT_PATTERN_LONGDATE = (wchar_t*) L"LongDate";
+    const BSTR SRV_DATETIME_FORMAT_PATTERN_LONGDATE_DOW = (wchar_t*) L"LongDateDOW";
+    const BSTR SRV_DATETIME_FORMAT_PATTERN_SHORTTIME = (wchar_t*) L"ShortTime";
+    const BSTR SRV_DATETIME_FORMAT_PATTERN_SHORTTIME_TZ = (wchar_t*) L"ShortTimeTZ";
+    const BSTR SRV_DATETIME_FORMAT_PATTERN_LONGTIME = (wchar_t*) L"LongTime";
+    const BSTR SRV_DATETIME_FORMAT_PATTERN_LONGTIME_TZ = (wchar_t*) L"LongTimeTZ";
+    const BSTR SRV_DATETIME_FORMAT_PATTERN_SHORTDATETIME = (wchar_t*) L"ShortDateTime";
+    const BSTR SRV_DATETIME_FORMAT_PATTERN_SHORTDATETIME_TZ = (wchar_t*) L"ShortDateTimeTZ";
+    const BSTR SRV_DATETIME_FORMAT_PATTERN_MEDIUMDATETIME = (wchar_t*) L"MediumDateTime";
+    const BSTR SRV_DATETIME_FORMAT_PATTERN_LONGDATETIME = (wchar_t*) L"LongDateTime";
+    const BSTR SRV_DATETIME_FORMAT_PATTERN_LONGDATETIME_TZ = (wchar_t*) L"LongDateTimeTZ";
+    const BSTR SRV_DATETIME_FORMAT_PATTERN_LONGDATETIME_DOW_TZ = (wchar_t*) L"LongDateTimeDOWTZ";
+    const BSTR SRV_DATETIME_FORMAT_PATTERN_LONGDATETIME_LONGTZ = (wchar_t*) L"LongDateTimeLongTZ";
+    const BSTR SRV_DATETIME_FORMAT_PATTERN_LONGDATETIME_DOW_LONGTZ = (wchar_t*) L"LongDateTimeDOWLongTZ";
+    const BSTR SRV_DATETIME_FORMAT_PATTERN_MONTHDAY = (wchar_t*) L"MonthDay";
+    const BSTR SRV_DATETIME_FORMAT_PATTERN_SHORTDATE4YR = (wchar_t*) L"ShortDate4Year";
+    const BSTR SRV_DATETIME_FORMAT_PATTERN_SHORTDATE4YR_DOW = (wchar_t*) L"ShortDate4YearDOW";
+    const BSTR SRV_DATETIME_FORMAT_PATTERN_MEDIUMDATE4YR = (wchar_t*) L"MediumDate4Year";
+    const BSTR SRV_DATETIME_FORMAT_PATTERN_MEDIUMDATE4YR_DOW = (wchar_t*) L"MediumDate4YearDOW";
+    const BSTR SRV_DATETIME_FORMAT_PATTERN_SHORTDATETIMENOSEC = (wchar_t*) L"ShortDateTimeNoSec";
+    const BSTR SRV_DATETIME_FORMAT_PATTERN_SERIAL = (wchar_t*) L"Serial";
+    const int SRV_TIMEZONE_ALIAS_int_DISPLAY_NAME = 0;
+    const int SRV_TIMEZONE_ALIAS_SHORT_DISPLAY_NAME = 1;
+    const int SRV_TIMEZONE_ALIAS_int_STANDARD_NAME = 2;
+    const int SRV_TIMEZONE_ALIAS_SHORT_STANDARD_NAME = 3;
+    const int SRV_TIMEZONE_ALIAS_int_DAYLIGHT_NAME = 4;
+    const int SRV_TIMEZONE_ALIAS_SHORT_DAYLIGHT_NAME = 5;
+
+struct __declspec(uuid("930cfdec-cbca-46f0-8db4-4eb58d1fd1e3"))
+DateTime;
+    // [ default ] interface IDateTime
+
+struct __declspec(uuid("aafcddce-017e-4f1f-a39b-91c534258952"))
+IDateTime : IDispatch
+{
+    //
+    // Wrapper methods for error-handling
+    //
+
+    HRESULT Init ( );
+    HRESULT InitFromMilliseconds (
+        unsigned __int64 milliseconds );
+    unsigned __int64 GetMilliseconds ( );
+    long Compare (
+        struct IDateTime * DateTime );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall raw_Init ( ) = 0;
+      virtual HRESULT __stdcall raw_InitFromMilliseconds (
+        /*[in]*/ unsigned __int64 milliseconds ) = 0;
+      virtual HRESULT __stdcall raw_GetMilliseconds (
+        /*[out,retval]*/ unsigned __int64 * milliseconds ) = 0;
+      virtual HRESULT __stdcall raw_Compare (
+        /*[in]*/ struct IDateTime * DateTime,
+        /*[out,retval]*/ long * result ) = 0;
+};
+
+struct __declspec(uuid("7d65a71a-a5d0-4ce0-8c2a-086b283478d8"))
+TimeSpan;
+    // [ default ] interface ITimeSpan
+
+struct __declspec(uuid("47e60fc3-bbe8-4071-bd57-b10fb3209ee7"))
+ITimeSpan : IDispatch
+{
+    //
+    // Wrapper methods for error-handling
+    //
+
+    HRESULT InitFromMilliseconds (
+        __int64 milliseconds );
+    HRESULT InitFromHMS (
+        int hours,
+        int minutes,
+        int seconds );
+    HRESULT InitFromDHMSM (
+        int days,
+        int hours,
+        int minutes,
+        int seconds,
+        int milliseconds );
+    HRESULT InitFromDays (
+        double days );
+    HRESULT InitFromHours (
+        double hours );
+    HRESULT InitFromMinutes (
+        double minutes );
+    HRESULT InitFromSeconds (
+        double seconds );
+    int GetDays ( );
+    int GetHours ( );
+    int GetMinutes ( );
+    int GetSeconds ( );
+    __int64 GetMilliseconds ( );
+    double GetTotalDays ( );
+    double GetTotalHours ( );
+    double GetTotalMinutes ( );
+    double GetTotalSeconds ( );
+    long Compare (
+        struct ITimeSpan * TimeSpan );
+    ITimeSpanPtr Duration ( );
+    ITimeSpanPtr Negate ( );
+    ITimeSpanPtr Add (
+        struct ITimeSpan * TimeSpan );
+    ITimeSpanPtr Subtract (
+        struct ITimeSpan * TimeSpan );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall raw_InitFromMilliseconds (
+        /*[in]*/ __int64 milliseconds ) = 0;
+      virtual HRESULT __stdcall raw_InitFromHMS (
+        /*[in]*/ int hours,
+        /*[in]*/ int minutes,
+        /*[in]*/ int seconds ) = 0;
+      virtual HRESULT __stdcall raw_InitFromDHMSM (
+        /*[in]*/ int days,
+        /*[in]*/ int hours,
+        /*[in]*/ int minutes,
+        /*[in]*/ int seconds,
+        /*[in]*/ int milliseconds ) = 0;
+      virtual HRESULT __stdcall raw_InitFromDays (
+        /*[in]*/ double days ) = 0;
+      virtual HRESULT __stdcall raw_InitFromHours (
+        /*[in]*/ double hours ) = 0;
+      virtual HRESULT __stdcall raw_InitFromMinutes (
+        /*[in]*/ double minutes ) = 0;
+      virtual HRESULT __stdcall raw_InitFromSeconds (
+        /*[in]*/ double seconds ) = 0;
+      virtual HRESULT __stdcall raw_GetDays (
+        /*[out,retval]*/ int * days ) = 0;
+      virtual HRESULT __stdcall raw_GetHours (
+        /*[out,retval]*/ int * hours ) = 0;
+      virtual HRESULT __stdcall raw_GetMinutes (
+        /*[out,retval]*/ int * minutes ) = 0;
+      virtual HRESULT __stdcall raw_GetSeconds (
+        /*[out,retval]*/ int * seconds ) = 0;
+      virtual HRESULT __stdcall raw_GetMilliseconds (
+        /*[out,retval]*/ __int64 * milliseconds ) = 0;
+      virtual HRESULT __stdcall raw_GetTotalDays (
+        /*[out,retval]*/ double * days ) = 0;
+      virtual HRESULT __stdcall raw_GetTotalHours (
+        /*[out,retval]*/ double * hours ) = 0;
+      virtual HRESULT __stdcall raw_GetTotalMinutes (
+        /*[out,retval]*/ double * minutes ) = 0;
+      virtual HRESULT __stdcall raw_GetTotalSeconds (
+        /*[out,retval]*/ double * seconds ) = 0;
+      virtual HRESULT __stdcall raw_Compare (
+        /*[in]*/ struct ITimeSpan * TimeSpan,
+        /*[out,retval]*/ long * result ) = 0;
+      virtual HRESULT __stdcall raw_Duration (
+        /*[out,retval]*/ struct ITimeSpan * * TimeSpan ) = 0;
+      virtual HRESULT __stdcall raw_Negate (
+        /*[out,retval]*/ struct ITimeSpan * * TimeSpan ) = 0;
+      virtual HRESULT __stdcall raw_Add (
+        /*[in]*/ struct ITimeSpan * TimeSpan,
+        /*[out,retval]*/ struct ITimeSpan * * result ) = 0;
+      virtual HRESULT __stdcall raw_Subtract (
+        /*[in]*/ struct ITimeSpan * TimeSpan,
+        /*[out,retval]*/ struct ITimeSpan * * result ) = 0;
+};
+
+struct __declspec(uuid("19f79a37-fddd-41f2-9121-770a237d04db"))
+DaylightTime;
+    // [ default ] interface IDaylightTime
+
+struct __declspec(uuid("a718a03e-c013-42d6-8aa0-29b8928b98c9"))
+IDaylightTime : IDispatch
+{
+    //
+    // Wrapper methods for error-handling
+    //
+
+    HRESULT Init (
+        struct IDateTime * start,
+        struct IDateTime * end );
+    IDateTimePtr GetStart ( );
+    IDateTimePtr GetEnd ( );
+    ITimeSpanPtr GetDelta ( );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall raw_Init (
+        /*[in]*/ struct IDateTime * start,
+        /*[in]*/ struct IDateTime * end ) = 0;
+      virtual HRESULT __stdcall raw_GetStart (
+        /*[out,retval]*/ struct IDateTime * * start ) = 0;
+      virtual HRESULT __stdcall raw_GetEnd (
+        /*[out,retval]*/ struct IDateTime * * end ) = 0;
+      virtual HRESULT __stdcall raw_GetDelta (
+        /*[out,retval]*/ struct ITimeSpan * * delta ) = 0;
+};
+
+struct __declspec(uuid("8150ad5f-145e-48f6-9550-88ab42c9a774"))
+TimeZone;
+    // [ default ] interface ITimeZone
+
+struct __declspec(uuid("f01d989e-dd09-4e21-a55b-1eac6e29c15e"))
+ITimeZone : IDispatch
+{
+    //
+    // Wrapper methods for error-handling
+    //
+
+    HRESULT Init ( );
+    HRESULT InitFromUTC ( );
+    HRESULT InitFromName (
+        _bstr_t name );
+    HRESULT InitFromIndex (
+        unsigned __int64 index );
+    IDaylightTimePtr GetDaylightChanges (
+        unsigned int year );
+    _bstr_t GetName ( );
+    unsigned __int64 GetIndex ( );
+    ITimeZonePtr GetDefault ( );
+    HRESULT SetDefault (
+        struct ITimeZone * TimeZone );
+    HRESULT GetTimeZones (
+        SAFEARRAY * * timeZones );
+    HRESULT GetTimeZonesOffset (
+        SAFEARRAY * * timeZones,
+        int offset );
+    HRESULT InitFromDomain ( );
+    HRESULT GetSystemTimeZones (
+        SAFEARRAY * * timeZones );
+    HRESULT InitFromIndexWithDefault (
+        unsigned __int64 index,
+        VARIANT_BOOL withDefault );
+    ITimeSpanPtr GetDaylightOffset ( );
+    ITimeZonePtr GetThreadDefault ( );
+    HRESULT SetThreadDefault (
+        struct ITimeZone * TimeZone );
+    ITimeSpanPtr GetUTCOffset ( );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall raw_Init ( ) = 0;
+      virtual HRESULT __stdcall raw_InitFromUTC ( ) = 0;
+      virtual HRESULT __stdcall raw_InitFromName (
+        /*[in]*/ BSTR name ) = 0;
+      virtual HRESULT __stdcall raw_InitFromIndex (
+        /*[in]*/ unsigned __int64 index ) = 0;
+      virtual HRESULT __stdcall raw_GetDaylightChanges (
+        /*[in]*/ unsigned int year,
+        /*[out,retval]*/ struct IDaylightTime * * result ) = 0;
+      virtual HRESULT __stdcall raw_GetName (
+        /*[out,retval]*/ BSTR * name ) = 0;
+      virtual HRESULT __stdcall raw_GetIndex (
+        /*[out,retval]*/ unsigned __int64 * index ) = 0;
+      virtual HRESULT __stdcall raw_GetDefault (
+        /*[out,retval]*/ struct ITimeZone * * TimeZone ) = 0;
+      virtual HRESULT __stdcall raw_SetDefault (
+        /*[in]*/ struct ITimeZone * TimeZone ) = 0;
+      virtual HRESULT __stdcall raw_GetTimeZones (
+        /*[in,out]*/ SAFEARRAY * * timeZones ) = 0;
+      virtual HRESULT __stdcall raw_GetTimeZonesOffset (
+        /*[in,out]*/ SAFEARRAY * * timeZones,
+        /*[in]*/ int offset ) = 0;
+      virtual HRESULT __stdcall raw_InitFromDomain ( ) = 0;
+      virtual HRESULT __stdcall raw_GetSystemTimeZones (
+        /*[in,out]*/ SAFEARRAY * * timeZones ) = 0;
+      virtual HRESULT __stdcall raw_InitFromIndexWithDefault (
+        /*[in]*/ unsigned __int64 index,
+        /*[in]*/ VARIANT_BOOL withDefault ) = 0;
+      virtual HRESULT __stdcall raw_GetDaylightOffset (
+        /*[out,retval]*/ struct ITimeSpan * * TimeSpan ) = 0;
+      virtual HRESULT __stdcall raw_GetThreadDefault (
+        /*[out,retval]*/ struct ITimeZone * * TimeZone ) = 0;
+      virtual HRESULT __stdcall raw_SetThreadDefault (
+        /*[in]*/ struct ITimeZone * TimeZone ) = 0;
+      virtual HRESULT __stdcall raw_GetUTCOffset (
+        /*[out,retval]*/ struct ITimeSpan * * TimeSpan ) = 0;
+};
+
+struct __declspec(uuid("fd1de9da-c485-4dd1-bfe2-11f12912b0c3"))
+Calendar;
+    // [ default ] interface ICalendar
+
+#pragma pack(push, 1)
+
+struct __declspec(uuid("764f093a-d81e-49cf-8131-65d152a6173e"))
+DateStruct
+{
+    unsigned char cen;
+    unsigned char year;
+    unsigned char mon;
+    unsigned char day;
+    unsigned char hour;
+    unsigned char minute;
+    unsigned char sec;
+    unsigned char hsec;
+};
+
+#pragma pack(pop)
+
+struct __declspec(uuid("1240fa04-e6be-48e3-bc89-ebf3a593a873"))
+ICalendar : IDispatch
+{
+    //
+    // Wrapper methods for error-handling
+    //
+
+    HRESULT Init (
+        unsigned int calendarType );
+    HRESULT InitFromZone (
+        struct ITimeZone * TimeZone,
+        unsigned int calendarType );
+    HRESULT InitFromDateTime (
+        struct IDateTime * DateTime,
+        unsigned int calendarType );
+    HRESULT InitFromDateTimeZone (
+        struct IDateTime * DateTime,
+        struct ITimeZone * TimeZone,
+        unsigned int calendarType );
+    HRESULT InitFromDateEx (
+        unsigned int year,
+        unsigned int month,
+        unsigned int day,
+        unsigned int calendarType );
+    HRESULT InitFromDateZoneEx (
+        unsigned int year,
+        unsigned int month,
+        unsigned int day,
+        struct ITimeZone * TimeZone,
+        unsigned int calendarType );
+    HRESULT InitFromDateTimeEx (
+        unsigned int year,
+        unsigned int month,
+        unsigned int day,
+        unsigned int hour,
+        unsigned int minute,
+        unsigned int second,
+        unsigned int millisecond,
+        unsigned int calendarType );
+    HRESULT InitFromDateTimeZoneEx (
+        unsigned int year,
+        unsigned int month,
+        unsigned int day,
+        unsigned int hour,
+        unsigned int minute,
+        unsigned int second,
+        unsigned int millisecond,
+        struct ITimeZone * TimeZone,
+        unsigned int calendarType );
+    IDateTimePtr GetDateTime ( );
+    unsigned int GetYear ( );
+    unsigned int GetMonth ( );
+    unsigned int GetHour ( );
+    unsigned int GetMinute ( );
+    unsigned int GetSecond ( );
+    unsigned int GetMillisecond ( );
+    unsigned int GetDayOfWeek ( );
+    unsigned int GetDayOfMonth ( );
+    unsigned int GetDayOfYear ( );
+    unsigned int GetDaysInMonth (
+        unsigned int year,
+        unsigned int month );
+    unsigned int GetDaysInYear (
+        unsigned int year );
+    unsigned int GetMonthsInYear (
+        unsigned int year );
+    unsigned int GetWeekOfYear (
+        unsigned int rule,
+        unsigned int dayOfWeek );
+    unsigned int GetWeekOfMonth (
+        unsigned int rule,
+        unsigned int dayOfWeek );
+    ITimeZonePtr GetTimeZone ( );
+    ITimeSpanPtr GetUTCOffset ( );
+    VARIANT_BOOL IsLeapDay (
+        unsigned int year,
+        unsigned int month,
+        unsigned int day );
+    VARIANT_BOOL IsLeapMonth (
+        unsigned int year,
+        unsigned int month );
+    VARIANT_BOOL IsLeapYear (
+        unsigned int year );
+    VARIANT_BOOL IsDaylight ( );
+    unsigned int GetType ( );
+    long Compare (
+        struct ICalendar * Calendar );
+    ICalendarPtr ToTimeZone (
+        struct ITimeZone * TimeZone );
+    ICalendarPtr ToUTC ( );
+    ICalendarPtr Add (
+        struct ITimeSpan * TimeSpan );
+    ICalendarPtr AddYears (
+        int amount );
+    ICalendarPtr AddMonths (
+        int amount );
+    ICalendarPtr AddWeeks (
+        int amount );
+    ICalendarPtr AddDays (
+        int amount );
+    ICalendarPtr AddHours (
+        int amount );
+    ICalendarPtr AddMinutes (
+        int amount );
+    ICalendarPtr AddSeconds (
+        int amount );
+    ICalendarPtr AddMilliseconds (
+        int amount );
+    ICalendarPtr RollYears (
+        int amount );
+    ICalendarPtr RollMonths (
+        int amount );
+    ICalendarPtr RollDays (
+        int amount );
+    ICalendarPtr RollHours (
+        int amount );
+    ICalendarPtr RollMinutes (
+        int amount );
+    ICalendarPtr RollSeconds (
+        int amount );
+    ICalendarPtr RollMilliseconds (
+        int amount );
+    ICalendarPtr Subtract (
+        struct ITimeSpan * TimeSpan );
+    ITimeSpanPtr SubtractCalendar (
+        struct ICalendar * Calendar );
+    HRESULT InitFromDateStruct (
+        struct DateStruct * date,
+        VARIANT_BOOL domainDate,
+        unsigned int calendarType );
+    HRESULT InitFromDateStructZone (
+        struct DateStruct * date,
+        struct ITimeZone * TimeZone,
+        VARIANT_BOOL domainDate,
+        unsigned int calendarType );
+    struct DateStruct GetDate ( );
+    unsigned int GetDefaultType ( );
+    HRESULT SetDefaultType (
+        unsigned int calendarType );
+    ICalendarPtr AddWallHours (
+        int amount );
+    ICalendarPtr AddWallMinutes (
+        int amount );
+    ICalendarPtr AddWallSeconds (
+        int amount );
+    ICalendarPtr AddWallMilliseconds (
+        int amount );
+    struct DateStruct GetDomainDate ( );
+    HRESULT InitFromCalendar (
+        struct ICalendar * Calendar );
+    VARIANT_BOOL IsMinimum ( );
+    VARIANT_BOOL IsMaximum ( );
+    VARIANT_BOOL IsCalLeapDay ( );
+    VARIANT_BOOL IsCalLeapMonth ( );
+    VARIANT_BOOL IsCalLeapYear ( );
+    unsigned int GetDaysInMonthForCal ( );
+    unsigned int GetDaysInYearForCal ( );
+    unsigned int GetMonthsInYearForCal ( );
+    HRESULT InitFromDateString (
+        _bstr_t date,
+        VARIANT_BOOL domainDate,
+        unsigned int calendarType );
+    HRESULT InitFromDateStringZone (
+        _bstr_t date,
+        struct ITimeZone * TimeZone,
+        VARIANT_BOOL domainDate,
+        unsigned int calendarType );
+    _bstr_t GetDateString ( );
+    _bstr_t GetDomainDateString ( );
+    HRESULT InitToMinimum ( );
+    HRESULT InitToMaximum ( );
+    HRESULT InitToNull ( );
+    VARIANT_BOOL IsNull ( );
+    HRESULT InitFromHandle (
+        unsigned int handle );
+    unsigned int GetHandle ( );
+    VARIANT_BOOL IsWallClockTimeRepeated ( );
+    ITimeSpanPtr SubtractWallCalendar (
+        struct ICalendar * Calendar );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall raw_Init (
+        /*[in]*/ unsigned int calendarType ) = 0;
+      virtual HRESULT __stdcall raw_InitFromZone (
+        /*[in]*/ struct ITimeZone * TimeZone,
+        /*[in]*/ unsigned int calendarType ) = 0;
+      virtual HRESULT __stdcall raw_InitFromDateTime (
+        /*[in]*/ struct IDateTime * DateTime,
+        /*[in]*/ unsigned int calendarType ) = 0;
+      virtual HRESULT __stdcall raw_InitFromDateTimeZone (
+        /*[in]*/ struct IDateTime * DateTime,
+        /*[in]*/ struct ITimeZone * TimeZone,
+        /*[in]*/ unsigned int calendarType ) = 0;
+      virtual HRESULT __stdcall raw_InitFromDateEx (
+        /*[in]*/ unsigned int year,
+        /*[in]*/ unsigned int month,
+        /*[in]*/ unsigned int day,
+        /*[in]*/ unsigned int calendarType ) = 0;
+      virtual HRESULT __stdcall raw_InitFromDateZoneEx (
+        /*[in]*/ unsigned int year,
+        /*[in]*/ unsigned int month,
+        /*[in]*/ unsigned int day,
+        /*[in]*/ struct ITimeZone * TimeZone,
+        /*[in]*/ unsigned int calendarType ) = 0;
+      virtual HRESULT __stdcall raw_InitFromDateTimeEx (
+        /*[in]*/ unsigned int year,
+        /*[in]*/ unsigned int month,
+        /*[in]*/ unsigned int day,
+        /*[in]*/ unsigned int hour,
+        /*[in]*/ unsigned int minute,
+        /*[in]*/ unsigned int second,
+        /*[in]*/ unsigned int millisecond,
+        /*[in]*/ unsigned int calendarType ) = 0;
+      virtual HRESULT __stdcall raw_InitFromDateTimeZoneEx (
+        /*[in]*/ unsigned int year,
+        /*[in]*/ unsigned int month,
+        /*[in]*/ unsigned int day,
+        /*[in]*/ unsigned int hour,
+        /*[in]*/ unsigned int minute,
+        /*[in]*/ unsigned int second,
+        /*[in]*/ unsigned int millisecond,
+        /*[in]*/ struct ITimeZone * TimeZone,
+        /*[in]*/ unsigned int calendarType ) = 0;
+      virtual HRESULT __stdcall raw_GetDateTime (
+        /*[out,retval]*/ struct IDateTime * * DateTime ) = 0;
+      virtual HRESULT __stdcall raw_GetYear (
+        /*[out,retval]*/ unsigned int * year ) = 0;
+      virtual HRESULT __stdcall raw_GetMonth (
+        /*[out,retval]*/ unsigned int * month ) = 0;
+      virtual HRESULT __stdcall raw_GetHour (
+        /*[out,retval]*/ unsigned int * hour ) = 0;
+      virtual HRESULT __stdcall raw_GetMinute (
+        /*[out,retval]*/ unsigned int * minute ) = 0;
+      virtual HRESULT __stdcall raw_GetSecond (
+        /*[out,retval]*/ unsigned int * second ) = 0;
+      virtual HRESULT __stdcall raw_GetMillisecond (
+        /*[out,retval]*/ unsigned int * millisecond ) = 0;
+      virtual HRESULT __stdcall raw_GetDayOfWeek (
+        /*[out,retval]*/ unsigned int * day ) = 0;
+      virtual HRESULT __stdcall raw_GetDayOfMonth (
+        /*[out,retval]*/ unsigned int * day ) = 0;
+      virtual HRESULT __stdcall raw_GetDayOfYear (
+        /*[out,retval]*/ unsigned int * day ) = 0;
+      virtual HRESULT __stdcall raw_GetDaysInMonth (
+        /*[in]*/ unsigned int year,
+        /*[in]*/ unsigned int month,
+        /*[out,retval]*/ unsigned int * days ) = 0;
+      virtual HRESULT __stdcall raw_GetDaysInYear (
+        /*[in]*/ unsigned int year,
+        /*[out,retval]*/ unsigned int * days ) = 0;
+      virtual HRESULT __stdcall raw_GetMonthsInYear (
+        /*[in]*/ unsigned int year,
+        /*[out,retval]*/ unsigned int * months ) = 0;
+      virtual HRESULT __stdcall raw_GetWeekOfYear (
+        /*[in]*/ unsigned int rule,
+        /*[in]*/ unsigned int dayOfWeek,
+        /*[out,retval]*/ unsigned int * week ) = 0;
+      virtual HRESULT __stdcall raw_GetWeekOfMonth (
+        /*[in]*/ unsigned int rule,
+        /*[in]*/ unsigned int dayOfWeek,
+        /*[out,retval]*/ unsigned int * week ) = 0;
+      virtual HRESULT __stdcall raw_GetTimeZone (
+        /*[out,retval]*/ struct ITimeZone * * TimeZone ) = 0;
+      virtual HRESULT __stdcall raw_GetUTCOffset (
+        /*[out,retval]*/ struct ITimeSpan * * utcOffset ) = 0;
+      virtual HRESULT __stdcall raw_IsLeapDay (
+        /*[in]*/ unsigned int year,
+        /*[in]*/ unsigned int month,
+        /*[in]*/ unsigned int day,
+        /*[out,retval]*/ VARIANT_BOOL * result ) = 0;
+      virtual HRESULT __stdcall raw_IsLeapMonth (
+        /*[in]*/ unsigned int year,
+        /*[in]*/ unsigned int month,
+        /*[out,retval]*/ VARIANT_BOOL * result ) = 0;
+      virtual HRESULT __stdcall raw_IsLeapYear (
+        /*[in]*/ unsigned int year,
+        /*[out,retval]*/ VARIANT_BOOL * result ) = 0;
+      virtual HRESULT __stdcall raw_IsDaylight (
+        /*[out,retval]*/ VARIANT_BOOL * result ) = 0;
+      virtual HRESULT __stdcall raw_GetType (
+        /*[out,retval]*/ unsigned int * calendarType ) = 0;
+      virtual HRESULT __stdcall raw_Compare (
+        /*[in]*/ struct ICalendar * Calendar,
+        /*[out,retval]*/ long * result ) = 0;
+      virtual HRESULT __stdcall raw_ToTimeZone (
+        /*[in]*/ struct ITimeZone * TimeZone,
+        /*[out,retval]*/ struct ICalendar * * result ) = 0;
+      virtual HRESULT __stdcall raw_ToUTC (
+        /*[out,retval]*/ struct ICalendar * * result ) = 0;
+      virtual HRESULT __stdcall raw_Add (
+        /*[in]*/ struct ITimeSpan * TimeSpan,
+        /*[out,retval]*/ struct ICalendar * * result ) = 0;
+      virtual HRESULT __stdcall raw_AddYears (
+        /*[in]*/ int amount,
+        /*[out,retval]*/ struct ICalendar * * result ) = 0;
+      virtual HRESULT __stdcall raw_AddMonths (
+        /*[in]*/ int amount,
+        /*[out,retval]*/ struct ICalendar * * result ) = 0;
+      virtual HRESULT __stdcall raw_AddWeeks (
+        /*[in]*/ int amount,
+        /*[out,retval]*/ struct ICalendar * * result ) = 0;
+      virtual HRESULT __stdcall raw_AddDays (
+        /*[in]*/ int amount,
+        /*[out,retval]*/ struct ICalendar * * result ) = 0;
+      virtual HRESULT __stdcall raw_AddHours (
+        /*[in]*/ int amount,
+        /*[out,retval]*/ struct ICalendar * * result ) = 0;
+      virtual HRESULT __stdcall raw_AddMinutes (
+        /*[in]*/ int amount,
+        /*[out,retval]*/ struct ICalendar * * result ) = 0;
+      virtual HRESULT __stdcall raw_AddSeconds (
+        /*[in]*/ int amount,
+        /*[out,retval]*/ struct ICalendar * * result ) = 0;
+      virtual HRESULT __stdcall raw_AddMilliseconds (
+        /*[in]*/ int amount,
+        /*[out,retval]*/ struct ICalendar * * result ) = 0;
+      virtual HRESULT __stdcall raw_RollYears (
+        /*[in]*/ int amount,
+        /*[out,retval]*/ struct ICalendar * * result ) = 0;
+      virtual HRESULT __stdcall raw_RollMonths (
+        /*[in]*/ int amount,
+        /*[out,retval]*/ struct ICalendar * * result ) = 0;
+      virtual HRESULT __stdcall raw_RollDays (
+        /*[in]*/ int amount,
+        /*[out,retval]*/ struct ICalendar * * result ) = 0;
+      virtual HRESULT __stdcall raw_RollHours (
+        /*[in]*/ int amount,
+        /*[out,retval]*/ struct ICalendar * * result ) = 0;
+      virtual HRESULT __stdcall raw_RollMinutes (
+        /*[in]*/ int amount,
+        /*[out,retval]*/ struct ICalendar * * result ) = 0;
+      virtual HRESULT __stdcall raw_RollSeconds (
+        /*[in]*/ int amount,
+        /*[out,retval]*/ struct ICalendar * * result ) = 0;
+      virtual HRESULT __stdcall raw_RollMilliseconds (
+        /*[in]*/ int amount,
+        /*[out,retval]*/ struct ICalendar * * result ) = 0;
+      virtual HRESULT __stdcall raw_Subtract (
+        /*[in]*/ struct ITimeSpan * TimeSpan,
+        /*[out,retval]*/ struct ICalendar * * result ) = 0;
+      virtual HRESULT __stdcall raw_SubtractCalendar (
+        /*[in]*/ struct ICalendar * Calendar,
+        /*[out,retval]*/ struct ITimeSpan * * result ) = 0;
+      virtual HRESULT __stdcall raw_InitFromDateStruct (
+        /*[in]*/ struct DateStruct * date,
+        /*[in]*/ VARIANT_BOOL domainDate,
+        /*[in]*/ unsigned int calendarType ) = 0;
+      virtual HRESULT __stdcall raw_InitFromDateStructZone (
+        /*[in]*/ struct DateStruct * date,
+        /*[in]*/ struct ITimeZone * TimeZone,
+        /*[in]*/ VARIANT_BOOL domainDate,
+        /*[in]*/ unsigned int calendarType ) = 0;
+      virtual HRESULT __stdcall raw_GetDate (
+        /*[out,retval]*/ struct DateStruct * date ) = 0;
+      virtual HRESULT __stdcall raw_GetDefaultType (
+        /*[out,retval]*/ unsigned int * calendarType ) = 0;
+      virtual HRESULT __stdcall raw_SetDefaultType (
+        /*[in]*/ unsigned int calendarType ) = 0;
+      virtual HRESULT __stdcall raw_AddWallHours (
+        /*[in]*/ int amount,
+        /*[out,retval]*/ struct ICalendar * * result ) = 0;
+      virtual HRESULT __stdcall raw_AddWallMinutes (
+        /*[in]*/ int amount,
+        /*[out,retval]*/ struct ICalendar * * result ) = 0;
+      virtual HRESULT __stdcall raw_AddWallSeconds (
+        /*[in]*/ int amount,
+        /*[out,retval]*/ struct ICalendar * * result ) = 0;
+      virtual HRESULT __stdcall raw_AddWallMilliseconds (
+        /*[in]*/ int amount,
+        /*[out,retval]*/ struct ICalendar * * result ) = 0;
+      virtual HRESULT __stdcall raw_GetDomainDate (
+        /*[out,retval]*/ struct DateStruct * date ) = 0;
+      virtual HRESULT __stdcall raw_InitFromCalendar (
+        /*[in]*/ struct ICalendar * Calendar ) = 0;
+      virtual HRESULT __stdcall raw_IsMinimum (
+        /*[out,retval]*/ VARIANT_BOOL * result ) = 0;
+      virtual HRESULT __stdcall raw_IsMaximum (
+        /*[out,retval]*/ VARIANT_BOOL * result ) = 0;
+      virtual HRESULT __stdcall raw_IsCalLeapDay (
+        /*[out,retval]*/ VARIANT_BOOL * result ) = 0;
+      virtual HRESULT __stdcall raw_IsCalLeapMonth (
+        /*[out,retval]*/ VARIANT_BOOL * result ) = 0;
+      virtual HRESULT __stdcall raw_IsCalLeapYear (
+        /*[out,retval]*/ VARIANT_BOOL * result ) = 0;
+      virtual HRESULT __stdcall raw_GetDaysInMonthForCal (
+        /*[out,retval]*/ unsigned int * days ) = 0;
+      virtual HRESULT __stdcall raw_GetDaysInYearForCal (
+        /*[out,retval]*/ unsigned int * days ) = 0;
+      virtual HRESULT __stdcall raw_GetMonthsInYearForCal (
+        /*[out,retval]*/ unsigned int * months ) = 0;
+      virtual HRESULT __stdcall raw_InitFromDateString (
+        /*[in]*/ BSTR date,
+        /*[in]*/ VARIANT_BOOL domainDate,
+        /*[in]*/ unsigned int calendarType ) = 0;
+      virtual HRESULT __stdcall raw_InitFromDateStringZone (
+        /*[in]*/ BSTR date,
+        /*[in]*/ struct ITimeZone * TimeZone,
+        /*[in]*/ VARIANT_BOOL domainDate,
+        /*[in]*/ unsigned int calendarType ) = 0;
+      virtual HRESULT __stdcall raw_GetDateString (
+        /*[out,retval]*/ BSTR * date ) = 0;
+      virtual HRESULT __stdcall raw_GetDomainDateString (
+        /*[out,retval]*/ BSTR * date ) = 0;
+      virtual HRESULT __stdcall raw_InitToMinimum ( ) = 0;
+      virtual HRESULT __stdcall raw_InitToMaximum ( ) = 0;
+      virtual HRESULT __stdcall raw_InitToNull ( ) = 0;
+      virtual HRESULT __stdcall raw_IsNull (
+        /*[out,retval]*/ VARIANT_BOOL * result ) = 0;
+      virtual HRESULT __stdcall raw_InitFromHandle (
+        /*[in]*/ unsigned int handle ) = 0;
+      virtual HRESULT __stdcall raw_GetHandle (
+        /*[out,retval]*/ unsigned int * handle ) = 0;
+      virtual HRESULT __stdcall raw_IsWallClockTimeRepeated (
+        /*[out,retval]*/ VARIANT_BOOL * result ) = 0;
+      virtual HRESULT __stdcall raw_SubtractWallCalendar (
+        /*[in]*/ struct ICalendar * Calendar,
+        /*[out,retval]*/ struct ITimeSpan * * result ) = 0;
+};
+
+struct __declspec(uuid("c4d55044-5134-454e-8f8a-db11d1923cc2"))
+BasicDateTimeFormatter;
+    // [ default ] interface IBasicDateTimeFormatter
+
+struct __declspec(uuid("9a42985b-1ac1-4790-a72a-f0d21073c602"))
+IBasicDateTimeFormatter : IDispatch
+{
+    //
+    // Wrapper methods for error-handling
+    //
+
+    HRESULT Init (
+        _bstr_t defaultPattern );
+    _bstr_t Format (
+        struct ICalendar * Calendar );
+    _bstr_t FormatByPatternType (
+        struct ICalendar * Calendar,
+        _bstr_t patternType );
+    _bstr_t FormatByPattern (
+        struct ICalendar * Calendar,
+        _bstr_t pattern );
+    _bstr_t GetMonthName (
+        unsigned int month,
+        unsigned int calendarType );
+    _bstr_t GetDayOfWeekName (
+        unsigned int dayOfWeek,
+        unsigned int calendarType );
+    unsigned int GetFirstDayOfWeek ( );
+    _bstr_t GetTimeZoneAlias (
+        struct ITimeZone * TimeZone,
+        unsigned int aliasType );
+    ICalendarPtr ParseByPattern (
+        _bstr_t DateTime,
+        _bstr_t pattern,
+        unsigned int calendarType );
+    ICalendarPtr ParseByPatternType (
+        _bstr_t DateTime,
+        _bstr_t patternType,
+        unsigned int calendarType );
+    ICalendarPtr Parse (
+        _bstr_t DateTime,
+        unsigned int calendarType );
+    _bstr_t GetShortMonthName (
+        unsigned int month,
+        unsigned int calendarType );
+    _bstr_t GetShortDayOfWeekName (
+        unsigned int dayOfWeek,
+        unsigned int calendarType );
+    ICalendarPtr ParseWithZone (
+        _bstr_t DateTime,
+        struct ITimeZone * TimeZone,
+        unsigned int calendarType );
+    ICalendarPtr ParseByPatternWithZone (
+        _bstr_t DateTime,
+        _bstr_t pattern,
+        struct ITimeZone * TimeZone,
+        unsigned int calendarType );
+    ICalendarPtr ParseByPatternTypeWithZone (
+        _bstr_t DateTime,
+        _bstr_t patternType,
+        struct ITimeZone * TimeZone,
+        unsigned int calendarType );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall raw_Init (
+        /*[in]*/ BSTR defaultPattern ) = 0;
+      virtual HRESULT __stdcall raw_Format (
+        /*[in]*/ struct ICalendar * Calendar,
+        /*[out,retval]*/ BSTR * result ) = 0;
+      virtual HRESULT __stdcall raw_FormatByPatternType (
+        /*[in]*/ struct ICalendar * Calendar,
+        /*[in]*/ BSTR patternType,
+        /*[out,retval]*/ BSTR * result ) = 0;
+      virtual HRESULT __stdcall raw_FormatByPattern (
+        /*[in]*/ struct ICalendar * Calendar,
+        /*[in]*/ BSTR pattern,
+        /*[out,retval]*/ BSTR * result ) = 0;
+      virtual HRESULT __stdcall raw_GetMonthName (
+        /*[in]*/ unsigned int month,
+        /*[in]*/ unsigned int calendarType,
+        /*[out,retval]*/ BSTR * monthName ) = 0;
+      virtual HRESULT __stdcall raw_GetDayOfWeekName (
+        /*[in]*/ unsigned int dayOfWeek,
+        /*[in]*/ unsigned int calendarType,
+        /*[out,retval]*/ BSTR * dayName ) = 0;
+      virtual HRESULT __stdcall raw_GetFirstDayOfWeek (
+        /*[out,retval]*/ unsigned int * firstDay ) = 0;
+      virtual HRESULT __stdcall raw_GetTimeZoneAlias (
+        /*[in]*/ struct ITimeZone * TimeZone,
+        /*[in]*/ unsigned int aliasType,
+        /*[out,retval]*/ BSTR * alias ) = 0;
+      virtual HRESULT __stdcall raw_ParseByPattern (
+        /*[in]*/ BSTR DateTime,
+        /*[in]*/ BSTR pattern,
+        /*[in]*/ unsigned int calendarType,
+        /*[out,retval]*/ struct ICalendar * * result ) = 0;
+      virtual HRESULT __stdcall raw_ParseByPatternType (
+        /*[in]*/ BSTR DateTime,
+        /*[in]*/ BSTR patternType,
+        /*[in]*/ unsigned int calendarType,
+        /*[out,retval]*/ struct ICalendar * * result ) = 0;
+      virtual HRESULT __stdcall raw_Parse (
+        /*[in]*/ BSTR DateTime,
+        /*[in]*/ unsigned int calendarType,
+        /*[out,retval]*/ struct ICalendar * * result ) = 0;
+      virtual HRESULT __stdcall raw_GetShortMonthName (
+        /*[in]*/ unsigned int month,
+        /*[in]*/ unsigned int calendarType,
+        /*[out,retval]*/ BSTR * monthName ) = 0;
+      virtual HRESULT __stdcall raw_GetShortDayOfWeekName (
+        /*[in]*/ unsigned int dayOfWeek,
+        /*[in]*/ unsigned int calendarType,
+        /*[out,retval]*/ BSTR * dayName ) = 0;
+      virtual HRESULT __stdcall raw_ParseWithZone (
+        /*[in]*/ BSTR DateTime,
+        /*[in]*/ struct ITimeZone * TimeZone,
+        /*[in]*/ unsigned int calendarType,
+        /*[out,retval]*/ struct ICalendar * * result ) = 0;
+      virtual HRESULT __stdcall raw_ParseByPatternWithZone (
+        /*[in]*/ BSTR DateTime,
+        /*[in]*/ BSTR pattern,
+        /*[in]*/ struct ITimeZone * TimeZone,
+        /*[in]*/ unsigned int calendarType,
+        /*[out,retval]*/ struct ICalendar * * result ) = 0;
+      virtual HRESULT __stdcall raw_ParseByPatternTypeWithZone (
+        /*[in]*/ BSTR DateTime,
+        /*[in]*/ BSTR patternType,
+        /*[in]*/ struct ITimeZone * TimeZone,
+        /*[in]*/ unsigned int calendarType,
+        /*[out,retval]*/ struct ICalendar * * result ) = 0;
+};
+
+struct __declspec(uuid("7aa4044b-372b-4b0f-b808-8b4cafe769f9"))
+AgeFormatter;
+    // [ default ] interface IAgeFormatter
+
+struct __declspec(uuid("550d6e57-9bb1-4b6f-86c0-2819b1f26f7b"))
+IAgeFormatPolicy : IDispatch
+{
+    //
+    // Wrapper methods for error-handling
+    //
+
+    HRESULT Init ( );
+    SAFEARRAY * GetFormatRules ( );
+    HRESULT InitFromRules (
+        SAFEARRAY * * formatRules );
+    HRESULT SetDefaultPolicy (
+        struct IAgeFormatPolicy * policy );
+    IAgeFormatPolicyPtr GetDefaultPolicy ( );
+    HRESULT ResetDefaultPolicy ( );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall raw_Init ( ) = 0;
+      virtual HRESULT __stdcall raw_GetFormatRules (
+        /*[out,retval]*/ SAFEARRAY * * result ) = 0;
+      virtual HRESULT __stdcall raw_InitFromRules (
+        /*[in]*/ SAFEARRAY * * formatRules ) = 0;
+      virtual HRESULT __stdcall raw_SetDefaultPolicy (
+        /*[in]*/ struct IAgeFormatPolicy * policy ) = 0;
+      virtual HRESULT __stdcall raw_GetDefaultPolicy (
+        /*[out,retval]*/ struct IAgeFormatPolicy * * result ) = 0;
+      virtual HRESULT __stdcall raw_ResetDefaultPolicy ( ) = 0;
+};
+
+struct __declspec(uuid("292caa6c-a8ab-44a2-acd6-789dfe2bd334"))
+IAgeFormatter : IDispatch
+{
+    //
+    // Wrapper methods for error-handling
+    //
+
+    HRESULT Init ( );
+    _bstr_t Format (
+        struct ICalendar * Calendar );
+    _bstr_t FormatAt (
+        struct ICalendar * birthDate,
+        struct ICalendar * endDate );
+    IAgeFormatPolicyPtr GetFormatPolicy ( );
+    HRESULT SetFormatPolicy (
+        struct IAgeFormatPolicy * policy );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall raw_Init ( ) = 0;
+      virtual HRESULT __stdcall raw_Format (
+        /*[in]*/ struct ICalendar * Calendar,
+        /*[out,retval]*/ BSTR * result ) = 0;
+      virtual HRESULT __stdcall raw_FormatAt (
+        /*[in]*/ struct ICalendar * birthDate,
+        /*[in]*/ struct ICalendar * endDate,
+        /*[out,retval]*/ BSTR * result ) = 0;
+      virtual HRESULT __stdcall raw_GetFormatPolicy (
+        /*[out,retval]*/ struct IAgeFormatPolicy * * result ) = 0;
+      virtual HRESULT __stdcall raw_SetFormatPolicy (
+        /*[in]*/ struct IAgeFormatPolicy * policy ) = 0;
+};
+
+struct __declspec(uuid("398fe54f-9d99-441d-a9f1-3999c6182ccc"))
+IAgeFormatRule : IDispatch
+{
+    //
+    // Wrapper methods for error-handling
+    //
+
+    VARIANT_BOOL UseFractionalUnits ( );
+    _bstr_t GetMinorUnit ( );
+    _bstr_t GetMajorUnit ( );
+    _bstr_t GetEndPoint ( );
+    HRESULT Init (
+        _bstr_t endPoint,
+        _bstr_t majorUnit,
+        _bstr_t minorUnit,
+        VARIANT_BOOL fractionalUnits );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall raw_UseFractionalUnits (
+        /*[out,retval]*/ VARIANT_BOOL * result ) = 0;
+      virtual HRESULT __stdcall raw_GetMinorUnit (
+        /*[out,retval]*/ BSTR * result ) = 0;
+      virtual HRESULT __stdcall raw_GetMajorUnit (
+        /*[out,retval]*/ BSTR * result ) = 0;
+      virtual HRESULT __stdcall raw_GetEndPoint (
+        /*[out,retval]*/ BSTR * result ) = 0;
+      virtual HRESULT __stdcall raw_Init (
+        /*[in]*/ BSTR endPoint,
+        /*[in]*/ BSTR majorUnit,
+        /*[in]*/ BSTR minorUnit,
+        /*[in]*/ VARIANT_BOOL fractionalUnits ) = 0;
+};
+
+struct __declspec(uuid("30d71459-8cdb-4ba7-966c-1ad56d5f0db3"))
+AgeFormatRule;
+    // [ default ] interface IAgeFormatRule
+
+struct __declspec(uuid("a96e1f09-c67d-4a41-97c4-646eed024cbe"))
+AgeFormatPolicy;
+    // [ default ] interface IAgeFormatPolicy
+
+//
+// Named GUID constants initializations
+//
+
+extern "C" const GUID __declspec(selectany) LIBID_SRVCALENDAR32Lib =
+    {0x3714881e,0xa1c9,0x4efc,{0xb2,0x62,0x36,0x90,0xe5,0x0e,0x8b,0x81}};
+extern "C" const GUID __declspec(selectany) CLSID_DateTime =
+    {0x930cfdec,0xcbca,0x46f0,{0x8d,0xb4,0x4e,0xb5,0x8d,0x1f,0xd1,0xe3}};
+extern "C" const GUID __declspec(selectany) IID_IDateTime =
+    {0xaafcddce,0x017e,0x4f1f,{0xa3,0x9b,0x91,0xc5,0x34,0x25,0x89,0x52}};
+extern "C" const GUID __declspec(selectany) CLSID_TimeSpan =
+    {0x7d65a71a,0xa5d0,0x4ce0,{0x8c,0x2a,0x08,0x6b,0x28,0x34,0x78,0xd8}};
+extern "C" const GUID __declspec(selectany) IID_ITimeSpan =
+    {0x47e60fc3,0xbbe8,0x4071,{0xbd,0x57,0xb1,0x0f,0xb3,0x20,0x9e,0xe7}};
+extern "C" const GUID __declspec(selectany) CLSID_DaylightTime =
+    {0x19f79a37,0xfddd,0x41f2,{0x91,0x21,0x77,0x0a,0x23,0x7d,0x04,0xdb}};
+extern "C" const GUID __declspec(selectany) IID_IDaylightTime =
+    {0xa718a03e,0xc013,0x42d6,{0x8a,0xa0,0x29,0xb8,0x92,0x8b,0x98,0xc9}};
+extern "C" const GUID __declspec(selectany) CLSID_TimeZone =
+    {0x8150ad5f,0x145e,0x48f6,{0x95,0x50,0x88,0xab,0x42,0xc9,0xa7,0x74}};
+extern "C" const GUID __declspec(selectany) IID_ITimeZone =
+    {0xf01d989e,0xdd09,0x4e21,{0xa5,0x5b,0x1e,0xac,0x6e,0x29,0xc1,0x5e}};
+extern "C" const GUID __declspec(selectany) CLSID_Calendar =
+    {0xfd1de9da,0xc485,0x4dd1,{0xbf,0xe2,0x11,0xf1,0x29,0x12,0xb0,0xc3}};
+extern "C" const GUID __declspec(selectany) IID_ICalendar =
+    {0x1240fa04,0xe6be,0x48e3,{0xbc,0x89,0xeb,0xf3,0xa5,0x93,0xa8,0x73}};
+extern "C" const GUID __declspec(selectany) CLSID_BasicDateTimeFormatter =
+    {0xc4d55044,0x5134,0x454e,{0x8f,0x8a,0xdb,0x11,0xd1,0x92,0x3c,0xc2}};
+extern "C" const GUID __declspec(selectany) IID_IBasicDateTimeFormatter =
+    {0x9a42985b,0x1ac1,0x4790,{0xa7,0x2a,0xf0,0xd2,0x10,0x73,0xc6,0x02}};
+extern "C" const GUID __declspec(selectany) CLSID_AgeFormatter =
+    {0x7aa4044b,0x372b,0x4b0f,{0xb8,0x08,0x8b,0x4c,0xaf,0xe7,0x69,0xf9}};
+extern "C" const GUID __declspec(selectany) IID_IAgeFormatPolicy =
+    {0x550d6e57,0x9bb1,0x4b6f,{0x86,0xc0,0x28,0x19,0xb1,0xf2,0x6f,0x7b}};
+extern "C" const GUID __declspec(selectany) IID_IAgeFormatter =
+    {0x292caa6c,0xa8ab,0x44a2,{0xac,0xd6,0x78,0x9d,0xfe,0x2b,0xd3,0x34}};
+extern "C" const GUID __declspec(selectany) IID_IAgeFormatRule =
+    {0x398fe54f,0x9d99,0x441d,{0xa9,0xf1,0x39,0x99,0xc6,0x18,0x2c,0xcc}};
+extern "C" const GUID __declspec(selectany) CLSID_AgeFormatRule =
+    {0x30d71459,0x8cdb,0x4ba7,{0x96,0x6c,0x1a,0xd5,0x6d,0x5f,0x0d,0xb3}};
+extern "C" const GUID __declspec(selectany) CLSID_AgeFormatPolicy =
+    {0xa96e1f09,0xc67d,0x4a41,{0x97,0xc4,0x64,0x6e,0xed,0x02,0x4c,0xbe}};
+
+//
+// Wrapper method implementations
+//
+
+#include "p:\ml-native\orders\orders_frontend\code\pvorderschedulemanager\src\main\cpp\testrelease\srvcalendar32.tli"
+
+#pragma pack(pop)

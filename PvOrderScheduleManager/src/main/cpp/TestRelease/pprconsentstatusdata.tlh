@@ -1,0 +1,1330 @@
+﻿// Created by Microsoft (R) C/C++ Compiler Version 14.00.24215.1 (8daf37a3).
+//
+// p:\ml-native\orders\orders_frontend\code\pvorderschedulemanager\src\main\cpp\testrelease\pprconsentstatusdata.tlh
+//
+// C++ source equivalent of type library pprconsentstatusdata.dll
+// compiler-generated file created 03/15/22 at 16:43:54 - DO NOT EDIT!
+
+#pragma once
+#pragma pack(push, 8)
+
+#include <comdef.h>
+
+//
+// Forward references and typedefs
+//
+
+struct __declspec(uuid("e9c75a1b-7b5f-4c26-b81e-a175e0c8a8d2"))
+/* LIBID */ __PPRCONSENTSTATUSDATALib;
+struct __declspec(uuid("5355331c-3b39-4541-ab37-91b388d56cab"))
+/* dispinterface */ _IConsentStatusEvents;
+struct __declspec(uuid("91d34943-2806-4c2f-9b55-eb7c4f0962dd"))
+/* dual interface */ IConsentStatus;
+struct __declspec(uuid("512118ea-5197-4fbe-bc8d-0a594c4942fb"))
+/* dual interface */ IConsentStatusColl;
+struct __declspec(uuid("7a342d23-8218-4d0a-8f7d-3946ea5ebfed"))
+/* dual interface */ IConsentStatusMgr;
+struct __declspec(uuid("dbd2a986-a2f0-4052-bbbe-affe3a3e7272"))
+/* dual interface */ IConsentPolicy;
+struct /* coclass */ ConsentStatus;
+struct /* coclass */ ConsentStatusColl;
+struct /* coclass */ ConsentStatusMgr;
+struct __declspec(uuid("3cd8ff8b-d0ae-4284-b482-b665c0d7ac0a"))
+/* dispinterface */ _IConsentPolicyEvents;
+struct __declspec(uuid("ecba9ce6-6049-4c0e-87d0-e237940afbfa"))
+/* dual interface */ IConsentPolicyMgr;
+struct __declspec(uuid("9f784d1e-b02a-483f-957a-d6e02cc3c54a"))
+/* dual interface */ IConsentPolicyColl;
+struct /* coclass */ ConsentPolicy;
+struct /* coclass */ ConsentPolicyMgr;
+struct /* coclass */ ConsentPolicyColl;
+
+//
+// Smart pointer typedef declarations
+//
+
+_COM_SMARTPTR_TYPEDEF(_IConsentStatusEvents, __uuidof(_IConsentStatusEvents));
+_COM_SMARTPTR_TYPEDEF(IConsentStatus, __uuidof(IConsentStatus));
+_COM_SMARTPTR_TYPEDEF(IConsentStatusColl, __uuidof(IConsentStatusColl));
+_COM_SMARTPTR_TYPEDEF(IConsentStatusMgr, __uuidof(IConsentStatusMgr));
+_COM_SMARTPTR_TYPEDEF(IConsentPolicy, __uuidof(IConsentPolicy));
+_COM_SMARTPTR_TYPEDEF(_IConsentPolicyEvents, __uuidof(_IConsentPolicyEvents));
+_COM_SMARTPTR_TYPEDEF(IConsentPolicyMgr, __uuidof(IConsentPolicyMgr));
+_COM_SMARTPTR_TYPEDEF(IConsentPolicyColl, __uuidof(IConsentPolicyColl));
+
+//
+// Type library items
+//
+
+struct __declspec(uuid("5355331c-3b39-4541-ab37-91b388d56cab"))
+_IConsentStatusEvents : IDispatch
+{};
+
+struct __declspec(uuid("91d34943-2806-4c2f-9b55-eb7c4f0962dd"))
+IConsentStatus : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(put=PutDisplayInfo))
+    _bstr_t DisplayInfo;
+    __declspec(property(get=GetKey,put=PutKey))
+    _bstr_t Key;
+    __declspec(property(get=GetStatusDisplay,put=PutStatusDisplay))
+    _bstr_t StatusDisplay;
+    __declspec(property(get=GetEncntrId,put=PutEncntrId))
+    double EncntrId;
+    __declspec(property(get=GetPolicyId,put=PutPolicyId))
+    double PolicyId;
+    __declspec(property(get=GetActiveInd,put=PutActiveInd))
+    short ActiveInd;
+    __declspec(property(get=GetBegEffectiveDateTime,put=PutBegEffectiveDateTime))
+    DATE BegEffectiveDateTime;
+    __declspec(property(get=GetEndEffectiveDateTime,put=PutEndEffectiveDateTime))
+    DATE EndEffectiveDateTime;
+    __declspec(property(get=GetStatusCd,put=PutStatusCd))
+    double StatusCd;
+    __declspec(property(get=GetReasonCd,put=PutReasonCd))
+    double ReasonCd;
+    __declspec(property(get=GetReasonDisplay,put=PutReasonDisplay))
+    _bstr_t ReasonDisplay;
+    __declspec(property(get=GetPersonId,put=PutPersonId))
+    double PersonId;
+    __declspec(property(get=GetOrganizationId,put=PutOrganizationId))
+    double OrganizationId;
+    __declspec(property(get=GetConsentStatusId,put=PutConsentStatusId))
+    double ConsentStatusId;
+    __declspec(property(get=GetConsentId,put=PutConsentId))
+    double ConsentId;
+    __declspec(property(get=GetConsentPolicyId,put=PutConsentPolicyId))
+    double ConsentPolicyId;
+    __declspec(property(get=GetConsentTypeCd,put=PutConsentTypeCd))
+    double ConsentTypeCd;
+    __declspec(property(get=GetBlobRefId,put=PutBlobRefId))
+    double BlobRefId;
+    __declspec(property(get=GetDocOnFileInd,put=PutDocOnFileInd))
+    short DocOnFileInd;
+    __declspec(property(get=GetRelationTypeCd,put=PutRelationTypeCd))
+    double RelationTypeCd;
+    __declspec(property(get=GetCommentText,put=PutCommentText))
+    _bstr_t CommentText;
+    __declspec(property(get=GetRelatedPersonId,put=PutRelatedPersonId))
+    double RelatedPersonId;
+    __declspec(property(get=GetUpdtCnt,put=PutUpdtCnt))
+    long UpdtCnt;
+    __declspec(property(get=GetActionFlag,put=PutActionFlag))
+    short ActionFlag;
+    __declspec(property(get=GetUpdtId,put=PutUpdtId))
+    double UpdtId;
+    __declspec(property(get=GetConsentTypeDisp,put=PutConsentTypeDisp))
+    _bstr_t ConsentTypeDisp;
+    __declspec(property(get=GetConsentTypeDesc,put=PutConsentTypeDesc))
+    _bstr_t ConsentTypeDesc;
+    __declspec(property(get=GetConsentTypeMean,put=PutConsentTypeMean))
+    _bstr_t ConsentTypeMean;
+    __declspec(property(get=GetStatusDesc,put=PutStatusDesc))
+    _bstr_t StatusDesc;
+    __declspec(property(get=GetStatusMean,put=PutStatusMean))
+    _bstr_t StatusMean;
+    __declspec(property(get=GetUpdtPrsnlName,put=PutUpdtPrsnlName))
+    _bstr_t UpdtPrsnlName;
+    __declspec(property(get=GetReasonDesc,put=PutReasonDesc))
+    _bstr_t ReasonDesc;
+    __declspec(property(get=GetReasonMean,put=PutReasonMean))
+    _bstr_t ReasonMean;
+    __declspec(property(get=GetStatus,put=PutStatus))
+    short Status;
+    __declspec(property(get=GetNameFullFormattedRelPerson,put=PutNameFullFormattedRelPerson))
+    _bstr_t NameFullFormattedRelPerson;
+    __declspec(property(get=GetNameFirstRelPerson,put=PutNameFirstRelPerson))
+    _bstr_t NameFirstRelPerson;
+    __declspec(property(get=GetNameLastRelPerson,put=PutNameLastRelPerson))
+    _bstr_t NameLastRelPerson;
+    __declspec(property(get=GetParentEntityName,put=PutParentEntityName))
+    _bstr_t ParentEntityName;
+    __declspec(property(get=GetNameCd,put=PutNameCd))
+    double NameCd;
+    __declspec(property(get=GetNameDisplay,put=PutNameDisplay))
+    _bstr_t NameDisplay;
+    __declspec(property(get=GetNameDesc,put=PutNameDesc))
+    _bstr_t NameDesc;
+    __declspec(property(get=GetPersonReltnCd,put=PutPersonReltnCd))
+    double PersonReltnCd;
+    __declspec(property(get=GetRelatedPersonReltnCd,put=PutRelatedPersonReltnCd))
+    double RelatedPersonReltnCd;
+    __declspec(property(get=GetPersonTypeCd,put=PutPersonTypeCd))
+    double PersonTypeCd;
+    __declspec(property(get=GetRelationId,put=PutRelationId))
+    double RelationId;
+    __declspec(property(get=GetRelationTypeActionFlag,put=PutRelationTypeActionFlag))
+    short RelationTypeActionFlag;
+    __declspec(property(get=GetFreeTextPersonActionFlag,put=PutFreeTextPersonActionFlag))
+    short FreeTextPersonActionFlag;
+    __declspec(property(get=GetScriptStatus,put=PutScriptStatus))
+    _bstr_t ScriptStatus;
+    __declspec(property(get=GetStatusChangeReasonCd,put=PutStatusChangeReasonCd))
+    double StatusChangeReasonCd;
+    __declspec(property(get=GetStatusChangeReasonText,put=PutStatusChangeReasonText))
+    _bstr_t StatusChangeReasonText;
+    __declspec(property(get=GetConsentParentEntityId,put=PutConsentParentEntityId))
+    double ConsentParentEntityId;
+    __declspec(property(get=GetConsentParentEntityName,put=PutConsentParentEntityName))
+    _bstr_t ConsentParentEntityName;
+    __declspec(property(get=GetBlobParentEntityId,put=PutBlobParentEntityId))
+    double BlobParentEntityId;
+    __declspec(property(get=GetBlobParentEntityName,put=PutBlobParentEntityName))
+    _bstr_t BlobParentEntityName;
+    __declspec(property(get=GetNameFullFormatted,put=PutNameFullFormatted))
+    _bstr_t NameFullFormatted;
+    __declspec(property(get=GetDefinedByCd,put=PutDefinedByCd))
+    double DefinedByCd;
+    __declspec(property(get=GetDefinedByDisp,put=PutDefinedByDisp))
+    _bstr_t DefinedByDisp;
+    __declspec(property(get=GetDefinedByDesc,put=PutDefinedByDesc))
+    _bstr_t DefinedByDesc;
+    __declspec(property(get=GetDisplayInOtherAppsInd,put=PutDisplayInOtherAppsInd))
+    short DisplayInOtherAppsInd;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    void PutDisplayInfo (
+        _bstr_t _arg1 );
+    _bstr_t GetKey ( );
+    void PutKey (
+        _bstr_t pVal );
+    _bstr_t GetStatusDisplay ( );
+    void PutStatusDisplay (
+        _bstr_t pVal );
+    double GetEncntrId ( );
+    void PutEncntrId (
+        double pVal );
+    double GetPolicyId ( );
+    void PutPolicyId (
+        double pVal );
+    short GetActiveInd ( );
+    void PutActiveInd (
+        short pVal );
+    DATE GetBegEffectiveDateTime ( );
+    void PutBegEffectiveDateTime (
+        DATE pVal );
+    DATE GetEndEffectiveDateTime ( );
+    void PutEndEffectiveDateTime (
+        DATE pVal );
+    double GetStatusCd ( );
+    void PutStatusCd (
+        double pVal );
+    double GetReasonCd ( );
+    void PutReasonCd (
+        double pVal );
+    _bstr_t GetReasonDisplay ( );
+    void PutReasonDisplay (
+        _bstr_t pVal );
+    double GetPersonId ( );
+    void PutPersonId (
+        double pVal );
+    double GetOrganizationId ( );
+    void PutOrganizationId (
+        double pVal );
+    double GetConsentStatusId ( );
+    void PutConsentStatusId (
+        double pVal );
+    double GetConsentId ( );
+    void PutConsentId (
+        double pVal );
+    double GetConsentPolicyId ( );
+    void PutConsentPolicyId (
+        double pVal );
+    double GetConsentTypeCd ( );
+    void PutConsentTypeCd (
+        double pVal );
+    double GetBlobRefId ( );
+    void PutBlobRefId (
+        double pVal );
+    short GetDocOnFileInd ( );
+    void PutDocOnFileInd (
+        short pVal );
+    double GetRelationTypeCd ( );
+    void PutRelationTypeCd (
+        double pVal );
+    _bstr_t GetCommentText ( );
+    void PutCommentText (
+        _bstr_t pVal );
+    double GetRelatedPersonId ( );
+    void PutRelatedPersonId (
+        double pVal );
+    long GetUpdtCnt ( );
+    void PutUpdtCnt (
+        long pVal );
+    short GetActionFlag ( );
+    void PutActionFlag (
+        short pVal );
+    double GetUpdtId ( );
+    void PutUpdtId (
+        double pVal );
+    _bstr_t GetConsentTypeDisp ( );
+    void PutConsentTypeDisp (
+        _bstr_t pVal );
+    _bstr_t GetConsentTypeDesc ( );
+    void PutConsentTypeDesc (
+        _bstr_t pVal );
+    _bstr_t GetConsentTypeMean ( );
+    void PutConsentTypeMean (
+        _bstr_t pVal );
+    _bstr_t GetStatusDesc ( );
+    void PutStatusDesc (
+        _bstr_t pVal );
+    _bstr_t GetStatusMean ( );
+    void PutStatusMean (
+        _bstr_t pVal );
+    _bstr_t GetUpdtPrsnlName ( );
+    void PutUpdtPrsnlName (
+        _bstr_t pVal );
+    _bstr_t GetReasonDesc ( );
+    void PutReasonDesc (
+        _bstr_t pVal );
+    _bstr_t GetReasonMean ( );
+    void PutReasonMean (
+        _bstr_t pVal );
+    short GetStatus ( );
+    void PutStatus (
+        short pVal );
+    IDispatchPtr GetHistory ( );
+    _bstr_t GetNameFullFormattedRelPerson ( );
+    void PutNameFullFormattedRelPerson (
+        _bstr_t pVal );
+    _bstr_t GetNameFirstRelPerson ( );
+    void PutNameFirstRelPerson (
+        _bstr_t pVal );
+    _bstr_t GetNameLastRelPerson ( );
+    void PutNameLastRelPerson (
+        _bstr_t pVal );
+    _bstr_t GetParentEntityName ( );
+    void PutParentEntityName (
+        _bstr_t pVal );
+    double GetNameCd ( );
+    void PutNameCd (
+        double pVal );
+    _bstr_t GetNameDisplay ( );
+    void PutNameDisplay (
+        _bstr_t pVal );
+    _bstr_t GetNameDesc ( );
+    void PutNameDesc (
+        _bstr_t pVal );
+    double GetPersonReltnCd ( );
+    void PutPersonReltnCd (
+        double pVal );
+    double GetRelatedPersonReltnCd ( );
+    void PutRelatedPersonReltnCd (
+        double pVal );
+    double GetPersonTypeCd ( );
+    void PutPersonTypeCd (
+        double pVal );
+    double GetRelationId ( );
+    void PutRelationId (
+        double pVal );
+    short GetRelationTypeActionFlag ( );
+    void PutRelationTypeActionFlag (
+        short pVal );
+    short GetFreeTextPersonActionFlag ( );
+    void PutFreeTextPersonActionFlag (
+        short pVal );
+    _bstr_t GetScriptStatus ( );
+    void PutScriptStatus (
+        _bstr_t pVal );
+    double GetStatusChangeReasonCd ( );
+    void PutStatusChangeReasonCd (
+        double pVal );
+    _bstr_t GetStatusChangeReasonText ( );
+    void PutStatusChangeReasonText (
+        _bstr_t pVal );
+    double GetConsentParentEntityId ( );
+    void PutConsentParentEntityId (
+        double pVal );
+    _bstr_t GetConsentParentEntityName ( );
+    void PutConsentParentEntityName (
+        _bstr_t pVal );
+    double GetBlobParentEntityId ( );
+    void PutBlobParentEntityId (
+        double pVal );
+    _bstr_t GetBlobParentEntityName ( );
+    void PutBlobParentEntityName (
+        _bstr_t pVal );
+    _bstr_t GetNameFullFormatted ( );
+    void PutNameFullFormatted (
+        _bstr_t pVal );
+    double GetDefinedByCd ( );
+    void PutDefinedByCd (
+        double pVal );
+    _bstr_t GetDefinedByDisp ( );
+    void PutDefinedByDisp (
+        _bstr_t pVal );
+    _bstr_t GetDefinedByDesc ( );
+    void PutDefinedByDesc (
+        _bstr_t pVal );
+    short GetDisplayInOtherAppsInd ( );
+    void PutDisplayInOtherAppsInd (
+        short pVal );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall put_DisplayInfo (
+        /*[in]*/ BSTR _arg1 ) = 0;
+      virtual HRESULT __stdcall get_Key (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_Key (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_StatusDisplay (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_StatusDisplay (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_EncntrId (
+        /*[out,retval]*/ double * pVal ) = 0;
+      virtual HRESULT __stdcall put_EncntrId (
+        /*[in]*/ double pVal ) = 0;
+      virtual HRESULT __stdcall get_PolicyId (
+        /*[out,retval]*/ double * pVal ) = 0;
+      virtual HRESULT __stdcall put_PolicyId (
+        /*[in]*/ double pVal ) = 0;
+      virtual HRESULT __stdcall get_ActiveInd (
+        /*[out,retval]*/ short * pVal ) = 0;
+      virtual HRESULT __stdcall put_ActiveInd (
+        /*[in]*/ short pVal ) = 0;
+      virtual HRESULT __stdcall get_BegEffectiveDateTime (
+        /*[out,retval]*/ DATE * pVal ) = 0;
+      virtual HRESULT __stdcall put_BegEffectiveDateTime (
+        /*[in]*/ DATE pVal ) = 0;
+      virtual HRESULT __stdcall get_EndEffectiveDateTime (
+        /*[out,retval]*/ DATE * pVal ) = 0;
+      virtual HRESULT __stdcall put_EndEffectiveDateTime (
+        /*[in]*/ DATE pVal ) = 0;
+      virtual HRESULT __stdcall get_StatusCd (
+        /*[out,retval]*/ double * pVal ) = 0;
+      virtual HRESULT __stdcall put_StatusCd (
+        /*[in]*/ double pVal ) = 0;
+      virtual HRESULT __stdcall get_ReasonCd (
+        /*[out,retval]*/ double * pVal ) = 0;
+      virtual HRESULT __stdcall put_ReasonCd (
+        /*[in]*/ double pVal ) = 0;
+      virtual HRESULT __stdcall get_ReasonDisplay (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_ReasonDisplay (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_PersonId (
+        /*[out,retval]*/ double * pVal ) = 0;
+      virtual HRESULT __stdcall put_PersonId (
+        /*[in]*/ double pVal ) = 0;
+      virtual HRESULT __stdcall get_OrganizationId (
+        /*[out,retval]*/ double * pVal ) = 0;
+      virtual HRESULT __stdcall put_OrganizationId (
+        /*[in]*/ double pVal ) = 0;
+      virtual HRESULT __stdcall get_ConsentStatusId (
+        /*[out,retval]*/ double * pVal ) = 0;
+      virtual HRESULT __stdcall put_ConsentStatusId (
+        /*[in]*/ double pVal ) = 0;
+      virtual HRESULT __stdcall get_ConsentId (
+        /*[out,retval]*/ double * pVal ) = 0;
+      virtual HRESULT __stdcall put_ConsentId (
+        /*[in]*/ double pVal ) = 0;
+      virtual HRESULT __stdcall get_ConsentPolicyId (
+        /*[out,retval]*/ double * pVal ) = 0;
+      virtual HRESULT __stdcall put_ConsentPolicyId (
+        /*[in]*/ double pVal ) = 0;
+      virtual HRESULT __stdcall get_ConsentTypeCd (
+        /*[out,retval]*/ double * pVal ) = 0;
+      virtual HRESULT __stdcall put_ConsentTypeCd (
+        /*[in]*/ double pVal ) = 0;
+      virtual HRESULT __stdcall get_BlobRefId (
+        /*[out,retval]*/ double * pVal ) = 0;
+      virtual HRESULT __stdcall put_BlobRefId (
+        /*[in]*/ double pVal ) = 0;
+      virtual HRESULT __stdcall get_DocOnFileInd (
+        /*[out,retval]*/ short * pVal ) = 0;
+      virtual HRESULT __stdcall put_DocOnFileInd (
+        /*[in]*/ short pVal ) = 0;
+      virtual HRESULT __stdcall get_RelationTypeCd (
+        /*[out,retval]*/ double * pVal ) = 0;
+      virtual HRESULT __stdcall put_RelationTypeCd (
+        /*[in]*/ double pVal ) = 0;
+      virtual HRESULT __stdcall get_CommentText (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_CommentText (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_RelatedPersonId (
+        /*[out,retval]*/ double * pVal ) = 0;
+      virtual HRESULT __stdcall put_RelatedPersonId (
+        /*[in]*/ double pVal ) = 0;
+      virtual HRESULT __stdcall get_UpdtCnt (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall put_UpdtCnt (
+        /*[in]*/ long pVal ) = 0;
+      virtual HRESULT __stdcall get_ActionFlag (
+        /*[out,retval]*/ short * pVal ) = 0;
+      virtual HRESULT __stdcall put_ActionFlag (
+        /*[in]*/ short pVal ) = 0;
+      virtual HRESULT __stdcall get_UpdtId (
+        /*[out,retval]*/ double * pVal ) = 0;
+      virtual HRESULT __stdcall put_UpdtId (
+        /*[in]*/ double pVal ) = 0;
+      virtual HRESULT __stdcall get_ConsentTypeDisp (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_ConsentTypeDisp (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_ConsentTypeDesc (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_ConsentTypeDesc (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_ConsentTypeMean (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_ConsentTypeMean (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_StatusDesc (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_StatusDesc (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_StatusMean (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_StatusMean (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_UpdtPrsnlName (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_UpdtPrsnlName (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_ReasonDesc (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_ReasonDesc (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_ReasonMean (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_ReasonMean (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_Status (
+        /*[out,retval]*/ short * pVal ) = 0;
+      virtual HRESULT __stdcall put_Status (
+        /*[in]*/ short pVal ) = 0;
+      virtual HRESULT __stdcall raw_GetHistory (
+        /*[out,retval]*/ IDispatch * * pDataColl ) = 0;
+      virtual HRESULT __stdcall get_NameFullFormattedRelPerson (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_NameFullFormattedRelPerson (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_NameFirstRelPerson (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_NameFirstRelPerson (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_NameLastRelPerson (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_NameLastRelPerson (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_ParentEntityName (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_ParentEntityName (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_NameCd (
+        /*[out,retval]*/ double * pVal ) = 0;
+      virtual HRESULT __stdcall put_NameCd (
+        /*[in]*/ double pVal ) = 0;
+      virtual HRESULT __stdcall get_NameDisplay (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_NameDisplay (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_NameDesc (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_NameDesc (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_PersonReltnCd (
+        /*[out,retval]*/ double * pVal ) = 0;
+      virtual HRESULT __stdcall put_PersonReltnCd (
+        /*[in]*/ double pVal ) = 0;
+      virtual HRESULT __stdcall get_RelatedPersonReltnCd (
+        /*[out,retval]*/ double * pVal ) = 0;
+      virtual HRESULT __stdcall put_RelatedPersonReltnCd (
+        /*[in]*/ double pVal ) = 0;
+      virtual HRESULT __stdcall get_PersonTypeCd (
+        /*[out,retval]*/ double * pVal ) = 0;
+      virtual HRESULT __stdcall put_PersonTypeCd (
+        /*[in]*/ double pVal ) = 0;
+      virtual HRESULT __stdcall get_RelationId (
+        /*[out,retval]*/ double * pVal ) = 0;
+      virtual HRESULT __stdcall put_RelationId (
+        /*[in]*/ double pVal ) = 0;
+      virtual HRESULT __stdcall get_RelationTypeActionFlag (
+        /*[out,retval]*/ short * pVal ) = 0;
+      virtual HRESULT __stdcall put_RelationTypeActionFlag (
+        /*[in]*/ short pVal ) = 0;
+      virtual HRESULT __stdcall get_FreeTextPersonActionFlag (
+        /*[out,retval]*/ short * pVal ) = 0;
+      virtual HRESULT __stdcall put_FreeTextPersonActionFlag (
+        /*[in]*/ short pVal ) = 0;
+      virtual HRESULT __stdcall get_ScriptStatus (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_ScriptStatus (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_StatusChangeReasonCd (
+        /*[out,retval]*/ double * pVal ) = 0;
+      virtual HRESULT __stdcall put_StatusChangeReasonCd (
+        /*[in]*/ double pVal ) = 0;
+      virtual HRESULT __stdcall get_StatusChangeReasonText (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_StatusChangeReasonText (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_ConsentParentEntityId (
+        /*[out,retval]*/ double * pVal ) = 0;
+      virtual HRESULT __stdcall put_ConsentParentEntityId (
+        /*[in]*/ double pVal ) = 0;
+      virtual HRESULT __stdcall get_ConsentParentEntityName (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_ConsentParentEntityName (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_BlobParentEntityId (
+        /*[out,retval]*/ double * pVal ) = 0;
+      virtual HRESULT __stdcall put_BlobParentEntityId (
+        /*[in]*/ double pVal ) = 0;
+      virtual HRESULT __stdcall get_BlobParentEntityName (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_BlobParentEntityName (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_NameFullFormatted (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_NameFullFormatted (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_DefinedByCd (
+        /*[out,retval]*/ double * pVal ) = 0;
+      virtual HRESULT __stdcall put_DefinedByCd (
+        /*[in]*/ double pVal ) = 0;
+      virtual HRESULT __stdcall get_DefinedByDisp (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_DefinedByDisp (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_DefinedByDesc (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_DefinedByDesc (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_DisplayInOtherAppsInd (
+        /*[out,retval]*/ short * pVal ) = 0;
+      virtual HRESULT __stdcall put_DisplayInOtherAppsInd (
+        /*[in]*/ short pVal ) = 0;
+};
+
+struct __declspec(uuid("512118ea-5197-4fbe-bc8d-0a594c4942fb"))
+IConsentStatusColl : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetItem))
+    _variant_t Item[];
+    __declspec(property(get=GetCount,put=PutCount))
+    long Count;
+    __declspec(property(get=Get_NewEnum))
+    IUnknownPtr _NewEnum;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    IUnknownPtr Get_NewEnum ( );
+    _variant_t GetItem (
+        const _variant_t & Index );
+    long GetCount ( );
+    void PutCount (
+        long pVal );
+    HRESULT Add (
+        const _variant_t & Key,
+        const _variant_t & Item );
+    HRESULT Remove (
+        const _variant_t & Index );
+    HRESULT Clear ( );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get__NewEnum (
+        /*[out,retval]*/ IUnknown * * ppUnk ) = 0;
+      virtual HRESULT __stdcall get_Item (
+        /*[in]*/ VARIANT Index,
+        /*[out,retval]*/ VARIANT * pVal ) = 0;
+      virtual HRESULT __stdcall get_Count (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall put_Count (
+        /*[in]*/ long pVal ) = 0;
+      virtual HRESULT __stdcall raw_Add (
+        /*[in]*/ VARIANT Key,
+        /*[in]*/ VARIANT Item ) = 0;
+      virtual HRESULT __stdcall raw_Remove (
+        /*[in]*/ VARIANT Index ) = 0;
+      virtual HRESULT __stdcall raw_Clear ( ) = 0;
+};
+
+struct __declspec(uuid("7a342d23-8218-4d0a-8f7d-3946ea5ebfed"))
+IConsentStatusMgr : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetHistoryInd,put=PutHistoryInd))
+    short HistoryInd;
+    __declspec(property(get=GetPolicyId,put=PutPolicyId))
+    double PolicyId;
+    __declspec(property(get=GetConsentTypeCd,put=PutConsentTypeCd))
+    double ConsentTypeCd;
+    __declspec(property(get=GetConsentTypeMean,put=PutConsentTypeMean))
+    _bstr_t ConsentTypeMean;
+    __declspec(property(get=GetOrganizationId,put=PutOrganizationId))
+    double OrganizationId;
+    __declspec(property(get=GetAuthorizedToView,put=PutAuthorizedToView))
+    long AuthorizedToView;
+    __declspec(property(get=GetDefaultingConsentInd,put=PutDefaultingConsentInd))
+    short DefaultingConsentInd;
+    __declspec(property(get=GetPDSMessagingInd,put=PutPDSMessagingInd))
+    short PDSMessagingInd;
+    __declspec(property(get=GetDefinedByCd,put=PutDefinedByCd))
+    double DefinedByCd;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    IDispatchPtr GetData (
+        IDispatch * pData );
+    short GetHistoryInd ( );
+    void PutHistoryInd (
+        short pVal );
+    double GetPolicyId ( );
+    void PutPolicyId (
+        double pVal );
+    double GetConsentTypeCd ( );
+    void PutConsentTypeCd (
+        double pVal );
+    _bstr_t GetConsentTypeMean ( );
+    void PutConsentTypeMean (
+        _bstr_t pVal );
+    double GetOrganizationId ( );
+    void PutOrganizationId (
+        double pVal );
+    HRESULT SaveData (
+        IDispatch * pData,
+        long lStatus );
+    long GetAuthorizedToView ( );
+    void PutAuthorizedToView (
+        long pVal );
+    short GetDefaultingConsentInd ( );
+    void PutDefaultingConsentInd (
+        short pVal );
+    short GetPDSMessagingInd ( );
+    void PutPDSMessagingInd (
+        short pVal );
+    double GetDefinedByCd ( );
+    void PutDefinedByCd (
+        double pVal );
+    HRESULT SendPDSMessage (
+        IDispatch * pData );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall raw_GetData (
+        /*[in]*/ IDispatch * pData,
+        /*[out,retval]*/ IDispatch * * pDataColl ) = 0;
+      virtual HRESULT __stdcall get_HistoryInd (
+        /*[out,retval]*/ short * pVal ) = 0;
+      virtual HRESULT __stdcall put_HistoryInd (
+        /*[in]*/ short pVal ) = 0;
+      virtual HRESULT __stdcall get_PolicyId (
+        /*[out,retval]*/ double * pVal ) = 0;
+      virtual HRESULT __stdcall put_PolicyId (
+        /*[in]*/ double pVal ) = 0;
+      virtual HRESULT __stdcall get_ConsentTypeCd (
+        /*[out,retval]*/ double * pVal ) = 0;
+      virtual HRESULT __stdcall put_ConsentTypeCd (
+        /*[in]*/ double pVal ) = 0;
+      virtual HRESULT __stdcall get_ConsentTypeMean (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_ConsentTypeMean (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_OrganizationId (
+        /*[out,retval]*/ double * pVal ) = 0;
+      virtual HRESULT __stdcall put_OrganizationId (
+        /*[in]*/ double pVal ) = 0;
+      virtual HRESULT __stdcall raw_SaveData (
+        IDispatch * pData,
+        long lStatus ) = 0;
+      virtual HRESULT __stdcall get_AuthorizedToView (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall put_AuthorizedToView (
+        /*[in]*/ long pVal ) = 0;
+      virtual HRESULT __stdcall get_DefaultingConsentInd (
+        /*[out,retval]*/ short * pVal ) = 0;
+      virtual HRESULT __stdcall put_DefaultingConsentInd (
+        /*[in]*/ short pVal ) = 0;
+      virtual HRESULT __stdcall get_PDSMessagingInd (
+        /*[out,retval]*/ short * pVal ) = 0;
+      virtual HRESULT __stdcall put_PDSMessagingInd (
+        /*[in]*/ short pVal ) = 0;
+      virtual HRESULT __stdcall get_DefinedByCd (
+        /*[out,retval]*/ double * pVal ) = 0;
+      virtual HRESULT __stdcall put_DefinedByCd (
+        /*[in]*/ double pVal ) = 0;
+      virtual HRESULT __stdcall raw_SendPDSMessage (
+        IDispatch * pData ) = 0;
+};
+
+struct __declspec(uuid("dbd2a986-a2f0-4052-bbbe-affe3a3e7272"))
+IConsentPolicy : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetOrganizationId,put=PutOrganizationId))
+    double OrganizationId;
+    __declspec(property(get=GetConsentPolicyId,put=PutConsentPolicyId))
+    double ConsentPolicyId;
+    __declspec(property(get=GetPolicyId,put=PutPolicyId))
+    double PolicyId;
+    __declspec(property(get=GetConsentTypeCd,put=PutConsentTypeCd))
+    double ConsentTypeCd;
+    __declspec(property(get=GetConsentTypeDesc,put=PutConsentTypeDesc))
+    _bstr_t ConsentTypeDesc;
+    __declspec(property(get=GetConsentTypeDisp,put=PutConsentTypeDisp))
+    _bstr_t ConsentTypeDisp;
+    __declspec(property(get=GetConsentTypeMean,put=PutConsentTypeMean))
+    _bstr_t ConsentTypeMean;
+    __declspec(property(get=GetVersionNumber,put=PutVersionNumber))
+    double VersionNumber;
+    __declspec(property(get=GetNameCd,put=PutNameCd))
+    double NameCd;
+    __declspec(property(get=GetNameDesc,put=PutNameDesc))
+    _bstr_t NameDesc;
+    __declspec(property(get=GetNameDisplay,put=PutNameDisplay))
+    _bstr_t NameDisplay;
+    __declspec(property(get=GetBegEffectiveDateTime,put=PutBegEffectiveDateTime))
+    DATE BegEffectiveDateTime;
+    __declspec(property(get=GetEndEffectiveDateTime,put=PutEndEffectiveDateTime))
+    DATE EndEffectiveDateTime;
+    __declspec(property(get=GetActiveInd,put=PutActiveInd))
+    short ActiveInd;
+    __declspec(property(get=GetEndCurrentConsentInd,put=PutEndCurrentConsentInd))
+    short EndCurrentConsentInd;
+    __declspec(property(get=GetUpdtCnt,put=PutUpdtCnt))
+    long UpdtCnt;
+    __declspec(property(get=GetUpdtId,put=PutUpdtId))
+    double UpdtId;
+    __declspec(property(get=GetUpdtPrsnlName,put=PutUpdtPrsnlName))
+    _bstr_t UpdtPrsnlName;
+    __declspec(property(get=GetCommentText,put=PutCommentText))
+    _bstr_t CommentText;
+    __declspec(property(get=GetAssociatedOrgs,put=PutAssociatedOrgs))
+    _variant_t AssociatedOrgs;
+    __declspec(property(get=GetActionFlag,put=PutActionFlag))
+    short ActionFlag;
+    __declspec(property(get=GetScriptStatus,put=PutScriptStatus))
+    _bstr_t ScriptStatus;
+    __declspec(property(get=GetStatus,put=PutStatus))
+    short Status;
+    __declspec(property(get=GetKey,put=PutKey))
+    _bstr_t Key;
+    __declspec(property(get=GetCheckPolicyExistsInd,put=PutCheckPolicyExistsInd))
+    short CheckPolicyExistsInd;
+    __declspec(property(get=GetStatusMessage,put=PutStatusMessage))
+    _bstr_t StatusMessage;
+    __declspec(property(get=GetPolicyText,put=PutPolicyText))
+    _bstr_t PolicyText;
+    __declspec(property(get=GetPolicyTextId,put=PutPolicyTextId))
+    double PolicyTextId;
+    __declspec(property(get=GetBlobRefScanId,put=PutBlobRefScanId))
+    double BlobRefScanId;
+    __declspec(property(get=GetBlobParentEntityId,put=PutBlobParentEntityId))
+    double BlobParentEntityId;
+    __declspec(property(get=GetBlobParentEntityName,put=PutBlobParentEntityName))
+    _bstr_t BlobParentEntityName;
+    __declspec(property(get=GetDefinedByCd,put=PutDefinedByCd))
+    double DefinedByCd;
+    __declspec(property(get=GetDefinedByDesc,put=PutDefinedByDesc))
+    _bstr_t DefinedByDesc;
+    __declspec(property(get=GetDefinedByDisp,put=PutDefinedByDisp))
+    _bstr_t DefinedByDisp;
+    __declspec(property(get=GetPolicyModel,put=PutPolicyModel))
+    short PolicyModel;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    double GetOrganizationId ( );
+    void PutOrganizationId (
+        double pVal );
+    double GetConsentPolicyId ( );
+    void PutConsentPolicyId (
+        double pVal );
+    double GetPolicyId ( );
+    void PutPolicyId (
+        double pVal );
+    double GetConsentTypeCd ( );
+    void PutConsentTypeCd (
+        double pVal );
+    _bstr_t GetConsentTypeDesc ( );
+    void PutConsentTypeDesc (
+        _bstr_t pVal );
+    _bstr_t GetConsentTypeDisp ( );
+    void PutConsentTypeDisp (
+        _bstr_t pVal );
+    _bstr_t GetConsentTypeMean ( );
+    void PutConsentTypeMean (
+        _bstr_t pVal );
+    double GetVersionNumber ( );
+    void PutVersionNumber (
+        double pVal );
+    double GetNameCd ( );
+    void PutNameCd (
+        double pVal );
+    _bstr_t GetNameDesc ( );
+    void PutNameDesc (
+        _bstr_t pVal );
+    _bstr_t GetNameDisplay ( );
+    void PutNameDisplay (
+        _bstr_t pVal );
+    DATE GetBegEffectiveDateTime ( );
+    void PutBegEffectiveDateTime (
+        DATE pVal );
+    DATE GetEndEffectiveDateTime ( );
+    void PutEndEffectiveDateTime (
+        DATE pVal );
+    short GetActiveInd ( );
+    void PutActiveInd (
+        short pVal );
+    short GetEndCurrentConsentInd ( );
+    void PutEndCurrentConsentInd (
+        short pVal );
+    long GetUpdtCnt ( );
+    void PutUpdtCnt (
+        long pVal );
+    double GetUpdtId ( );
+    void PutUpdtId (
+        double pVal );
+    _bstr_t GetUpdtPrsnlName ( );
+    void PutUpdtPrsnlName (
+        _bstr_t pVal );
+    _bstr_t GetCommentText ( );
+    void PutCommentText (
+        _bstr_t pVal );
+    _variant_t GetAssociatedOrgs ( );
+    void PutAssociatedOrgs (
+        const _variant_t & pVal );
+    short GetActionFlag ( );
+    void PutActionFlag (
+        short pVal );
+    _bstr_t GetScriptStatus ( );
+    void PutScriptStatus (
+        _bstr_t pVal );
+    short GetStatus ( );
+    void PutStatus (
+        short pVal );
+    _bstr_t GetKey ( );
+    void PutKey (
+        _bstr_t pVal );
+    short GetCheckPolicyExistsInd ( );
+    void PutCheckPolicyExistsInd (
+        short pVal );
+    _bstr_t GetStatusMessage ( );
+    void PutStatusMessage (
+        _bstr_t pVal );
+    _bstr_t GetPolicyText ( );
+    void PutPolicyText (
+        _bstr_t pVal );
+    double GetPolicyTextId ( );
+    void PutPolicyTextId (
+        double pVal );
+    double GetBlobRefScanId ( );
+    void PutBlobRefScanId (
+        double pVal );
+    double GetBlobParentEntityId ( );
+    void PutBlobParentEntityId (
+        double pVal );
+    _bstr_t GetBlobParentEntityName ( );
+    void PutBlobParentEntityName (
+        _bstr_t pVal );
+    double GetDefinedByCd ( );
+    void PutDefinedByCd (
+        double pVal );
+    _bstr_t GetDefinedByDesc ( );
+    void PutDefinedByDesc (
+        _bstr_t pVal );
+    _bstr_t GetDefinedByDisp ( );
+    void PutDefinedByDisp (
+        _bstr_t pVal );
+    short GetPolicyModel ( );
+    void PutPolicyModel (
+        short pVal );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_OrganizationId (
+        /*[out,retval]*/ double * pVal ) = 0;
+      virtual HRESULT __stdcall put_OrganizationId (
+        /*[in]*/ double pVal ) = 0;
+      virtual HRESULT __stdcall get_ConsentPolicyId (
+        /*[out,retval]*/ double * pVal ) = 0;
+      virtual HRESULT __stdcall put_ConsentPolicyId (
+        /*[in]*/ double pVal ) = 0;
+      virtual HRESULT __stdcall get_PolicyId (
+        /*[out,retval]*/ double * pVal ) = 0;
+      virtual HRESULT __stdcall put_PolicyId (
+        /*[in]*/ double pVal ) = 0;
+      virtual HRESULT __stdcall get_ConsentTypeCd (
+        /*[out,retval]*/ double * pVal ) = 0;
+      virtual HRESULT __stdcall put_ConsentTypeCd (
+        /*[in]*/ double pVal ) = 0;
+      virtual HRESULT __stdcall get_ConsentTypeDesc (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_ConsentTypeDesc (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_ConsentTypeDisp (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_ConsentTypeDisp (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_ConsentTypeMean (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_ConsentTypeMean (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_VersionNumber (
+        /*[out,retval]*/ double * pVal ) = 0;
+      virtual HRESULT __stdcall put_VersionNumber (
+        /*[in]*/ double pVal ) = 0;
+      virtual HRESULT __stdcall get_NameCd (
+        /*[out,retval]*/ double * pVal ) = 0;
+      virtual HRESULT __stdcall put_NameCd (
+        /*[in]*/ double pVal ) = 0;
+      virtual HRESULT __stdcall get_NameDesc (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_NameDesc (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_NameDisplay (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_NameDisplay (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_BegEffectiveDateTime (
+        /*[out,retval]*/ DATE * pVal ) = 0;
+      virtual HRESULT __stdcall put_BegEffectiveDateTime (
+        /*[in]*/ DATE pVal ) = 0;
+      virtual HRESULT __stdcall get_EndEffectiveDateTime (
+        /*[out,retval]*/ DATE * pVal ) = 0;
+      virtual HRESULT __stdcall put_EndEffectiveDateTime (
+        /*[in]*/ DATE pVal ) = 0;
+      virtual HRESULT __stdcall get_ActiveInd (
+        /*[out,retval]*/ short * pVal ) = 0;
+      virtual HRESULT __stdcall put_ActiveInd (
+        /*[in]*/ short pVal ) = 0;
+      virtual HRESULT __stdcall get_EndCurrentConsentInd (
+        /*[out,retval]*/ short * pVal ) = 0;
+      virtual HRESULT __stdcall put_EndCurrentConsentInd (
+        /*[in]*/ short pVal ) = 0;
+      virtual HRESULT __stdcall get_UpdtCnt (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall put_UpdtCnt (
+        /*[in]*/ long pVal ) = 0;
+      virtual HRESULT __stdcall get_UpdtId (
+        /*[out,retval]*/ double * pVal ) = 0;
+      virtual HRESULT __stdcall put_UpdtId (
+        /*[in]*/ double pVal ) = 0;
+      virtual HRESULT __stdcall get_UpdtPrsnlName (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_UpdtPrsnlName (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_CommentText (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_CommentText (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_AssociatedOrgs (
+        /*[out,retval]*/ VARIANT * pVal ) = 0;
+      virtual HRESULT __stdcall put_AssociatedOrgs (
+        /*[in]*/ VARIANT pVal ) = 0;
+      virtual HRESULT __stdcall get_ActionFlag (
+        /*[out,retval]*/ short * pVal ) = 0;
+      virtual HRESULT __stdcall put_ActionFlag (
+        /*[in]*/ short pVal ) = 0;
+      virtual HRESULT __stdcall get_ScriptStatus (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_ScriptStatus (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_Status (
+        /*[out,retval]*/ short * pVal ) = 0;
+      virtual HRESULT __stdcall put_Status (
+        /*[in]*/ short pVal ) = 0;
+      virtual HRESULT __stdcall get_Key (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_Key (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_CheckPolicyExistsInd (
+        /*[out,retval]*/ short * pVal ) = 0;
+      virtual HRESULT __stdcall put_CheckPolicyExistsInd (
+        /*[in]*/ short pVal ) = 0;
+      virtual HRESULT __stdcall get_StatusMessage (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_StatusMessage (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_PolicyText (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_PolicyText (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_PolicyTextId (
+        /*[out,retval]*/ double * pVal ) = 0;
+      virtual HRESULT __stdcall put_PolicyTextId (
+        /*[in]*/ double pVal ) = 0;
+      virtual HRESULT __stdcall get_BlobRefScanId (
+        /*[out,retval]*/ double * pVal ) = 0;
+      virtual HRESULT __stdcall put_BlobRefScanId (
+        /*[in]*/ double pVal ) = 0;
+      virtual HRESULT __stdcall get_BlobParentEntityId (
+        /*[out,retval]*/ double * pVal ) = 0;
+      virtual HRESULT __stdcall put_BlobParentEntityId (
+        /*[in]*/ double pVal ) = 0;
+      virtual HRESULT __stdcall get_BlobParentEntityName (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_BlobParentEntityName (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_DefinedByCd (
+        /*[out,retval]*/ double * pVal ) = 0;
+      virtual HRESULT __stdcall put_DefinedByCd (
+        /*[in]*/ double pVal ) = 0;
+      virtual HRESULT __stdcall get_DefinedByDesc (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_DefinedByDesc (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_DefinedByDisp (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_DefinedByDisp (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_PolicyModel (
+        /*[out,retval]*/ short * pVal ) = 0;
+      virtual HRESULT __stdcall put_PolicyModel (
+        /*[in]*/ short pVal ) = 0;
+};
+
+struct __declspec(uuid("97ed5fe2-2efc-4ba1-a2a0-aa0fd52acead"))
+ConsentStatus;
+    // [ default ] interface IConsentStatus
+    // [ default, source ] dispinterface _IConsentStatusEvents
+
+struct __declspec(uuid("de8822a9-499c-4a78-93e2-7b63771a30ba"))
+ConsentStatusColl;
+    // [ default ] interface IConsentStatusColl
+
+struct __declspec(uuid("8c50cbb5-aca6-41fe-b1c3-1e27499d34da"))
+ConsentStatusMgr;
+    // [ default ] interface IConsentStatusMgr
+
+struct __declspec(uuid("3cd8ff8b-d0ae-4284-b482-b665c0d7ac0a"))
+_IConsentPolicyEvents : IDispatch
+{};
+
+struct __declspec(uuid("ecba9ce6-6049-4c0e-87d0-e237940afbfa"))
+IConsentPolicyMgr : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetConsentTypeCd,put=PutConsentTypeCd))
+    double ConsentTypeCd;
+    __declspec(property(get=GetConsentTypeMean,put=PutConsentTypeMean))
+    _bstr_t ConsentTypeMean;
+    __declspec(property(get=GetOrganizationId,put=PutOrganizationId))
+    double OrganizationId;
+    __declspec(property(get=GetGetAllInd,put=PutGetAllInd))
+    short GetAllInd;
+    __declspec(property(get=GetGetActiveInd,put=PutGetActiveInd))
+    short GetActiveInd;
+    __declspec(property(get=GetDefinedByCd,put=PutDefinedByCd))
+    double DefinedByCd;
+    __declspec(property(get=GetPolicyModel,put=PutPolicyModel))
+    short PolicyModel;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    IDispatchPtr GetData (
+        IDispatch * pData );
+    double GetConsentTypeCd ( );
+    void PutConsentTypeCd (
+        double pVal );
+    _bstr_t GetConsentTypeMean ( );
+    void PutConsentTypeMean (
+        _bstr_t pVal );
+    double GetOrganizationId ( );
+    void PutOrganizationId (
+        double pVal );
+    HRESULT SaveData (
+        IDispatch * pData,
+        VARIANT * varOrganizations );
+    short GetGetAllInd ( );
+    void PutGetAllInd (
+        short pVal );
+    short GetGetActiveInd ( );
+    void PutGetActiveInd (
+        short pVal );
+    double GetDefinedByCd ( );
+    void PutDefinedByCd (
+        double pVal );
+    short GetPolicyModel ( );
+    void PutPolicyModel (
+        short pVal );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall raw_GetData (
+        /*[in]*/ IDispatch * pData,
+        /*[out,retval]*/ IDispatch * * pDataColl ) = 0;
+      virtual HRESULT __stdcall get_ConsentTypeCd (
+        /*[out,retval]*/ double * pVal ) = 0;
+      virtual HRESULT __stdcall put_ConsentTypeCd (
+        /*[in]*/ double pVal ) = 0;
+      virtual HRESULT __stdcall get_ConsentTypeMean (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall put_ConsentTypeMean (
+        /*[in]*/ BSTR pVal ) = 0;
+      virtual HRESULT __stdcall get_OrganizationId (
+        /*[out,retval]*/ double * pVal ) = 0;
+      virtual HRESULT __stdcall put_OrganizationId (
+        /*[in]*/ double pVal ) = 0;
+      virtual HRESULT __stdcall raw_SaveData (
+        IDispatch * pData,
+        VARIANT * varOrganizations ) = 0;
+      virtual HRESULT __stdcall get_GetAllInd (
+        /*[out,retval]*/ short * pVal ) = 0;
+      virtual HRESULT __stdcall put_GetAllInd (
+        /*[in]*/ short pVal ) = 0;
+      virtual HRESULT __stdcall get_GetActiveInd (
+        /*[out,retval]*/ short * pVal ) = 0;
+      virtual HRESULT __stdcall put_GetActiveInd (
+        /*[in]*/ short pVal ) = 0;
+      virtual HRESULT __stdcall get_DefinedByCd (
+        /*[out,retval]*/ double * pVal ) = 0;
+      virtual HRESULT __stdcall put_DefinedByCd (
+        /*[in]*/ double pVal ) = 0;
+      virtual HRESULT __stdcall get_PolicyModel (
+        /*[out,retval]*/ short * pVal ) = 0;
+      virtual HRESULT __stdcall put_PolicyModel (
+        /*[in]*/ short pVal ) = 0;
+};
+
+struct __declspec(uuid("9f784d1e-b02a-483f-957a-d6e02cc3c54a"))
+IConsentPolicyColl : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetItem))
+    _variant_t Item[];
+    __declspec(property(get=GetCount,put=PutCount))
+    long Count;
+    __declspec(property(get=Get_NewEnum))
+    IUnknownPtr _NewEnum;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    IUnknownPtr Get_NewEnum ( );
+    _variant_t GetItem (
+        const _variant_t & Index );
+    long GetCount ( );
+    void PutCount (
+        long pVal );
+    HRESULT Add (
+        const _variant_t & Key,
+        const _variant_t & Item );
+    HRESULT Remove (
+        const _variant_t & Index );
+    HRESULT Clear ( );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get__NewEnum (
+        /*[out,retval]*/ IUnknown * * ppUnk ) = 0;
+      virtual HRESULT __stdcall get_Item (
+        /*[in]*/ VARIANT Index,
+        /*[out,retval]*/ VARIANT * pVal ) = 0;
+      virtual HRESULT __stdcall get_Count (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall put_Count (
+        /*[in]*/ long pVal ) = 0;
+      virtual HRESULT __stdcall raw_Add (
+        /*[in]*/ VARIANT Key,
+        /*[in]*/ VARIANT Item ) = 0;
+      virtual HRESULT __stdcall raw_Remove (
+        /*[in]*/ VARIANT Index ) = 0;
+      virtual HRESULT __stdcall raw_Clear ( ) = 0;
+};
+
+struct __declspec(uuid("826f40c3-81a1-46b6-85af-583f7facedbc"))
+ConsentPolicy;
+    // [ default ] interface IConsentPolicy
+    // [ default, source ] dispinterface _IConsentPolicyEvents
+
+struct __declspec(uuid("1809d9a0-d5f3-4e83-93be-3bf96b713c6b"))
+ConsentPolicyMgr;
+    // [ default ] interface IConsentPolicyMgr
+
+struct __declspec(uuid("7d9f6ece-be3b-469d-a7ab-86d3d7b0efad"))
+ConsentPolicyColl;
+    // [ default ] interface IConsentPolicyColl
+
+//
+// Named GUID constants initializations
+//
+
+extern "C" const GUID __declspec(selectany) LIBID_PPRCONSENTSTATUSDATALib =
+    {0xe9c75a1b,0x7b5f,0x4c26,{0xb8,0x1e,0xa1,0x75,0xe0,0xc8,0xa8,0xd2}};
+extern "C" const GUID __declspec(selectany) DIID__IConsentStatusEvents =
+    {0x5355331c,0x3b39,0x4541,{0xab,0x37,0x91,0xb3,0x88,0xd5,0x6c,0xab}};
+extern "C" const GUID __declspec(selectany) IID_IConsentStatus =
+    {0x91d34943,0x2806,0x4c2f,{0x9b,0x55,0xeb,0x7c,0x4f,0x09,0x62,0xdd}};
+extern "C" const GUID __declspec(selectany) IID_IConsentStatusColl =
+    {0x512118ea,0x5197,0x4fbe,{0xbc,0x8d,0x0a,0x59,0x4c,0x49,0x42,0xfb}};
+extern "C" const GUID __declspec(selectany) IID_IConsentStatusMgr =
+    {0x7a342d23,0x8218,0x4d0a,{0x8f,0x7d,0x39,0x46,0xea,0x5e,0xbf,0xed}};
+extern "C" const GUID __declspec(selectany) IID_IConsentPolicy =
+    {0xdbd2a986,0xa2f0,0x4052,{0xbb,0xbe,0xaf,0xfe,0x3a,0x3e,0x72,0x72}};
+extern "C" const GUID __declspec(selectany) CLSID_ConsentStatus =
+    {0x97ed5fe2,0x2efc,0x4ba1,{0xa2,0xa0,0xaa,0x0f,0xd5,0x2a,0xce,0xad}};
+extern "C" const GUID __declspec(selectany) CLSID_ConsentStatusColl =
+    {0xde8822a9,0x499c,0x4a78,{0x93,0xe2,0x7b,0x63,0x77,0x1a,0x30,0xba}};
+extern "C" const GUID __declspec(selectany) CLSID_ConsentStatusMgr =
+    {0x8c50cbb5,0xaca6,0x41fe,{0xb1,0xc3,0x1e,0x27,0x49,0x9d,0x34,0xda}};
+extern "C" const GUID __declspec(selectany) DIID__IConsentPolicyEvents =
+    {0x3cd8ff8b,0xd0ae,0x4284,{0xb4,0x82,0xb6,0x65,0xc0,0xd7,0xac,0x0a}};
+extern "C" const GUID __declspec(selectany) IID_IConsentPolicyMgr =
+    {0xecba9ce6,0x6049,0x4c0e,{0x87,0xd0,0xe2,0x37,0x94,0x0a,0xfb,0xfa}};
+extern "C" const GUID __declspec(selectany) IID_IConsentPolicyColl =
+    {0x9f784d1e,0xb02a,0x483f,{0x95,0x7a,0xd6,0xe0,0x2c,0xc3,0xc5,0x4a}};
+extern "C" const GUID __declspec(selectany) CLSID_ConsentPolicy =
+    {0x826f40c3,0x81a1,0x46b6,{0x85,0xaf,0x58,0x3f,0x7f,0xac,0xed,0xbc}};
+extern "C" const GUID __declspec(selectany) CLSID_ConsentPolicyMgr =
+    {0x1809d9a0,0xd5f3,0x4e83,{0x93,0xbe,0x3b,0xf9,0x6b,0x71,0x3c,0x6b}};
+extern "C" const GUID __declspec(selectany) CLSID_ConsentPolicyColl =
+    {0x7d9f6ece,0xbe3b,0x469d,{0xa7,0xab,0x86,0xd3,0xd7,0xb0,0xef,0xad}};
+
+//
+// Wrapper method implementations
+//
+
+#include "p:\ml-native\orders\orders_frontend\code\pvorderschedulemanager\src\main\cpp\testrelease\pprconsentstatusdata.tli"
+
+#pragma pack(pop)

@@ -1,0 +1,1475 @@
+﻿// Created by Microsoft (R) C/C++ Compiler Version 14.00.24215.1 (8daf37a3).
+//
+// p:\ml-native\orders\orders_frontend\code\pvorderschedulemanager\src\main\cpp\testrelease\pprconsentstatusdata.tli
+//
+// Wrapper implementations for type library pprconsentstatusdata.dll
+// compiler-generated file created 03/15/22 at 16:43:54 - DO NOT EDIT!
+
+#pragma once
+
+//
+// interface IConsentStatus wrapper method implementations
+//
+
+inline void IConsentStatus::PutDisplayInfo ( _bstr_t _arg1 ) {
+    HRESULT _hr = put_DisplayInfo(_arg1);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t IConsentStatus::GetKey ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_Key(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void IConsentStatus::PutKey ( _bstr_t pVal ) {
+    HRESULT _hr = put_Key(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t IConsentStatus::GetStatusDisplay ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_StatusDisplay(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void IConsentStatus::PutStatusDisplay ( _bstr_t pVal ) {
+    HRESULT _hr = put_StatusDisplay(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline double IConsentStatus::GetEncntrId ( ) {
+    double _result = 0;
+    HRESULT _hr = get_EncntrId(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IConsentStatus::PutEncntrId ( double pVal ) {
+    HRESULT _hr = put_EncntrId(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline double IConsentStatus::GetPolicyId ( ) {
+    double _result = 0;
+    HRESULT _hr = get_PolicyId(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IConsentStatus::PutPolicyId ( double pVal ) {
+    HRESULT _hr = put_PolicyId(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline short IConsentStatus::GetActiveInd ( ) {
+    short _result = 0;
+    HRESULT _hr = get_ActiveInd(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IConsentStatus::PutActiveInd ( short pVal ) {
+    HRESULT _hr = put_ActiveInd(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline DATE IConsentStatus::GetBegEffectiveDateTime ( ) {
+    DATE _result = 0;
+    HRESULT _hr = get_BegEffectiveDateTime(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IConsentStatus::PutBegEffectiveDateTime ( DATE pVal ) {
+    HRESULT _hr = put_BegEffectiveDateTime(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline DATE IConsentStatus::GetEndEffectiveDateTime ( ) {
+    DATE _result = 0;
+    HRESULT _hr = get_EndEffectiveDateTime(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IConsentStatus::PutEndEffectiveDateTime ( DATE pVal ) {
+    HRESULT _hr = put_EndEffectiveDateTime(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline double IConsentStatus::GetStatusCd ( ) {
+    double _result = 0;
+    HRESULT _hr = get_StatusCd(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IConsentStatus::PutStatusCd ( double pVal ) {
+    HRESULT _hr = put_StatusCd(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline double IConsentStatus::GetReasonCd ( ) {
+    double _result = 0;
+    HRESULT _hr = get_ReasonCd(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IConsentStatus::PutReasonCd ( double pVal ) {
+    HRESULT _hr = put_ReasonCd(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t IConsentStatus::GetReasonDisplay ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_ReasonDisplay(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void IConsentStatus::PutReasonDisplay ( _bstr_t pVal ) {
+    HRESULT _hr = put_ReasonDisplay(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline double IConsentStatus::GetPersonId ( ) {
+    double _result = 0;
+    HRESULT _hr = get_PersonId(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IConsentStatus::PutPersonId ( double pVal ) {
+    HRESULT _hr = put_PersonId(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline double IConsentStatus::GetOrganizationId ( ) {
+    double _result = 0;
+    HRESULT _hr = get_OrganizationId(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IConsentStatus::PutOrganizationId ( double pVal ) {
+    HRESULT _hr = put_OrganizationId(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline double IConsentStatus::GetConsentStatusId ( ) {
+    double _result = 0;
+    HRESULT _hr = get_ConsentStatusId(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IConsentStatus::PutConsentStatusId ( double pVal ) {
+    HRESULT _hr = put_ConsentStatusId(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline double IConsentStatus::GetConsentId ( ) {
+    double _result = 0;
+    HRESULT _hr = get_ConsentId(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IConsentStatus::PutConsentId ( double pVal ) {
+    HRESULT _hr = put_ConsentId(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline double IConsentStatus::GetConsentPolicyId ( ) {
+    double _result = 0;
+    HRESULT _hr = get_ConsentPolicyId(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IConsentStatus::PutConsentPolicyId ( double pVal ) {
+    HRESULT _hr = put_ConsentPolicyId(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline double IConsentStatus::GetConsentTypeCd ( ) {
+    double _result = 0;
+    HRESULT _hr = get_ConsentTypeCd(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IConsentStatus::PutConsentTypeCd ( double pVal ) {
+    HRESULT _hr = put_ConsentTypeCd(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline double IConsentStatus::GetBlobRefId ( ) {
+    double _result = 0;
+    HRESULT _hr = get_BlobRefId(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IConsentStatus::PutBlobRefId ( double pVal ) {
+    HRESULT _hr = put_BlobRefId(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline short IConsentStatus::GetDocOnFileInd ( ) {
+    short _result = 0;
+    HRESULT _hr = get_DocOnFileInd(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IConsentStatus::PutDocOnFileInd ( short pVal ) {
+    HRESULT _hr = put_DocOnFileInd(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline double IConsentStatus::GetRelationTypeCd ( ) {
+    double _result = 0;
+    HRESULT _hr = get_RelationTypeCd(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IConsentStatus::PutRelationTypeCd ( double pVal ) {
+    HRESULT _hr = put_RelationTypeCd(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t IConsentStatus::GetCommentText ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_CommentText(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void IConsentStatus::PutCommentText ( _bstr_t pVal ) {
+    HRESULT _hr = put_CommentText(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline double IConsentStatus::GetRelatedPersonId ( ) {
+    double _result = 0;
+    HRESULT _hr = get_RelatedPersonId(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IConsentStatus::PutRelatedPersonId ( double pVal ) {
+    HRESULT _hr = put_RelatedPersonId(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long IConsentStatus::GetUpdtCnt ( ) {
+    long _result = 0;
+    HRESULT _hr = get_UpdtCnt(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IConsentStatus::PutUpdtCnt ( long pVal ) {
+    HRESULT _hr = put_UpdtCnt(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline short IConsentStatus::GetActionFlag ( ) {
+    short _result = 0;
+    HRESULT _hr = get_ActionFlag(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IConsentStatus::PutActionFlag ( short pVal ) {
+    HRESULT _hr = put_ActionFlag(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline double IConsentStatus::GetUpdtId ( ) {
+    double _result = 0;
+    HRESULT _hr = get_UpdtId(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IConsentStatus::PutUpdtId ( double pVal ) {
+    HRESULT _hr = put_UpdtId(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t IConsentStatus::GetConsentTypeDisp ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_ConsentTypeDisp(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void IConsentStatus::PutConsentTypeDisp ( _bstr_t pVal ) {
+    HRESULT _hr = put_ConsentTypeDisp(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t IConsentStatus::GetConsentTypeDesc ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_ConsentTypeDesc(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void IConsentStatus::PutConsentTypeDesc ( _bstr_t pVal ) {
+    HRESULT _hr = put_ConsentTypeDesc(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t IConsentStatus::GetConsentTypeMean ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_ConsentTypeMean(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void IConsentStatus::PutConsentTypeMean ( _bstr_t pVal ) {
+    HRESULT _hr = put_ConsentTypeMean(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t IConsentStatus::GetStatusDesc ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_StatusDesc(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void IConsentStatus::PutStatusDesc ( _bstr_t pVal ) {
+    HRESULT _hr = put_StatusDesc(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t IConsentStatus::GetStatusMean ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_StatusMean(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void IConsentStatus::PutStatusMean ( _bstr_t pVal ) {
+    HRESULT _hr = put_StatusMean(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t IConsentStatus::GetUpdtPrsnlName ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_UpdtPrsnlName(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void IConsentStatus::PutUpdtPrsnlName ( _bstr_t pVal ) {
+    HRESULT _hr = put_UpdtPrsnlName(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t IConsentStatus::GetReasonDesc ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_ReasonDesc(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void IConsentStatus::PutReasonDesc ( _bstr_t pVal ) {
+    HRESULT _hr = put_ReasonDesc(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t IConsentStatus::GetReasonMean ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_ReasonMean(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void IConsentStatus::PutReasonMean ( _bstr_t pVal ) {
+    HRESULT _hr = put_ReasonMean(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline short IConsentStatus::GetStatus ( ) {
+    short _result = 0;
+    HRESULT _hr = get_Status(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IConsentStatus::PutStatus ( short pVal ) {
+    HRESULT _hr = put_Status(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline IDispatchPtr IConsentStatus::GetHistory ( ) {
+    IDispatch * _result = 0;
+    HRESULT _hr = raw_GetHistory(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IDispatchPtr(_result, false);
+}
+
+inline _bstr_t IConsentStatus::GetNameFullFormattedRelPerson ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_NameFullFormattedRelPerson(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void IConsentStatus::PutNameFullFormattedRelPerson ( _bstr_t pVal ) {
+    HRESULT _hr = put_NameFullFormattedRelPerson(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t IConsentStatus::GetNameFirstRelPerson ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_NameFirstRelPerson(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void IConsentStatus::PutNameFirstRelPerson ( _bstr_t pVal ) {
+    HRESULT _hr = put_NameFirstRelPerson(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t IConsentStatus::GetNameLastRelPerson ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_NameLastRelPerson(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void IConsentStatus::PutNameLastRelPerson ( _bstr_t pVal ) {
+    HRESULT _hr = put_NameLastRelPerson(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t IConsentStatus::GetParentEntityName ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_ParentEntityName(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void IConsentStatus::PutParentEntityName ( _bstr_t pVal ) {
+    HRESULT _hr = put_ParentEntityName(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline double IConsentStatus::GetNameCd ( ) {
+    double _result = 0;
+    HRESULT _hr = get_NameCd(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IConsentStatus::PutNameCd ( double pVal ) {
+    HRESULT _hr = put_NameCd(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t IConsentStatus::GetNameDisplay ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_NameDisplay(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void IConsentStatus::PutNameDisplay ( _bstr_t pVal ) {
+    HRESULT _hr = put_NameDisplay(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t IConsentStatus::GetNameDesc ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_NameDesc(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void IConsentStatus::PutNameDesc ( _bstr_t pVal ) {
+    HRESULT _hr = put_NameDesc(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline double IConsentStatus::GetPersonReltnCd ( ) {
+    double _result = 0;
+    HRESULT _hr = get_PersonReltnCd(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IConsentStatus::PutPersonReltnCd ( double pVal ) {
+    HRESULT _hr = put_PersonReltnCd(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline double IConsentStatus::GetRelatedPersonReltnCd ( ) {
+    double _result = 0;
+    HRESULT _hr = get_RelatedPersonReltnCd(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IConsentStatus::PutRelatedPersonReltnCd ( double pVal ) {
+    HRESULT _hr = put_RelatedPersonReltnCd(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline double IConsentStatus::GetPersonTypeCd ( ) {
+    double _result = 0;
+    HRESULT _hr = get_PersonTypeCd(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IConsentStatus::PutPersonTypeCd ( double pVal ) {
+    HRESULT _hr = put_PersonTypeCd(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline double IConsentStatus::GetRelationId ( ) {
+    double _result = 0;
+    HRESULT _hr = get_RelationId(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IConsentStatus::PutRelationId ( double pVal ) {
+    HRESULT _hr = put_RelationId(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline short IConsentStatus::GetRelationTypeActionFlag ( ) {
+    short _result = 0;
+    HRESULT _hr = get_RelationTypeActionFlag(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IConsentStatus::PutRelationTypeActionFlag ( short pVal ) {
+    HRESULT _hr = put_RelationTypeActionFlag(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline short IConsentStatus::GetFreeTextPersonActionFlag ( ) {
+    short _result = 0;
+    HRESULT _hr = get_FreeTextPersonActionFlag(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IConsentStatus::PutFreeTextPersonActionFlag ( short pVal ) {
+    HRESULT _hr = put_FreeTextPersonActionFlag(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t IConsentStatus::GetScriptStatus ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_ScriptStatus(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void IConsentStatus::PutScriptStatus ( _bstr_t pVal ) {
+    HRESULT _hr = put_ScriptStatus(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline double IConsentStatus::GetStatusChangeReasonCd ( ) {
+    double _result = 0;
+    HRESULT _hr = get_StatusChangeReasonCd(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IConsentStatus::PutStatusChangeReasonCd ( double pVal ) {
+    HRESULT _hr = put_StatusChangeReasonCd(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t IConsentStatus::GetStatusChangeReasonText ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_StatusChangeReasonText(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void IConsentStatus::PutStatusChangeReasonText ( _bstr_t pVal ) {
+    HRESULT _hr = put_StatusChangeReasonText(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline double IConsentStatus::GetConsentParentEntityId ( ) {
+    double _result = 0;
+    HRESULT _hr = get_ConsentParentEntityId(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IConsentStatus::PutConsentParentEntityId ( double pVal ) {
+    HRESULT _hr = put_ConsentParentEntityId(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t IConsentStatus::GetConsentParentEntityName ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_ConsentParentEntityName(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void IConsentStatus::PutConsentParentEntityName ( _bstr_t pVal ) {
+    HRESULT _hr = put_ConsentParentEntityName(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline double IConsentStatus::GetBlobParentEntityId ( ) {
+    double _result = 0;
+    HRESULT _hr = get_BlobParentEntityId(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IConsentStatus::PutBlobParentEntityId ( double pVal ) {
+    HRESULT _hr = put_BlobParentEntityId(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t IConsentStatus::GetBlobParentEntityName ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_BlobParentEntityName(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void IConsentStatus::PutBlobParentEntityName ( _bstr_t pVal ) {
+    HRESULT _hr = put_BlobParentEntityName(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t IConsentStatus::GetNameFullFormatted ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_NameFullFormatted(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void IConsentStatus::PutNameFullFormatted ( _bstr_t pVal ) {
+    HRESULT _hr = put_NameFullFormatted(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline double IConsentStatus::GetDefinedByCd ( ) {
+    double _result = 0;
+    HRESULT _hr = get_DefinedByCd(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IConsentStatus::PutDefinedByCd ( double pVal ) {
+    HRESULT _hr = put_DefinedByCd(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t IConsentStatus::GetDefinedByDisp ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_DefinedByDisp(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void IConsentStatus::PutDefinedByDisp ( _bstr_t pVal ) {
+    HRESULT _hr = put_DefinedByDisp(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t IConsentStatus::GetDefinedByDesc ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_DefinedByDesc(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void IConsentStatus::PutDefinedByDesc ( _bstr_t pVal ) {
+    HRESULT _hr = put_DefinedByDesc(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline short IConsentStatus::GetDisplayInOtherAppsInd ( ) {
+    short _result = 0;
+    HRESULT _hr = get_DisplayInOtherAppsInd(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IConsentStatus::PutDisplayInOtherAppsInd ( short pVal ) {
+    HRESULT _hr = put_DisplayInOtherAppsInd(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+//
+// interface IConsentStatusColl wrapper method implementations
+//
+
+inline IUnknownPtr IConsentStatusColl::Get_NewEnum ( ) {
+    IUnknown * _result = 0;
+    HRESULT _hr = get__NewEnum(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IUnknownPtr(_result, false);
+}
+
+inline _variant_t IConsentStatusColl::GetItem ( const _variant_t & Index ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_Item(Index, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline long IConsentStatusColl::GetCount ( ) {
+    long _result = 0;
+    HRESULT _hr = get_Count(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IConsentStatusColl::PutCount ( long pVal ) {
+    HRESULT _hr = put_Count(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline HRESULT IConsentStatusColl::Add ( const _variant_t & Key, const _variant_t & Item ) {
+    HRESULT _hr = raw_Add(Key, Item);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IConsentStatusColl::Remove ( const _variant_t & Index ) {
+    HRESULT _hr = raw_Remove(Index);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IConsentStatusColl::Clear ( ) {
+    HRESULT _hr = raw_Clear();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface IConsentStatusMgr wrapper method implementations
+//
+
+inline IDispatchPtr IConsentStatusMgr::GetData ( IDispatch * pData ) {
+    IDispatch * _result = 0;
+    HRESULT _hr = raw_GetData(pData, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IDispatchPtr(_result, false);
+}
+
+inline short IConsentStatusMgr::GetHistoryInd ( ) {
+    short _result = 0;
+    HRESULT _hr = get_HistoryInd(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IConsentStatusMgr::PutHistoryInd ( short pVal ) {
+    HRESULT _hr = put_HistoryInd(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline double IConsentStatusMgr::GetPolicyId ( ) {
+    double _result = 0;
+    HRESULT _hr = get_PolicyId(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IConsentStatusMgr::PutPolicyId ( double pVal ) {
+    HRESULT _hr = put_PolicyId(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline double IConsentStatusMgr::GetConsentTypeCd ( ) {
+    double _result = 0;
+    HRESULT _hr = get_ConsentTypeCd(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IConsentStatusMgr::PutConsentTypeCd ( double pVal ) {
+    HRESULT _hr = put_ConsentTypeCd(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t IConsentStatusMgr::GetConsentTypeMean ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_ConsentTypeMean(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void IConsentStatusMgr::PutConsentTypeMean ( _bstr_t pVal ) {
+    HRESULT _hr = put_ConsentTypeMean(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline double IConsentStatusMgr::GetOrganizationId ( ) {
+    double _result = 0;
+    HRESULT _hr = get_OrganizationId(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IConsentStatusMgr::PutOrganizationId ( double pVal ) {
+    HRESULT _hr = put_OrganizationId(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline HRESULT IConsentStatusMgr::SaveData ( IDispatch * pData, long lStatus ) {
+    HRESULT _hr = raw_SaveData(pData, lStatus);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline long IConsentStatusMgr::GetAuthorizedToView ( ) {
+    long _result = 0;
+    HRESULT _hr = get_AuthorizedToView(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IConsentStatusMgr::PutAuthorizedToView ( long pVal ) {
+    HRESULT _hr = put_AuthorizedToView(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline short IConsentStatusMgr::GetDefaultingConsentInd ( ) {
+    short _result = 0;
+    HRESULT _hr = get_DefaultingConsentInd(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IConsentStatusMgr::PutDefaultingConsentInd ( short pVal ) {
+    HRESULT _hr = put_DefaultingConsentInd(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline short IConsentStatusMgr::GetPDSMessagingInd ( ) {
+    short _result = 0;
+    HRESULT _hr = get_PDSMessagingInd(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IConsentStatusMgr::PutPDSMessagingInd ( short pVal ) {
+    HRESULT _hr = put_PDSMessagingInd(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline double IConsentStatusMgr::GetDefinedByCd ( ) {
+    double _result = 0;
+    HRESULT _hr = get_DefinedByCd(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IConsentStatusMgr::PutDefinedByCd ( double pVal ) {
+    HRESULT _hr = put_DefinedByCd(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline HRESULT IConsentStatusMgr::SendPDSMessage ( IDispatch * pData ) {
+    HRESULT _hr = raw_SendPDSMessage(pData);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface IConsentPolicy wrapper method implementations
+//
+
+inline double IConsentPolicy::GetOrganizationId ( ) {
+    double _result = 0;
+    HRESULT _hr = get_OrganizationId(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IConsentPolicy::PutOrganizationId ( double pVal ) {
+    HRESULT _hr = put_OrganizationId(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline double IConsentPolicy::GetConsentPolicyId ( ) {
+    double _result = 0;
+    HRESULT _hr = get_ConsentPolicyId(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IConsentPolicy::PutConsentPolicyId ( double pVal ) {
+    HRESULT _hr = put_ConsentPolicyId(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline double IConsentPolicy::GetPolicyId ( ) {
+    double _result = 0;
+    HRESULT _hr = get_PolicyId(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IConsentPolicy::PutPolicyId ( double pVal ) {
+    HRESULT _hr = put_PolicyId(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline double IConsentPolicy::GetConsentTypeCd ( ) {
+    double _result = 0;
+    HRESULT _hr = get_ConsentTypeCd(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IConsentPolicy::PutConsentTypeCd ( double pVal ) {
+    HRESULT _hr = put_ConsentTypeCd(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t IConsentPolicy::GetConsentTypeDesc ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_ConsentTypeDesc(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void IConsentPolicy::PutConsentTypeDesc ( _bstr_t pVal ) {
+    HRESULT _hr = put_ConsentTypeDesc(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t IConsentPolicy::GetConsentTypeDisp ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_ConsentTypeDisp(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void IConsentPolicy::PutConsentTypeDisp ( _bstr_t pVal ) {
+    HRESULT _hr = put_ConsentTypeDisp(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t IConsentPolicy::GetConsentTypeMean ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_ConsentTypeMean(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void IConsentPolicy::PutConsentTypeMean ( _bstr_t pVal ) {
+    HRESULT _hr = put_ConsentTypeMean(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline double IConsentPolicy::GetVersionNumber ( ) {
+    double _result = 0;
+    HRESULT _hr = get_VersionNumber(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IConsentPolicy::PutVersionNumber ( double pVal ) {
+    HRESULT _hr = put_VersionNumber(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline double IConsentPolicy::GetNameCd ( ) {
+    double _result = 0;
+    HRESULT _hr = get_NameCd(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IConsentPolicy::PutNameCd ( double pVal ) {
+    HRESULT _hr = put_NameCd(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t IConsentPolicy::GetNameDesc ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_NameDesc(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void IConsentPolicy::PutNameDesc ( _bstr_t pVal ) {
+    HRESULT _hr = put_NameDesc(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t IConsentPolicy::GetNameDisplay ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_NameDisplay(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void IConsentPolicy::PutNameDisplay ( _bstr_t pVal ) {
+    HRESULT _hr = put_NameDisplay(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline DATE IConsentPolicy::GetBegEffectiveDateTime ( ) {
+    DATE _result = 0;
+    HRESULT _hr = get_BegEffectiveDateTime(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IConsentPolicy::PutBegEffectiveDateTime ( DATE pVal ) {
+    HRESULT _hr = put_BegEffectiveDateTime(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline DATE IConsentPolicy::GetEndEffectiveDateTime ( ) {
+    DATE _result = 0;
+    HRESULT _hr = get_EndEffectiveDateTime(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IConsentPolicy::PutEndEffectiveDateTime ( DATE pVal ) {
+    HRESULT _hr = put_EndEffectiveDateTime(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline short IConsentPolicy::GetActiveInd ( ) {
+    short _result = 0;
+    HRESULT _hr = get_ActiveInd(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IConsentPolicy::PutActiveInd ( short pVal ) {
+    HRESULT _hr = put_ActiveInd(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline short IConsentPolicy::GetEndCurrentConsentInd ( ) {
+    short _result = 0;
+    HRESULT _hr = get_EndCurrentConsentInd(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IConsentPolicy::PutEndCurrentConsentInd ( short pVal ) {
+    HRESULT _hr = put_EndCurrentConsentInd(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long IConsentPolicy::GetUpdtCnt ( ) {
+    long _result = 0;
+    HRESULT _hr = get_UpdtCnt(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IConsentPolicy::PutUpdtCnt ( long pVal ) {
+    HRESULT _hr = put_UpdtCnt(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline double IConsentPolicy::GetUpdtId ( ) {
+    double _result = 0;
+    HRESULT _hr = get_UpdtId(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IConsentPolicy::PutUpdtId ( double pVal ) {
+    HRESULT _hr = put_UpdtId(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t IConsentPolicy::GetUpdtPrsnlName ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_UpdtPrsnlName(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void IConsentPolicy::PutUpdtPrsnlName ( _bstr_t pVal ) {
+    HRESULT _hr = put_UpdtPrsnlName(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t IConsentPolicy::GetCommentText ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_CommentText(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void IConsentPolicy::PutCommentText ( _bstr_t pVal ) {
+    HRESULT _hr = put_CommentText(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _variant_t IConsentPolicy::GetAssociatedOrgs ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_AssociatedOrgs(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline void IConsentPolicy::PutAssociatedOrgs ( const _variant_t & pVal ) {
+    HRESULT _hr = put_AssociatedOrgs(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline short IConsentPolicy::GetActionFlag ( ) {
+    short _result = 0;
+    HRESULT _hr = get_ActionFlag(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IConsentPolicy::PutActionFlag ( short pVal ) {
+    HRESULT _hr = put_ActionFlag(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t IConsentPolicy::GetScriptStatus ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_ScriptStatus(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void IConsentPolicy::PutScriptStatus ( _bstr_t pVal ) {
+    HRESULT _hr = put_ScriptStatus(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline short IConsentPolicy::GetStatus ( ) {
+    short _result = 0;
+    HRESULT _hr = get_Status(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IConsentPolicy::PutStatus ( short pVal ) {
+    HRESULT _hr = put_Status(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t IConsentPolicy::GetKey ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_Key(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void IConsentPolicy::PutKey ( _bstr_t pVal ) {
+    HRESULT _hr = put_Key(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline short IConsentPolicy::GetCheckPolicyExistsInd ( ) {
+    short _result = 0;
+    HRESULT _hr = get_CheckPolicyExistsInd(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IConsentPolicy::PutCheckPolicyExistsInd ( short pVal ) {
+    HRESULT _hr = put_CheckPolicyExistsInd(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t IConsentPolicy::GetStatusMessage ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_StatusMessage(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void IConsentPolicy::PutStatusMessage ( _bstr_t pVal ) {
+    HRESULT _hr = put_StatusMessage(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t IConsentPolicy::GetPolicyText ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_PolicyText(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void IConsentPolicy::PutPolicyText ( _bstr_t pVal ) {
+    HRESULT _hr = put_PolicyText(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline double IConsentPolicy::GetPolicyTextId ( ) {
+    double _result = 0;
+    HRESULT _hr = get_PolicyTextId(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IConsentPolicy::PutPolicyTextId ( double pVal ) {
+    HRESULT _hr = put_PolicyTextId(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline double IConsentPolicy::GetBlobRefScanId ( ) {
+    double _result = 0;
+    HRESULT _hr = get_BlobRefScanId(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IConsentPolicy::PutBlobRefScanId ( double pVal ) {
+    HRESULT _hr = put_BlobRefScanId(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline double IConsentPolicy::GetBlobParentEntityId ( ) {
+    double _result = 0;
+    HRESULT _hr = get_BlobParentEntityId(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IConsentPolicy::PutBlobParentEntityId ( double pVal ) {
+    HRESULT _hr = put_BlobParentEntityId(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t IConsentPolicy::GetBlobParentEntityName ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_BlobParentEntityName(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void IConsentPolicy::PutBlobParentEntityName ( _bstr_t pVal ) {
+    HRESULT _hr = put_BlobParentEntityName(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline double IConsentPolicy::GetDefinedByCd ( ) {
+    double _result = 0;
+    HRESULT _hr = get_DefinedByCd(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IConsentPolicy::PutDefinedByCd ( double pVal ) {
+    HRESULT _hr = put_DefinedByCd(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t IConsentPolicy::GetDefinedByDesc ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_DefinedByDesc(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void IConsentPolicy::PutDefinedByDesc ( _bstr_t pVal ) {
+    HRESULT _hr = put_DefinedByDesc(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t IConsentPolicy::GetDefinedByDisp ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_DefinedByDisp(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void IConsentPolicy::PutDefinedByDisp ( _bstr_t pVal ) {
+    HRESULT _hr = put_DefinedByDisp(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline short IConsentPolicy::GetPolicyModel ( ) {
+    short _result = 0;
+    HRESULT _hr = get_PolicyModel(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IConsentPolicy::PutPolicyModel ( short pVal ) {
+    HRESULT _hr = put_PolicyModel(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+//
+// interface IConsentPolicyMgr wrapper method implementations
+//
+
+inline IDispatchPtr IConsentPolicyMgr::GetData ( IDispatch * pData ) {
+    IDispatch * _result = 0;
+    HRESULT _hr = raw_GetData(pData, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IDispatchPtr(_result, false);
+}
+
+inline double IConsentPolicyMgr::GetConsentTypeCd ( ) {
+    double _result = 0;
+    HRESULT _hr = get_ConsentTypeCd(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IConsentPolicyMgr::PutConsentTypeCd ( double pVal ) {
+    HRESULT _hr = put_ConsentTypeCd(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t IConsentPolicyMgr::GetConsentTypeMean ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_ConsentTypeMean(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void IConsentPolicyMgr::PutConsentTypeMean ( _bstr_t pVal ) {
+    HRESULT _hr = put_ConsentTypeMean(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline double IConsentPolicyMgr::GetOrganizationId ( ) {
+    double _result = 0;
+    HRESULT _hr = get_OrganizationId(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IConsentPolicyMgr::PutOrganizationId ( double pVal ) {
+    HRESULT _hr = put_OrganizationId(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline HRESULT IConsentPolicyMgr::SaveData ( IDispatch * pData, VARIANT * varOrganizations ) {
+    HRESULT _hr = raw_SaveData(pData, varOrganizations);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline short IConsentPolicyMgr::GetGetAllInd ( ) {
+    short _result = 0;
+    HRESULT _hr = get_GetAllInd(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IConsentPolicyMgr::PutGetAllInd ( short pVal ) {
+    HRESULT _hr = put_GetAllInd(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline short IConsentPolicyMgr::GetGetActiveInd ( ) {
+    short _result = 0;
+    HRESULT _hr = get_GetActiveInd(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IConsentPolicyMgr::PutGetActiveInd ( short pVal ) {
+    HRESULT _hr = put_GetActiveInd(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline double IConsentPolicyMgr::GetDefinedByCd ( ) {
+    double _result = 0;
+    HRESULT _hr = get_DefinedByCd(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IConsentPolicyMgr::PutDefinedByCd ( double pVal ) {
+    HRESULT _hr = put_DefinedByCd(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline short IConsentPolicyMgr::GetPolicyModel ( ) {
+    short _result = 0;
+    HRESULT _hr = get_PolicyModel(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IConsentPolicyMgr::PutPolicyModel ( short pVal ) {
+    HRESULT _hr = put_PolicyModel(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+//
+// interface IConsentPolicyColl wrapper method implementations
+//
+
+inline IUnknownPtr IConsentPolicyColl::Get_NewEnum ( ) {
+    IUnknown * _result = 0;
+    HRESULT _hr = get__NewEnum(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IUnknownPtr(_result, false);
+}
+
+inline _variant_t IConsentPolicyColl::GetItem ( const _variant_t & Index ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_Item(Index, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline long IConsentPolicyColl::GetCount ( ) {
+    long _result = 0;
+    HRESULT _hr = get_Count(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IConsentPolicyColl::PutCount ( long pVal ) {
+    HRESULT _hr = put_Count(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline HRESULT IConsentPolicyColl::Add ( const _variant_t & Key, const _variant_t & Item ) {
+    HRESULT _hr = raw_Add(Key, Item);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IConsentPolicyColl::Remove ( const _variant_t & Index ) {
+    HRESULT _hr = raw_Remove(Index);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IConsentPolicyColl::Clear ( ) {
+    HRESULT _hr = raw_Clear();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
